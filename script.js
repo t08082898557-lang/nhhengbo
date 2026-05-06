@@ -54,7 +54,7 @@ const translations = {
     qualityEyebrow: "Quality & Service", qualityTitle: "ISO 9001-oriented quality management for stable export orders.", qualityText: "We build our daily production around ISO 9001 quality management principles, with documented checkpoints from incoming materials to final shipment.", qualityIso: "Process-based quality management", qualityStages: "Incoming, in-process and final checks", qualityAql: "Sampling inspection before shipment", certEyebrow: "Compliance Portfolio", certTitle: "Documented compliance support for professional buyers.", certText: "For importers, distributors and project buyers, we provide selected third-party documents for initial review. Available files include CE/EMC, FCC and RoHS documents related to emergency warning light and work light product series.", certNote: "Documents are provided for buyer reference; applicable requirements may vary by model, market and order specification.", certCe: "Electromagnetic compatibility documentation", certFcc: "Supplier's Declaration of Conformity documentation", certRohs: "Restriction of hazardous substances documentation", certOpen: "View PDF",
     showroomEyebrow: "Scenario Ready", showroomTitle: "Roadside safety · Cycling & outdoor · Emergency warning · Portable utility",
     contactEyebrow: "Start A Project", contactTitle: "Send your market, quantity and customization needs.", contactText: "We will prepare product recommendations, packaging options, lead time and quotation details for your target market.",
-    formName: "Your name", formEmail: "Email / WhatsApp", formProduct: "Product interest", formMessage: "Quantity, logo, packaging, destination market", formSubmit: "Send Inquiry", footerText: "Integrated manufacturer & trading partner for portable lighting and safety warning products.", searchProducts: "Search model or product", filterAll: "All", filterWork: "Work Lights", filterWarning: "Warning Lights", filterBeacon: "Beacons", floatingInquiry: "Quick Inquiry", backTop: "Back to top", moreProducts: "More Products", lessProducts: "Show Less", customBadge: "OEM / ODM", customLogo: "Custom Logo", customLogoText: "Your brand on product", customPack: "Custom Packaging", customPackText: "Retail-ready box design", thanks: "Thank you. We will contact you soon."
+    formName: "Your name", formEmail: "Email / WhatsApp", formProduct: "Product interest", formMessage: "Quantity, logo, packaging, destination market", formSubmit: "Send Inquiry", footerText: "Integrated manufacturer & trading partner for portable lighting and safety warning products.", searchProducts: "Search model or product", filterAll: "All", filterWork: "Work Lights", filterWarning: "Warning Lights", filterBeacon: "Beacons", floatingInquiry: "Quick Inquiry", backTop: "Back to top", moreProducts: "More Products", lessProducts: "Show Less", customBadge: "OEM / ODM", customLogo: "Custom Logo", customLogoText: "Your brand on product", customPack: "Custom Packaging", customPackText: "Retail-ready box design", productCta: "View details", categoryWork: "Work light", categoryWarning: "Warning light", categoryBeacon: "Beacon", thanks: "Thank you. We will contact you soon."
   },
   zh: {
     brandTag: "工贸一体实力工厂", navProducts: "产品", navFactory: "工厂", navCustom: "定制", navQuality: "质量", navContact: "联系", quote: "获取报价",
@@ -68,7 +68,8 @@ const translations = {
     qualityEyebrow: "质量与服务", qualityTitle: "围绕 ISO9001 质量管理体系，保障稳定出口订单。", qualityText: "我们按照 ISO9001 质量管理体系思路建立日常生产流程，从来料、制程、功能测试到出货抽检均设置记录和检查节点。", qualityIso: "以过程管理保障品质一致", qualityStages: "来料、制程、成品分阶段检验", qualityAql: "出货前按订单要求抽检",
     showroomEyebrow: "多场景适配", showroomTitle: "道路安全 · 骑行户外 · 应急警示 · 便携工具",
     contactEyebrow: "开启项目", contactTitle: "告诉我们市场、数量和定制需求。", contactText: "我们会根据目标市场提供产品推荐、包装方案、交期和报价。",
-    formName: "您的姓名", formEmail: "邮箱 / WhatsApp", formProduct: "感兴趣的产品", formMessage: "数量、LOGO、包装、目标市场", formSubmit: "发送询盘", footerText: "便携照明与安全警示产品的工贸一体合作伙伴。", searchProducts: "搜索型号或产品", filterAll: "全部", filterWork: "工作灯", filterWarning: "警示灯", filterBeacon: "警示信标", floatingInquiry: "快速询盘", backTop: "返回顶部", thanks: "感谢咨询，我们会尽快联系您。"
+    certEyebrow: "合规文件", certTitle: "面向专业买家的认证资料支持。", certText: "我们为进口商、经销商和项目采购提供部分第三方文件用于初步审核，包含应急警示灯和工作灯系列相关的 CE/EMC、FCC、RoHS 文件。", certNote: "文件仅供买家参考，具体适用要求会因型号、市场和订单规格而不同。", certCe: "电磁兼容文件", certFcc: "FCC 符合性文件", certRohs: "有害物质限制文件", certOpen: "查看 PDF",
+    formName: "您的姓名", formEmail: "邮箱 / WhatsApp", formProduct: "感兴趣的产品", formMessage: "数量、LOGO、包装、目标市场", formSubmit: "发送询盘", footerText: "便携照明与安全警示产品的工贸一体合作伙伴。", searchProducts: "搜索型号或产品", filterAll: "全部", filterWork: "工作灯", filterWarning: "警示灯", filterBeacon: "警示信标", floatingInquiry: "快速询盘", backTop: "返回顶部", moreProducts: "更多产品", lessProducts: "收起产品", customBadge: "OEM / ODM", customLogo: "定制 LOGO", customLogoText: "产品印制您的品牌", customPack: "定制包装", customPackText: "适合零售渠道的彩盒", productCta: "查看详情", categoryWork: "工作灯", categoryWarning: "警示灯", categoryBeacon: "信标", thanks: "感谢咨询，我们会尽快联系您。"
   },
   es: { navProducts:"Productos",navFactory:"Fábrica",navCustom:"OEM/ODM",navQuality:"Calidad",navContact:"Contacto",quote:"Cotizar",heroTitle:"Capacidad industrial para marcas globales.",heroText:"Fabricante y socio comercial integrado para luces LED de advertencia, trabajo, balizas magnéticas y emergencia.",explore:"Ver productos",customize:"Personalizar marca",productsTitle:"Iluminación portátil para carretera, exterior y emergencias.",factoryTitle:"Capacidad integral para marcas globales.",customTitle:"De la idea al producto de marca.",qualityTitle:"Control estricto desde materia prima hasta producto final.",contactTitle:"Envíenos mercado, cantidad y requisitos.",formSubmit:"Enviar consulta",thanks:"Gracias. Le contactaremos pronto." },
   fr: { navProducts:"Produits",navFactory:"Usine",navCustom:"OEM/ODM",navQuality:"Qualité",navContact:"Contact",quote:"Devis",heroTitle:"Puissance industrielle pour les marques mondiales.",heroText:"Partenaire usine + commerce pour feux LED d'avertissement, lampes de travail, balises magnétiques et éclairage d'urgence.",explore:"Voir les produits",customize:"Personnaliser",productsTitle:"Éclairage portable pour route, extérieur et urgence.",factoryTitle:"Capacité complète pour marques mondiales.",customTitle:"De l'idée au produit de marque.",qualityTitle:"Contrôle qualité strict du matériau au produit fini.",contactTitle:"Envoyez marché, quantité et besoins.",formSubmit:"Envoyer",thanks:"Merci. Nous vous contacterons bientôt." },
@@ -137,6 +138,13 @@ function productCategory(item) {
   return "warning";
 }
 
+function productCategoryLabel(item) {
+  const category = productCategory(item);
+  if (category === "work") return t("categoryWork");
+  if (category === "beacon") return t("categoryBeacon");
+  return t("categoryWarning");
+}
+
 function renderStaticLists() {
   const grid = document.getElementById("productGrid");
   const showAll = grid?.classList.contains("show-all");
@@ -150,9 +158,12 @@ function renderStaticLists() {
   grid.innerHTML = filtered.map((item, index) => {
     const [name, desc] = localized(item);
     return `
-      <button class="product-card reveal ${index >= 8 ? "is-extra" : ""}" type="button" data-model="${item.model}">
-        <img src="assets/${item.img}" alt="${name}">
-        <div class="product-info"><h3>${name}</h3><p>${desc}</p></div>
+      <button class="product-card reveal ${index >= 8 ? "is-extra" : ""}" type="button" data-model="${item.model}" aria-label="${item.model} ${name}">
+        <div class="product-card-top">
+          <div class="product-meta"><span>${item.model}</span><span>${productCategoryLabel(item)}</span></div>
+          <img src="assets/${item.img}" alt="${name}" loading="${index < 4 ? "eager" : "lazy"}">
+        </div>
+        <div class="product-info"><h3>${name}</h3><p>${desc}</p><span class="product-action">${t("productCta")}</span></div>
       </button>`;
   }).join("");
   if (showAll) grid.classList.add("show-all");
@@ -181,7 +192,7 @@ function renderStaticLists() {
 
 function renderProductOptions() {
   const select = document.getElementById("productInterest");
-  const first = `<option data-i18n="formProduct">${t("formProduct")}</option>`;
+  const first = `<option value="" data-i18n="formProduct">${t("formProduct")}</option>`;
   select.innerHTML = first + products.map(item => {
     const [name] = localized(item);
     return `<option value="${item.model} - ${name}">${item.model} - ${name}</option>`;
@@ -212,22 +223,26 @@ function openProductModal(model) {
   document.getElementById("modalTitle").textContent = name;
   document.getElementById("modalDesc").textContent = desc;
   const labels = currentLang === "zh"
-    ? { spec: "产品解析", moq: "起订量", lead: "交货期", cert: "认证", price: "参考单价" }
-    : { spec: "Product details", moq: "MOQ", lead: "Lead time", cert: "Certificates", price: "Reference price" };
+    ? { spec: "产品解析", moq: "起订量", lead: "交货期", cert: "认证", price: "报价方式" }
+    : { spec: "Product details", moq: "MOQ", lead: "Lead time", cert: "Certificates", price: "Quotation" };
+  const quoteValue = currentLang === "zh" ? "请联系业务获取最新报价" : "Contact sales for current quotation";
   document.getElementById("modalSpecs").innerHTML = [
     [labels.spec, detail.spec || "-"],
     [labels.moq, detail.moq || "-"],
     [labels.lead, detail.lead || "-"],
     [labels.cert, detail.cert || "-"],
-    [labels.price, detail.price || "-"]
+    [labels.price, quoteValue]
   ].map(([k,v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("");
   document.getElementById("productModal").classList.add("open");
   document.getElementById("productModal").setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-is-open");
+  document.getElementById("modalClose").focus();
 }
 
 function closeProductModal() {
   document.getElementById("productModal").classList.remove("open");
   document.getElementById("productModal").setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-is-open");
 }
 
 function applyLanguage(lang) {
@@ -262,6 +277,11 @@ document.getElementById("modalClose").addEventListener("click", closeProductModa
 document.getElementById("productModal").addEventListener("click", event => {
   if (event.target.id === "productModal") closeProductModal();
 });
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape" && document.getElementById("productModal").classList.contains("open")) {
+    closeProductModal();
+  }
+});
 
 document.getElementById("productSearch").addEventListener("input", event => {
   searchTerm = event.target.value.trim();
@@ -288,6 +308,7 @@ window.addEventListener("scroll", () => {
 
 document.getElementById("inquiryForm").addEventListener("submit", event => {
   event.preventDefault();
+  if (!event.currentTarget.reportValidity()) return;
   const selected = document.getElementById("recipientSelect").value;
   const to = selected === "all" ? inquiryEmails.join(",") : selected;
   const name = document.getElementById("customerName").value.trim();
@@ -327,6 +348,7 @@ function showSlide(index) {
 
 function startCarousel() {
   clearInterval(slideTimer);
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   slideTimer = setInterval(() => showSlide(slideIndex + 1), 3600);
 }
 

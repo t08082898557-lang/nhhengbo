@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HB Electric | Portable Lighting & Safety Warning Solutions</title>
   <meta name="description" content="Integrated manufacturer and trading partner for portable LED lighting, safety warning lights, OEM/ODM customization and global supply.">
+  <meta name="theme-color" content="#04101f">
+  <meta property="og:title" content="HB Electric | Portable Lighting & Safety Warning Solutions">
+  <meta property="og:description" content="Factory-owned production, OEM/ODM customization and export support for portable lighting and safety warning products.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nhhengbo.com/">
+  <meta property="og:image" content="https://nhhengbo.com/assets/hero_factory.webp">
+  <link rel="canonical" href="https://nhhengbo.com/">
+  <link rel="preload" as="image" href="assets/hero_factory.webp">
+  <link rel="preload" as="image" href="assets/p328.webp">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -51,12 +60,6 @@
 
   <main>
     <section class="hero">
-      <div class="orb-field" aria-hidden="true">
-        <span class="orb orb-a"></span>
-        <span class="orb orb-b"></span>
-        <span class="orb orb-c"></span>
-        <span class="orb orb-d"></span>
-      </div>
       <div class="hero-copy reveal">
         <p class="eyebrow" data-i18n="eyebrow">Portable Lighting & Safety Warning Solutions</p>
         <h1 data-i18n="heroTitle">Manufacturing strength for global safety brands.</h1>
@@ -314,16 +317,16 @@
           <option value="bshong@126.com" data-i18n="recipient3">Sales Consultant 3 - bshong@126.com</option>
           <option value="all" data-i18n="recipientAll">Send to all consultants</option>
         </select>
-        <input id="customerName" data-i18n-placeholder="formName" placeholder="Your name">
-        <input id="customerContact" data-i18n-placeholder="formEmail" placeholder="Email / WhatsApp">
-        <select id="productInterest">
-          <option data-i18n="formProduct">Product interest</option>
+        <input id="customerName" data-i18n-placeholder="formName" placeholder="Your name" autocomplete="name" required>
+        <input id="customerContact" data-i18n-placeholder="formEmail" placeholder="Email / WhatsApp" autocomplete="email" required>
+        <select id="productInterest" required>
+          <option value="" data-i18n="formProduct">Product interest</option>
           <option>Mini LED Warning Light</option>
           <option>LED Road Warning Light</option>
           <option>Magnetic Safety Beacon</option>
           <option>Outdoor Emergency Light</option>
         </select>
-        <textarea id="messageText" data-i18n-placeholder="formMessage" placeholder="Quantity, logo, packaging, destination market"></textarea>
+        <textarea id="messageText" data-i18n-placeholder="formMessage" placeholder="Quantity, logo, packaging, destination market" required></textarea>
         <button class="btn primary" type="submit" data-i18n="formSubmit">Send Inquiry</button>
         <p class="form-note" data-i18n="formNote">Submitting will open your email app with the selected recipient and inquiry content.</p>
       </form>
@@ -340,7 +343,7 @@
 
   <div class="modal" id="productModal" aria-hidden="true">
     <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Product detail">
-      <button class="modal-close" type="button" id="modalClose" aria-label="Close">×</button>
+      <button class="modal-close" type="button" id="modalClose" aria-label="Close">&times;</button>
       <img id="modalImage" alt="">
       <div class="modal-content">
         <p class="eyebrow" id="modalModel"></p>
@@ -352,5 +355,32 @@
   </div>
 
   <script src="script.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "HB Electric",
+      "url": "https://nhhengbo.com/",
+      "description": "Integrated manufacturer and trading partner for portable lighting and safety warning products.",
+      "email": "19858215314@163.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "19858215314@163.com"
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "cyanpeter@hotmail.com"
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "bshong@126.com"
+        }
+      ]
+    }
+  </script>
 </body>
 </html>
