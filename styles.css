@@ -756,6 +756,31 @@ h2 { font-size: clamp(2.2rem, 4.5vw, 4.8rem); }
   color: white;
   background: linear-gradient(160deg, var(--deep), var(--blue));
 }
+
+.quality-system {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+.quality-system div {
+  padding: 16px 18px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 20px;
+  background: rgba(255,255,255,.10);
+  backdrop-filter: blur(10px);
+}
+.quality-system b {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--gold);
+  letter-spacing: .08em;
+  font-size: .92rem;
+}
+.quality-system span {
+  color: rgba(255,255,255,.88);
+  line-height: 1.55;
+}
+
 .advantage-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0,1fr));
