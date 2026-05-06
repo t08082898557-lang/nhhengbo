@@ -1104,3 +1104,62 @@ h2 { font-size: clamp(2.2rem, 4.5vw, 4.8rem); }
   .slide h3 { font-size: 2.7rem; }
   .showroom-copy { left: 18px; right: 18px; bottom: 18px; }
 }
+
+
+.certificates {
+  padding-top: clamp(70px, 8vw, 110px);
+}
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.certificate-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+  padding: 28px;
+  border-radius: 30px;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 90% 10%, rgba(244,189,98,.24), transparent 12rem),
+    linear-gradient(145deg, #ffffff, #f4f7fb);
+  box-shadow: 0 18px 44px rgba(8,26,46,.09);
+  text-decoration: none;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.certificate-card::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  bottom: -34px;
+  width: 132px;
+  height: 132px;
+  border-radius: 42px;
+  border: 1px solid rgba(13,82,150,.12);
+  transform: rotate(18deg);
+}
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 54px rgba(8,26,46,.14);
+}
+.certificate-card b {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--blue);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  letter-spacing: -.04em;
+}
+.certificate-card span {
+  display: block;
+  max-width: 24ch;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.certificate-card em {
+  display: inline-flex;
+  margin-top: 24px;
+  color: var(--gold-dark);
+  font-style: normal;
+  font-weight: 800;
+}
