@@ -315,9 +315,9 @@ document.getElementById("inquiryForm").addEventListener("submit", event => {
   const contact = document.getElementById("customerContact").value.trim();
   const product = document.getElementById("productInterest").value;
   const message = document.getElementById("messageText").value.trim();
-  const subject = `Product Inquiry - ${product || "HB Electric"}`;
+  const subject = `Product Inquiry - ${product || "HENGBO"}`;
   const body = [
-    "Hello HB Electric team,",
+    "Hello HENGBO team,",
     "",
     "I would like to request more information / quotation.",
     "",
