@@ -180,7 +180,7 @@ function renderStaticLists() {
   document.getElementById("advantageGrid").innerHTML = advantages.map((item) => {
     const [title, text] = localized(item);
     return `
-      <article class="advantage">
+      <article class="advantage" data-mark="${item.num}">
         <b>${item.num}</b><h3>${title}</h3><p>${text}</p>
       </article>`;
   }).join("");
