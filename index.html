@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <div class="grain"></div>
   <div class="scroll-progress" id="scrollProgress"></div>
   <header class="site-header" id="top">
@@ -55,7 +56,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1">
     <section class="hero">
       <div class="hero-copy reveal">
         <p class="eyebrow" data-i18n="eyebrow">Portable Lighting & Safety Warning Solutions</p>
@@ -125,12 +126,24 @@
           <button class="chip" type="button" data-filter="work" data-i18n="filterWork">Work Lights</button>
           <button class="chip" type="button" data-filter="warning" data-i18n="filterWarning">Warning Lights</button>
           <button class="chip" type="button" data-filter="beacon" data-i18n="filterBeacon">Beacons</button>
+          <button class="chip" type="button" data-filter="solar" data-i18n="filterSolar">Solar Lights</button>
+          <button class="chip" type="button" data-filter="camping" data-i18n="filterCamping">Camping</button>
+          <button class="chip" type="button" data-filter="security" data-i18n="filterSecurity">Security</button>
         </div>
       </div>
-      <div class="product-grid" id="productGrid"></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
       <div class="more-products-row">
-        <button class="btn primary" type="button" id="toggleProducts" data-i18n="moreProducts">More Products</button>
+        <button class="btn primary" type="button" id="toggleProducts" data-i18n="moreProducts" aria-controls="productGrid" aria-expanded="false">More Products</button>
       </div>
+    </section>
+
+    <section class="category-showcase reveal" aria-label="New outdoor and solar product collections">
+      <div class="category-showcase-head">
+        <p class="eyebrow" data-i18n="collectionsEyebrow">New Outdoor Range</p>
+        <h2 data-i18n="collectionsTitle">Solar, camping and security lighting now ready for inquiry.</h2>
+        <p data-i18n="collectionsText">Quickly browse the newly added XG series and build a wider catalog for retail, wholesale and project buyers.</p>
+      </div>
+      <div class="collection-grid" id="collectionGrid"></div>
     </section>
 
     <section class="flagship reveal" aria-label="Flagship product presentation">
@@ -148,7 +161,7 @@
 
     <section class="section factory" id="factory">
       <div class="factory-image reveal">
-        <img src="assets/manufacturing.webp" alt="Manufacturing excellence overview">
+        <img src="assets/manufacturing.webp" alt="Manufacturing excellence overview" loading="lazy" decoding="async">
       </div>
       <div class="factory-copy reveal">
         <p class="eyebrow" data-i18n="factoryEyebrow">Manufacturing Excellence</p>
@@ -193,8 +206,8 @@
         <div class="custom-showcase reveal">
           <div class="custom-badge" data-i18n="customBadge">OEM / ODM</div>
           <div class="custom-products">
-            <img src="assets/p327.webp" alt="Customized warning light">
-            <img src="assets/p328.webp" alt="Customized road warning light">
+            <img src="assets/p327.webp" alt="Customized warning light" loading="lazy" decoding="async">
+            <img src="assets/p328.webp" alt="Customized road warning light" loading="lazy" decoding="async">
           </div>
           <div class="custom-packaging">
             <div>
@@ -274,19 +287,19 @@
       </div>
       <div class="certificate-grid reveal">
         <a class="certificate-card" href="assets/certificates/iso9001-certificate.pdf" target="_blank" rel="noopener">
-          <figure><img src="assets/certificates/iso9001-certificate.webp" alt="ISO 9001 certificate preview"></figure>
+          <figure><img src="assets/certificates/iso9001-certificate.webp" alt="ISO 9001 certificate preview" loading="lazy" decoding="async"></figure>
           <div><b>ISO 9001</b><span data-i18n="certIso">Quality management system certificate</span><em data-i18n="certOpen">View PDF</em></div>
         </a>
         <a class="certificate-card" href="assets/certificates/ce-emc-certificate.pdf" target="_blank" rel="noopener">
-          <figure><img src="assets/certificates/ce-emc-certificate.webp" alt="CE EMC certificate preview"></figure>
+          <figure><img src="assets/certificates/ce-emc-certificate.webp" alt="CE EMC certificate preview" loading="lazy" decoding="async"></figure>
           <div><b>CE / EMC</b><span data-i18n="certCe">Electromagnetic compatibility documentation</span><em data-i18n="certOpen">View PDF</em></div>
         </a>
         <a class="certificate-card" href="assets/certificates/fcc-certificate.pdf" target="_blank" rel="noopener">
-          <figure><img src="assets/certificates/fcc-certificate.webp" alt="FCC certificate preview"></figure>
+          <figure><img src="assets/certificates/fcc-certificate.webp" alt="FCC certificate preview" loading="lazy" decoding="async"></figure>
           <div><b>FCC</b><span data-i18n="certFcc">Supplier's Declaration of Conformity documentation</span><em data-i18n="certOpen">View PDF</em></div>
         </a>
         <a class="certificate-card" href="assets/certificates/rohs-certificate.pdf" target="_blank" rel="noopener">
-          <figure><img src="assets/certificates/rohs-certificate.webp" alt="RoHS certificate preview"></figure>
+          <figure><img src="assets/certificates/rohs-certificate.webp" alt="RoHS certificate preview" loading="lazy" decoding="async"></figure>
           <div><b>RoHS</b><span data-i18n="certRohs">Restriction of hazardous substances documentation</span><em data-i18n="certOpen">View PDF</em></div>
         </a>
       </div>
@@ -374,7 +387,7 @@
   <a class="floating-inquiry" href="#contact" data-i18n="floatingInquiry">Quick Inquiry</a>
 
   <div class="modal" id="productModal" aria-hidden="true">
-    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Product detail">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
       <button class="modal-close" type="button" id="modalClose" aria-label="Close">&times;</button>
       <img id="modalImage" alt="">
       <div class="modal-content">
@@ -382,6 +395,7 @@
         <h2 id="modalTitle"></h2>
         <p id="modalDesc"></p>
         <dl id="modalSpecs"></dl>
+        <button class="btn primary" type="button" id="modalInquiry" data-i18n="modalInquiry">Inquire this product</button>
       </div>
     </div>
   </div>

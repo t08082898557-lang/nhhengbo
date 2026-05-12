@@ -8,7 +8,33 @@ const products = [
   { model: "HB-329", img: "p329.webp", en: ["Magnetic Safety Beacon", "Magnetic safety beacon for vehicles, projects and emergency scenes."], zh: ["磁吸安全警示灯", "磁吸式安全警示灯，适用于车辆、工程与应急现场。"] },
   { model: "HB-330", img: "p330.webp", en: ["Triangle Roadside Warning Lamp", "Foldable triangle warning lamp for night roadside emergencies."], zh: ["三角道路警示灯", "折叠式三角警示灯，适合夜间道路应急。"] },
   { model: "HB-331", img: "p331.webp", en: ["Triangle Work Warning Light", "Portable triangle warning light with strong safety illumination."], zh: ["三角工作警示灯", "便携式三角警示灯，安全警示效果明显。"] },
-  { model: "HB-361", img: "p361.webp", en: ["Red Blue Emergency Beacon", "Red and blue emergency beacon for roadside and field warning."], zh: ["红蓝应急警示灯", "红蓝应急警示灯，适合道路和户外警示场景。"] }
+  { model: "HB-361", img: "p361.webp", en: ["Red Blue Emergency Beacon", "Red and blue emergency beacon for roadside and field warning."], zh: ["红蓝应急警示灯", "红蓝应急警示灯，适合道路和户外警示场景。"] },
+  {"model": "XG-T31", "img": "xg-t31.webp", "cat": "solar", "en": ["Solar Wall Sensor Garden Light", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["XG-T31 壁挂感应灯", "壁挂感应灯/庭院灯，1200MA/18650*1；140+12LED；5.5v/ 2w；太阳能+人体感应；高亮白光+警示灯；防水+遥控功能。"]},
+  {"model": "XG-T30", "img": "xg-t30.webp", "cat": "security", "en": ["Solar Dummy Camera Security Light", "Camera-style warning and security light for perimeter deterrence, yards, storefronts and outdoor sites."], "zh": ["XG-T30 监控摄像头灯", "监控摄像头灯/仿真摄像头灯，1200MA/18650*2；6大功率+8LED；5.5v/ 3w。"]},
+  {"model": "XG-T28-SMD", "img": "xg-t28-smd.webp", "cat": "security", "en": ["SMD Solar Camera Sensor Light", "Camera-style warning and security light for perimeter deterrence, yards, storefronts and outdoor sites."], "zh": ["XG-T28-SMD 监控摄像头灯", "监控摄像头灯/仿真摄像头灯，1200MA/18650*1；33LED；5.5v/ 1.5w。"]},
+  {"model": "XG-T28-COB", "img": "xg-t28-cob.webp", "cat": "security", "en": ["COB Solar Camera Sensor Light", "Camera-style warning and security light for perimeter deterrence, yards, storefronts and outdoor sites."], "zh": ["XG-T28-COB 监控摄像头灯", "监控摄像头灯/仿真摄像头灯，1200MA/18650*1；33LED；5.5v/ 1.5w。"]},
+  {"model": "XG-152-COB", "img": "xg-152-cob.webp", "cat": "work", "en": ["COB Multifunction Portable Emergency Light", "Portable work and emergency light for job sites, garages, roadside service and outdoor repair."], "zh": ["XG-152-COB 多功能手提应急灯", "多功能手提应急灯，1200MA/18650*4；140+12LED；5.5v/ 2.2w。"]},
+  {"model": "XG-152-SMD", "img": "xg-152-smd.webp", "cat": "work", "en": ["SMD Multifunction Portable Emergency Light", "Portable work and emergency light for job sites, garages, roadside service and outdoor repair."], "zh": ["XG-152-SMD 多功能手提应急灯", "多功能手提应急灯，1200MA/18650*4；140+12LED；5.5v/ 2.2w。"]},
+  {"model": "XG-T8501-COB", "img": "xg-t8501-cob.webp", "cat": "solar", "en": ["COB Split Solar Flood Light", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["XG-T8501-COB 太阳能投光灯", "太阳能投光灯/分体太阳能灯，1200MA/18650*2；50LED；5.5v/ 3w。"]},
+  {"model": "XG-T8502-SMD", "img": "xg-t8502-smd.webp", "cat": "solar", "en": ["SMD Split Solar Flood Light", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["XG-T8502-SMD 太阳能投光灯", "太阳能投光灯/分体太阳能灯，1200MA/18650*2；50LED；5.5v/ 3w。"]},
+  {"model": "XG-C8505-COB", "img": "xg-c8505-cob.webp", "cat": "work", "en": ["COB Portable Work Light", "Portable work and emergency light for job sites, garages, roadside service and outdoor repair."], "zh": ["XG-C8505-COB 手提工作灯", "手提工作灯/便携工作灯，1200MA/18650*2；50LED；USB充电。"]},
+  {"model": "XG-C8506-SMD", "img": "xg-c8506-smd.webp", "cat": "work", "en": ["SMD Portable Work Light", "Portable work and emergency light for job sites, garages, roadside service and outdoor repair."], "zh": ["XG-C8506-SMD 手提工作灯", "手提工作灯/便携工作灯，1200MA/18650*2；50LED；USB充电。"]},
+  {"model": "XG-TF28-SMD", "img": "xg-tf28-smd.webp", "cat": "security", "en": ["Indoor Split Solar Camera Light SMD", "Camera-style warning and security light for perimeter deterrence, yards, storefronts and outdoor sites."], "zh": ["XG-TF28-SMD 监控摄像头灯", "监控摄像头灯/仿真摄像头灯，1200MA/18650*1；33LED；5.5v/ 3w；室内分体太阳能。"]},
+  {"model": "XG-TF28-COB", "img": "xg-tf28-cob.webp", "cat": "security", "en": ["Indoor Split Solar Camera Light COB", "Camera-style warning and security light for perimeter deterrence, yards, storefronts and outdoor sites."], "zh": ["XG-TF28-COB 监控摄像头灯", "监控摄像头灯/仿真摄像头灯，1200MA/18650*1；33LED；5.5v/ 3w；室内分体太阳能。"]},
+  {"model": "XG-C11", "img": "xg-c11.webp", "cat": "security", "en": ["Battery Dummy Camera Warning Light", "Camera-style warning and security light for perimeter deterrence, yards, storefronts and outdoor sites."], "zh": ["XG-C11 监控摄像头灯", "监控摄像头灯/仿真摄像头灯，5号2节电池；1LED红灯闪；不含电池。"]},
+  {"model": "XG-009", "img": "xg-009.webp", "cat": "security", "en": ["Battery Dummy Camera Warning Light", "Camera-style warning and security light for perimeter deterrence, yards, storefronts and outdoor sites."], "zh": ["XG-009 监控摄像头灯", "监控摄像头灯/仿真摄像头灯，5号3节电池；1LED红灯闪；起订量3000。"]},
+  {"model": "XG-008", "img": "xg-008.webp", "cat": "security", "en": ["Battery Dummy Camera Warning Light", "Camera-style warning and security light for perimeter deterrence, yards, storefronts and outdoor sites."], "zh": ["XG-008 监控摄像头灯", "监控摄像头灯/仿真摄像头灯，5号2节电池；1LED红灯闪；不含电池。"]},
+  {"model": "XG-T32SMD", "img": "xg-t32smd.webp", "cat": "solar", "en": ["SMD Solar RGB Landscape Spotlight", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["XG-T32SMD 壁挂感应灯", "壁挂感应灯/庭院灯，1200MA/18650*1；50LED白光+RGB七彩；5.5v/ 1.2w。"]},
+  {"model": "XG-T32COB", "img": "xg-t32cob.webp", "cat": "solar", "en": ["COB Solar RGB Landscape Spotlight", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["XG-T32COB 壁挂感应灯", "壁挂感应灯/庭院灯，1200MA/18650*1；COB白光+RGB七彩；5.5v/ 1.2w。"]},
+  {"model": "XG-T38", "img": "xg-t38.webp", "cat": "camping", "en": ["Solar Camping Bulb Lantern", "Portable camping and ambience light for outdoor leisure, emergency backup and retail channels."], "zh": ["XG-T38 露营吊灯", "露营吊灯/野营灯，60LED白光+3钨丝灯+RGB七彩；1500MA/18650*2；5.5v/ 0.8w。"]},
+  {"model": "XG-T39SMD", "img": "xg-t39smd.webp", "cat": "solar", "en": ["SMD Split Solar Flood Light with RGB Ambience", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["XG-T39SMD 太阳能投光灯", "太阳能投光灯/分体太阳能灯，18650×3/1800MA；SMD白光；6v/ 6w。"]},
+  {"model": "XG-T35SMD", "img": "xg-t35smd.webp", "cat": "solar", "en": ["SMD Split Solar Sensor Flood Light", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["XG-T35SMD 太阳能投光灯", "太阳能投光灯/分体太阳能灯，18650×3/1800MA；SMD白光；6v/ 6w。"]},
+  {"model": "XG-T37SMD", "img": "xg-t37smd.webp", "cat": "work", "en": ["SMD Solar Portable Camping Work Light", "Portable work and emergency light for job sites, garages, roadside service and outdoor repair."], "zh": ["XG-T37SMD 手提工作灯", "手提工作灯/便携工作灯，18650×3/1800MA；SMD白光/红白爆闪；5.5v/ 6w。"]},
+  {"model": "XG-T37COB", "img": "xg-t37cob.webp", "cat": "work", "en": ["COB Solar Portable Camping Work Light", "Portable work and emergency light for job sites, garages, roadside service and outdoor repair."], "zh": ["XG-T37COB 手提工作灯", "手提工作灯/便携工作灯，18650×3/1800MA；SMD白光/红白爆闪；5.5v/ 6w。"]},
+  {"model": "XG-T53-200W", "img": "xg-t53-200w.webp", "cat": "solar", "en": ["200W LED Solar Flood Light", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["LED太阳能投光灯庭院灯", "太阳能投光灯/庭院灯，200W；13-15小时；光控、遥控、定时；5000毫安锂电池；6V6W分体太阳能充电。"]},
+  {"model": "XG-T53-300W", "img": "xg-t53-300w.webp", "cat": "solar", "en": ["300W LED Solar Flood Light", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["LED太阳能投光灯庭院灯", "太阳能投光灯/庭院灯，300W；13-15小时；光控、遥控、定时；10000毫安锂电池；6V12W分体太阳能充电。"]},
+  {"model": "XG-T53-400W", "img": "xg-t53-400w.webp", "cat": "solar", "en": ["400W LED Solar Flood Light", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["LED太阳能投光灯庭院灯", "太阳能投光灯/庭院灯，400W；13-15小时；光控、遥控、定时；15000毫安锂电池；6V18W分体太阳能充电。"]},
+  {"model": "XG-T51", "img": "xg-t51.webp", "cat": "camping", "en": ["Solar Camping Ambience Light", "Portable camping and ambience light for outdoor leisure, emergency backup and retail channels."], "zh": ["太阳能露营氛围灯", "露营/野营灯，白光4小时；暖光12小时；七彩灯8小时；白光、暖光、七彩灯；3000毫安锂电池。"]}
 ];
 
 const process = [
@@ -38,7 +64,33 @@ const productDetails = {
   "HB-361": { moq: "500", lead: "5~25天", cert: "CE, RoHS, FCC", price: "55元", spec: "材料 PC+ABS；前面 SMD 96颗，侧面 SMD 48颗；白光高亮700LM，红蓝警示48LM。" },
   "HB-321": { moq: "1000", lead: "10~25天", cert: "CE, RoHS, FCC", price: "8.5元（不含电池）", spec: "材料 ABS；COB 3W，190LM；尺寸 19.5*6.5*2.5CM；重量 96g。" },
   "HB-325": { moq: "1000", lead: "7~25天", cert: "CE, RoHS, FCC", price: "22元", spec: "材料 TPR；COB 160LM + 1LED 60LM；尺寸 15.5*4*2.5CM；重量 123g。" },
-  "HB-326": { moq: "1000", lead: "7~25天", cert: "CE, RoHS, FCC", price: "10元（不含电池）", spec: "材料 ABS；COB 180LM，3W；尺寸 13*6*3CM；重量 97g。" }
+  "HB-326": { moq: "1000", lead: "7~25天", cert: "CE, RoHS, FCC", price: "10元（不含电池）", spec: "材料 ABS；COB 180LM，3W；尺寸 13*6*3CM；重量 97g。" },
+  "XG-T31": {"spec": "1200MA/18650*1；140+12LED；5.5v/ 2w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "22 元", "packing": "60PCS；25.5G.M；55×52×51.5CM", "note": "太阳能+人体感应；高亮白光+警示灯；防水+遥控功能"},
+  "XG-T30": {"spec": "1200MA/18650*2；6大功率+8LED；5.5v/ 3w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "32 元", "packing": "50PCS；33G.M；67×39×68.5CM", "note": ""},
+  "XG-T28-SMD": {"spec": "1200MA/18650*1；33LED；5.5v/ 1.5w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "26 元", "packing": "60PCS；24G.M；65×48.5×59CM", "note": ""},
+  "XG-T28-COB": {"spec": "1200MA/18650*1；33LED；5.5v/ 1.5w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "26 元", "packing": "60PCS；24G.M；65×48.5×59CM", "note": ""},
+  "XG-152-COB": {"spec": "1200MA/18650*4；140+12LED；5.5v/ 2.2w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "52 元", "packing": "48PCS；34G.M；65×40×48CM", "note": ""},
+  "XG-152-SMD": {"spec": "1200MA/18650*4；140+12LED；5.5v/ 2.2w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "52 元", "packing": "48PCS；34G.M；65×40×48CM", "note": ""},
+  "XG-T8501-COB": {"spec": "1200MA/18650*2；50LED；5.5v/ 3w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "50 元", "packing": "30PCS；29G.M；52×47×50CM", "note": ""},
+  "XG-T8502-SMD": {"spec": "1200MA/18650*2；50LED；5.5v/ 3w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "50 元", "packing": "30PCS；29G.M；52×47×50CM", "note": ""},
+  "XG-C8505-COB": {"spec": "1200MA/18650*2；50LED；USB充电", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "42 元", "packing": "12PCS；15G.M；62.5×29.5×59CM", "note": ""},
+  "XG-C8506-SMD": {"spec": "1200MA/18650*2；50LED；USB充电", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "42 元", "packing": "12PCS；15G.M；62.5×29.5×59CM", "note": ""},
+  "XG-TF28-SMD": {"spec": "1200MA/18650*1；33LED；5.5v/ 3w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "32 元", "packing": "48PCS；33.5G.M；68×39.5×64CM", "note": "室内分体太阳能"},
+  "XG-TF28-COB": {"spec": "1200MA/18650*1；33LED；5.5v/ 3w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "32 元", "packing": "48PCS；33.5G.M；68×39.5×64CM", "note": "室内分体太阳能"},
+  "XG-C11": {"spec": "5号2节电池；1LED红灯闪", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "8 元", "packing": "60PCS；19G.M；57×36×75.5CM", "note": "不含电池"},
+  "XG-009": {"spec": "5号3节电池；1LED红灯闪", "moq": "3000", "lead": "Contact sales", "cert": "Contact sales", "price": "5.5 元", "packing": "100PCS；21G.M；53.5×51.5×67CM", "note": "起订量3000"},
+  "XG-008": {"spec": "5号2节电池；1LED红灯闪；不含电池", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "3 元", "packing": "100PCS；16G.M；49.7×41.2×62CM", "note": ""},
+  "XG-T32SMD": {"spec": "1200MA/18650*1；50LED白光+RGB七彩；5.5v/ 1.2w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "24 元", "packing": "80PCS；22G.M；71×38×59CM", "note": ""},
+  "XG-T32COB": {"spec": "1200MA/18650*1；COB白光+RGB七彩；5.5v/ 1.2w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "24 元", "packing": "80PCS；22G.M；71×38×59CM", "note": ""},
+  "XG-T38": {"spec": "60LED白光+3钨丝灯+RGB七彩；1500MA/18650*2；5.5v/ 0.8w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "19 元", "packing": "60PCS；19G.M；62×38×64CM", "note": ""},
+  "XG-T39SMD": {"spec": "18650×3/1800MA；SMD白光；6v/ 6w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "65 元", "packing": "12PCS；22G.M；59×31.5×52CM", "note": ""},
+  "XG-T35SMD": {"spec": "18650×3/1800MA；SMD白光；6v/ 6w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "65 元", "packing": "12PCS；22G.M；59×31.5×52CM", "note": ""},
+  "XG-T37SMD": {"spec": "18650×3/1800MA；SMD白光/红白爆闪；5.5v/ 6w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "70 元", "packing": "12PCS；21G.M；43×35×74CM", "note": ""},
+  "XG-T37COB": {"spec": "18650×3/1800MA；SMD白光/红白爆闪；5.5v/ 6w", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "70 元", "packing": "12PCS；21G.M；43×35×74CM", "note": ""},
+  "XG-T53-200W": {"spec": "200W；13-15小时；光控、遥控、定时；5000毫安锂电池；6V6W分体太阳能充电", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "46 元", "packing": "20PCS；28G.M；58×40×47", "note": ""},
+  "XG-T53-300W": {"spec": "300W；13-15小时；光控、遥控、定时；10000毫安锂电池；6V12W分体太阳能充电", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "62 元", "packing": "12PCS；23G.M；56×37×53", "note": ""},
+  "XG-T53-400W": {"spec": "400W；13-15小时；光控、遥控、定时；15000毫安锂电池；6V18W分体太阳能充电", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "75 元", "packing": "10PCS；25G.M；51×37×63", "note": ""},
+  "XG-T51": {"spec": "白光4小时；暖光12小时；七彩灯8小时；白光、暖光、七彩灯；3000毫安锂电池", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "22 元", "packing": "60PCS；26G.M；74×36×55", "note": ""}
 };
 
 const translations = {
@@ -48,13 +100,14 @@ const translations = {
     proof1: "Factory-owned production", proof2: "Export service team", proof3: "OEM/ODM brand support", signatureEyebrow: "Signature Series", signatureTitle: "Designed for visibility. Built for real-world safety.", flagshipEyebrow: "Flagship Product Matrix", flagshipTitle: "One product line, multiple safety scenarios.", flagshipText: "Build your market range from compact warning lights to work lights, safety beacons and road emergency lamps.", prestige1: "modern production base", prestige2: "core manufacturing modules", prestige3: "trained production staff", prestige4: "quality & export compliance", metricFactory: "Modern factory", metricTeam: "Skilled employees", metricService: "Full customization", metricExport: "Export ready",
     floatingLabel: "Factory Verified", floatingText: "Injection molding · Tooling · Assembly · QC", strip1: "Global supply", strip2: "Stable quality", strip3: "Competitive pricing", strip4: "Bulk order support", strip5: "Fast response",
     productsEyebrow: "Main Product Lines", productsTitle: "Portable lighting for roadside, outdoor and emergency scenarios.", productsText: "From handheld work lights to LED road warning lights and magnetic safety beacons, our catalog supports retail packs, private label programs and project procurement.",
+    collectionsEyebrow: "New Outdoor Range", collectionsTitle: "Solar, camping and security lighting now ready for inquiry.", collectionsText: "Quickly browse the newly added XG series and build a wider catalog for retail, wholesale and project buyers.", collectionSolarTitle: "Solar project lighting", collectionSolarText: "Flood lights, wall lights and garden lighting for yards, farms and project supply.", collectionCampingTitle: "Camping & ambience", collectionCampingText: "Portable lanterns and ambience lights for outdoor retail and seasonal programs.", collectionSecurityTitle: "Security warning lights", collectionSecurityText: "Camera-style warning lights for perimeter deterrence and storefront protection.", collectionWorkTitle: "Portable work range", collectionWorkText: "Rechargeable work lights and emergency lights for repair, garage and job-site use.", collectionCta: "View range",
     factoryEyebrow: "Manufacturing Excellence", factoryTitle: "End-to-end capability, built for global brands.", factoryText: "We combine production ownership with export service: injection molding, precision tooling, assembly lines, packaging warehouse and dedicated QC are coordinated under an ISO 9001-oriented management system.",
     cap1: "Advanced injection molding", cap2: "Precision tooling workshop", cap3: "Standardized assembly", cap4: "Sustainable packaging", cap5: "Dedicated quality control", cap6: "Scalable production capacity",
     customEyebrow: "OEM & ODM Customization", customTitle: "From idea to branded product, one accountable team.",
     qualityEyebrow: "Quality & Service", qualityTitle: "ISO 9001-oriented quality management for stable export orders.", qualityText: "We build our daily production around ISO 9001 quality management principles, with documented checkpoints from incoming materials to final shipment.", qualityIso: "Process-based quality management", qualityStages: "Incoming, in-process and final checks", qualityAql: "Sampling inspection before shipment", qualityFlowEyebrow: "Quality Delivery Path", qualityFlowTitle: "From order review to shipment, every step leaves a check point.", qualityFlow1: "Material verification", qualityFlow2: "Assembly inspection", qualityFlow3: "Function testing", qualityFlow4: "Packing & shipment check", qualityFlowNote: "Clear inspection records and order-specific sampling help professional buyers reduce repeat-order risk.", certEyebrow: "Compliance Portfolio", certTitle: "Documented compliance support for professional buyers.", certText: "For importers, distributors and project buyers, we provide selected third-party documents for initial review. Available files include ISO 9001, CE/EMC, FCC and RoHS documents related to lighting product series.", certNote: "Documents are provided for buyer reference; applicable requirements may vary by model, market and order specification.", certIso: "Quality management system certificate for lighting production scope", certCe: "Electromagnetic compatibility documentation", certFcc: "Supplier's Declaration of Conformity documentation", certRohs: "Restriction of hazardous substances documentation", certOpen: "View PDF",
     showroomEyebrow: "Scenario Ready", showroomTitle: "Roadside safety · Cycling & outdoor · Emergency warning · Portable utility",
     contactEyebrow: "Start A Project", contactTitle: "Send your market, quantity and customization needs.", contactText: "We will prepare product recommendations, packaging options, lead time and quotation details for your target market.",
-    formName: "Your name", formEmail: "Email / WhatsApp", formProduct: "Product interest", formMessage: "Quantity, logo, packaging, destination market", formSubmit: "Send Inquiry", footerText: "Integrated manufacturer & trading partner for portable lighting and safety warning products.", searchProducts: "Search model or product", filterAll: "All", filterWork: "Work Lights", filterWarning: "Warning Lights", filterBeacon: "Beacons", floatingInquiry: "Quick Inquiry", backTop: "Back to top", moreProducts: "More Products", lessProducts: "Show Less", customBadge: "OEM / ODM", customLogo: "Custom Logo", customLogoText: "Your brand on product", customPack: "Custom Packaging", customPackText: "Retail-ready box design", productCta: "View details", categoryWork: "Work light", categoryWarning: "Warning light", categoryBeacon: "Beacon", thanks: "Thank you. We will contact you soon."
+    formName: "Your name", formEmail: "Email / WhatsApp", formProduct: "Product interest", formMessage: "Quantity, logo, packaging, destination market", formSubmit: "Send Inquiry", footerText: "Integrated manufacturer & trading partner for portable lighting and safety warning products.", searchProducts: "Search model or product", filterAll: "All", filterWork: "Work Lights", filterWarning: "Warning Lights", filterBeacon: "Beacons", filterSolar: "Solar Lights", filterCamping: "Camping", filterSecurity: "Security", floatingInquiry: "Quick Inquiry", backTop: "Back to top", moreProducts: "More Products", lessProducts: "Show Less", customBadge: "OEM / ODM", customLogo: "Custom Logo", customLogoText: "Your brand on product", customPack: "Custom Packaging", customPackText: "Retail-ready box design", productCta: "View details", modalInquiry: "Inquire this product", categoryWork: "Work light", categoryWarning: "Warning light", categoryBeacon: "Beacon", categorySolar: "Solar light", categoryCamping: "Camping light", categorySecurity: "Security light", thanks: "Thank you. We will contact you soon."
   },
   zh: {
     brandTag: "工贸一体实力工厂", navProducts: "产品", navFactory: "工厂", navCustom: "定制", navQuality: "质量", navContact: "联系", quote: "获取报价",
@@ -62,6 +115,7 @@ const translations = {
     proof1: "自有工厂生产", proof2: "外贸服务团队", proof3: "OEM/ODM品牌支持", signatureEyebrow: "核心系列", signatureTitle: "为高可见度而设计，为真实安全场景而制造。", flagshipEyebrow: "旗舰产品矩阵", flagshipTitle: "一条产品线，覆盖多种安全场景。", flagshipText: "从迷你警示灯、工作灯，到安全信标和道路应急灯，帮助客户快速搭建市场产品组合。", prestige1: "现代化生产基地", prestige2: "核心制造模块", prestige3: "专业生产人员", prestige4: "质量体系与出口认证支持", metricFactory: "现代化工厂", metricTeam: "专业团队", metricService: "全链路定制", metricExport: "全球交付",
     floatingLabel: "实力工厂", floatingText: "注塑 · 模具 · 装配 · 质检", strip1: "全球供应", strip2: "品质稳定", strip3: "价格有竞争力", strip4: "支持批量订单", strip5: "响应快速",
     productsEyebrow: "主营产品线", productsTitle: "适用于道路、户外、应急场景的便携照明。", productsText: "从手持工作灯到道路 LED 警示灯和磁吸安全信标，支持零售包装、贴牌项目和工程采购。",
+    collectionsEyebrow: "新增户外系列", collectionsTitle: "太阳能、露营、安防照明产品已可快速询盘。", collectionsText: "快速浏览新增 XG 系列，帮助零售、批发和工程客户扩展产品组合。", collectionSolarTitle: "太阳能工程照明", collectionSolarText: "投光灯、壁挂灯、庭院灯，适合庭院、农场和工程供货。", collectionCampingTitle: "露营与氛围灯", collectionCampingText: "便携露营灯与氛围灯，适合户外零售和季节性项目。", collectionSecurityTitle: "安防警示灯", collectionSecurityText: "仿真摄像头警示灯，适合周界警示、店铺和庭院安防。", collectionWorkTitle: "便携工作灯系列", collectionWorkText: "充电工作灯和应急灯，适用于维修、车库和工地场景。", collectionCta: "查看系列",
     factoryEyebrow: "制造实力", factoryTitle: "端到端生产能力，服务全球品牌。", factoryText: "我们将生产制造与出口服务整合：注塑、精密模具、装配线、包装仓储和专职质检在 ISO9001 质量管理体系要求下协同运行。",
     cap1: "先进注塑", cap2: "精密模具车间", cap3: "标准化装配", cap4: "环保包装", cap5: "专职质量控制", cap6: "可扩展产能",
     customEyebrow: "OEM/ODM 定制", customTitle: "从想法到品牌成品，一个团队全程负责。",
@@ -69,7 +123,7 @@ const translations = {
     qualityFlowEyebrow: "质量交付路径", qualityFlowTitle: "从订单评审到出货，每一步都有对应检查节点。", qualityFlow1: "来料核验", qualityFlow2: "装配巡检", qualityFlow3: "功能测试", qualityFlow4: "包装与出货检查", qualityFlowNote: "清晰的检验记录与按订单要求抽检，帮助专业买家降低复购风险。", showroomEyebrow: "多场景适配", showroomTitle: "道路安全 · 骑行户外 · 应急警示 · 便携工具",
     contactEyebrow: "开启项目", contactTitle: "告诉我们市场、数量和定制需求。", contactText: "我们会根据目标市场提供产品推荐、包装方案、交期和报价。",
     certEyebrow: "合规文件", certTitle: "面向专业买家的认证资料支持。", certText: "我们为进口商、经销商和项目采购提供部分第三方文件用于初步审核，包含照明产品系列相关的 ISO9001、CE/EMC、FCC、RoHS 文件。", certNote: "文件仅供买家参考，具体适用要求会因型号、市场和订单规格而不同。", certIso: "照明灯具生产范围的质量管理体系证书", certCe: "电磁兼容文件", certFcc: "FCC 符合性文件", certRohs: "有害物质限制文件", certOpen: "查看 PDF",
-    formName: "您的姓名", formEmail: "邮箱 / WhatsApp", formProduct: "感兴趣的产品", formMessage: "数量、LOGO、包装、目标市场", formSubmit: "发送询盘", footerText: "便携照明与安全警示产品的工贸一体合作伙伴。", searchProducts: "搜索型号或产品", filterAll: "全部", filterWork: "工作灯", filterWarning: "警示灯", filterBeacon: "警示信标", floatingInquiry: "快速询盘", backTop: "返回顶部", moreProducts: "更多产品", lessProducts: "收起产品", customBadge: "OEM / ODM", customLogo: "定制 LOGO", customLogoText: "产品印制您的品牌", customPack: "定制包装", customPackText: "适合零售渠道的彩盒", productCta: "查看详情", categoryWork: "工作灯", categoryWarning: "警示灯", categoryBeacon: "信标", thanks: "感谢咨询，我们会尽快联系您。"
+    formName: "您的姓名", formEmail: "邮箱 / WhatsApp", formProduct: "感兴趣的产品", formMessage: "数量、LOGO、包装、目标市场", formSubmit: "发送询盘", footerText: "便携照明与安全警示产品的工贸一体合作伙伴。", searchProducts: "搜索型号或产品", filterAll: "全部", filterWork: "工作灯", filterWarning: "警示灯", filterBeacon: "警示信标", filterSolar: "太阳能灯", filterCamping: "露营灯", filterSecurity: "安防灯", floatingInquiry: "快速询盘", backTop: "返回顶部", moreProducts: "更多产品", lessProducts: "收起产品", customBadge: "OEM / ODM", customLogo: "定制 LOGO", customLogoText: "产品印制您的品牌", customPack: "定制包装", customPackText: "适合零售渠道的彩盒", productCta: "查看详情", modalInquiry: "咨询此产品", categoryWork: "工作灯", categoryWarning: "警示灯", categoryBeacon: "信标", categorySolar: "太阳能灯", categoryCamping: "露营灯", categorySecurity: "安防灯", thanks: "感谢咨询，我们会尽快联系您。"
   },
   es: { navProducts:"Productos",navFactory:"Fábrica",navCustom:"OEM/ODM",navQuality:"Calidad",navContact:"Contacto",quote:"Cotizar",heroTitle:"Capacidad industrial para marcas globales.",heroText:"Fabricante y socio comercial integrado para luces LED de advertencia, trabajo, balizas magnéticas y emergencia.",explore:"Ver productos",customize:"Personalizar marca",productsTitle:"Iluminación portátil para carretera, exterior y emergencias.",factoryTitle:"Capacidad integral para marcas globales.",customTitle:"De la idea al producto de marca.",qualityTitle:"Control estricto desde materia prima hasta producto final.",contactTitle:"Envíenos mercado, cantidad y requisitos.",formSubmit:"Enviar consulta",thanks:"Gracias. Le contactaremos pronto." },
   fr: { navProducts:"Produits",navFactory:"Usine",navCustom:"OEM/ODM",navQuality:"Qualité",navContact:"Contact",quote:"Devis",heroTitle:"Puissance industrielle pour les marques mondiales.",heroText:"Partenaire usine + commerce pour feux LED d'avertissement, lampes de travail, balises magnétiques et éclairage d'urgence.",explore:"Voir les produits",customize:"Personnaliser",productsTitle:"Éclairage portable pour route, extérieur et urgence.",factoryTitle:"Capacité complète pour marques mondiales.",customTitle:"De l'idée au produit de marque.",qualityTitle:"Contrôle qualité strict du matériau au produit fini.",contactTitle:"Envoyez marché, quantité et besoins.",formSubmit:"Envoyer",thanks:"Merci. Nous vous contacterons bientôt." },
@@ -93,6 +147,32 @@ let currentLang = "en";
 let activeFilter = "all";
 let searchTerm = "";
 const inquiryEmails = ["19858215314@163.com", "cyanpeter@hotmail.com", "bshong@126.com"];
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, char => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[char]);
+}
+
+function getSavedLanguage() {
+  try {
+    return localStorage.getItem("hb-lang");
+  } catch {
+    return null;
+  }
+}
+
+function saveLanguage(lang) {
+  try {
+    localStorage.setItem("hb-lang", lang);
+  } catch {
+    // Private browsing or strict privacy settings can block storage.
+  }
+}
 
 const recipientLabels = {
   en: {
@@ -130,6 +210,7 @@ function localized(item) {
 }
 
 function productCategory(item) {
+  if (item.cat) return item.cat;
   const model = item.model;
   const workModels = new Set(["HB-321", "HB-325", "HB-326"]);
   const beaconModels = new Set(["HB-329", "HB-361"]);
@@ -142,7 +223,19 @@ function productCategoryLabel(item) {
   const category = productCategory(item);
   if (category === "work") return t("categoryWork");
   if (category === "beacon") return t("categoryBeacon");
+  if (category === "solar") return t("categorySolar");
+  if (category === "camping") return t("categoryCamping");
+  if (category === "security") return t("categorySecurity");
   return t("categoryWarning");
+}
+
+function updateProductToggle(total = products.length) {
+  const grid = document.getElementById("productGrid");
+  const toggle = document.getElementById("toggleProducts");
+  const isExpanded = grid.classList.contains("show-all");
+  toggle.style.display = total > 8 ? "inline-flex" : "none";
+  toggle.textContent = isExpanded ? t("lessProducts") : t("moreProducts");
+  toggle.setAttribute("aria-expanded", String(isExpanded));
 }
 
 function renderStaticLists() {
@@ -150,38 +243,43 @@ function renderStaticLists() {
   const showAll = grid?.classList.contains("show-all");
   const filtered = products.filter(item => {
     const [name, desc] = localized(item);
-    const haystack = `${item.model} ${name} ${desc}`.toLowerCase();
+    const haystack = `${item.model} ${name} ${desc} ${productCategoryLabel(item)}`.toLowerCase();
     const okSearch = !searchTerm || haystack.includes(searchTerm.toLowerCase());
     const okFilter = activeFilter === "all" || productCategory(item) === activeFilter;
     return okSearch && okFilter;
   });
   grid.innerHTML = filtered.map((item, index) => {
     const [name, desc] = localized(item);
+    const model = escapeHtml(item.model);
+    const safeName = escapeHtml(name);
+    const safeDesc = escapeHtml(desc);
+    const category = escapeHtml(productCategoryLabel(item));
+    const image = escapeHtml(item.img);
     return `
-      <button class="product-card reveal ${index >= 8 ? "is-extra" : ""}" type="button" data-model="${item.model}" aria-label="${item.model} ${name}">
+      <button class="product-card reveal ${index >= 8 ? "is-extra" : ""}" type="button" data-model="${model}" aria-label="${model} ${safeName}">
         <div class="product-card-top">
-          <div class="product-meta"><span>${item.model}</span><span>${productCategoryLabel(item)}</span></div>
-          <img src="assets/${item.img}" alt="${name}" loading="${index < 4 ? "eager" : "lazy"}">
+          <div class="product-meta"><span>${model}</span><span>${category}</span></div>
+          <img src="assets/${image}" alt="${safeName}" loading="${index < 4 ? "eager" : "lazy"}" decoding="async">
         </div>
-        <div class="product-info"><h3>${name}</h3><p>${desc}</p><span class="product-action">${t("productCta")}</span></div>
+        <div class="product-info"><h3>${safeName}</h3><p>${safeDesc}</p><span class="product-action">${escapeHtml(t("productCta"))}</span></div>
       </button>`;
   }).join("");
   if (showAll) grid.classList.add("show-all");
-  document.getElementById("toggleProducts").style.display = filtered.length > 8 ? "inline-flex" : "none";
+  updateProductToggle(filtered.length);
 
   document.getElementById("processList").innerHTML = process.map((item) => {
     const [title, text] = localized(item);
     return `
       <article class="process-step">
-        <b>${item.num}</b><div><h3>${title}</h3><p>${text}</p></div>
+        <b>${escapeHtml(item.num)}</b><div><h3>${escapeHtml(title)}</h3><p>${escapeHtml(text)}</p></div>
       </article>`;
   }).join("");
 
   document.getElementById("advantageGrid").innerHTML = advantages.map((item) => {
     const [title, text] = localized(item);
     return `
-      <article class="advantage" data-mark="${item.num}">
-        <b>${item.num}</b><h3>${title}</h3><p>${text}</p>
+      <article class="advantage" data-mark="${escapeHtml(item.num)}">
+        <b>${escapeHtml(item.num)}</b><h3>${escapeHtml(title)}</h3><p>${escapeHtml(text)}</p>
       </article>`;
   }).join("");
 
@@ -192,10 +290,11 @@ function renderStaticLists() {
 
 function renderProductOptions() {
   const select = document.getElementById("productInterest");
-  const first = `<option value="" data-i18n="formProduct">${t("formProduct")}</option>`;
+  const first = `<option value="" data-i18n="formProduct">${escapeHtml(t("formProduct"))}</option>`;
   select.innerHTML = first + products.map(item => {
     const [name] = localized(item);
-    return `<option value="${item.model} - ${name}">${item.model} - ${name}</option>`;
+    const label = `${item.model} - ${name}`;
+    return `<option value="${escapeHtml(label)}">${escapeHtml(label)}</option>`;
   }).join("");
 }
 
@@ -223,16 +322,19 @@ function openProductModal(model) {
   document.getElementById("modalTitle").textContent = name;
   document.getElementById("modalDesc").textContent = desc;
   const labels = currentLang === "zh"
-    ? { spec: "产品解析", moq: "起订量", lead: "交货期", cert: "认证", price: "报价方式" }
-    : { spec: "Product details", moq: "MOQ", lead: "Lead time", cert: "Certificates", price: "Quotation" };
+    ? { spec: "产品解析", moq: "起订量", lead: "交货期", cert: "认证", packing: "装箱信息", note: "备注", price: "报价方式" }
+    : { spec: "Product details", moq: "MOQ", lead: "Lead time", cert: "Certificates", packing: "Carton info", note: "Notes", price: "Quotation" };
   const quoteValue = currentLang === "zh" ? "请联系业务获取最新报价" : "Contact sales for current quotation";
-  document.getElementById("modalSpecs").innerHTML = [
+  const specRows = [
     [labels.spec, detail.spec || "-"],
     [labels.moq, detail.moq || "-"],
     [labels.lead, detail.lead || "-"],
     [labels.cert, detail.cert || "-"],
+    detail.packing ? [labels.packing, detail.packing] : null,
+    detail.note ? [labels.note, detail.note] : null,
     [labels.price, quoteValue]
-  ].map(([k,v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("");
+  ].filter(Boolean);
+  document.getElementById("modalSpecs").innerHTML = specRows.map(([k,v]) => `<dt>${escapeHtml(k)}</dt><dd>${escapeHtml(v)}</dd>`).join("");
   document.getElementById("productModal").classList.add("open");
   document.getElementById("productModal").setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-is-open");
@@ -252,17 +354,15 @@ function applyLanguage(lang) {
   document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
   document.querySelectorAll("[data-i18n-placeholder]").forEach(el => { el.placeholder = t(el.dataset.i18nPlaceholder); });
   window.currentThanks = t("thanks");
-  localStorage.setItem("hb-lang", lang);
+  saveLanguage(lang);
   renderStaticLists();
   renderProductOptions();
   renderSlides();
-  const grid = document.getElementById("productGrid");
-  document.getElementById("toggleProducts").textContent = grid.classList.contains("show-all") ? t("lessProducts") : t("moreProducts");
 }
 
 renderStaticLists();
 const selector = document.getElementById("language");
-selector.value = localStorage.getItem("hb-lang") || (navigator.language || "en").slice(0,2);
+selector.value = getSavedLanguage() || (navigator.language || "en").slice(0,2);
 if (!translations[selector.value]) selector.value = "en";
 applyLanguage(selector.value);
 selector.addEventListener("change", e => applyLanguage(e.target.value));
@@ -270,7 +370,7 @@ selector.addEventListener("change", e => applyLanguage(e.target.value));
 document.getElementById("toggleProducts").addEventListener("click", () => {
   const grid = document.getElementById("productGrid");
   grid.classList.toggle("show-all");
-  document.getElementById("toggleProducts").textContent = grid.classList.contains("show-all") ? t("lessProducts") : t("moreProducts");
+  updateProductToggle(grid.querySelectorAll(".product-card").length);
 });
 
 document.getElementById("modalClose").addEventListener("click", closeProductModal);
@@ -300,11 +400,19 @@ document.querySelectorAll(".chip").forEach(chip => {
   });
 });
 
-window.addEventListener("scroll", () => {
+let scrollTicking = false;
+function updateScrollProgress() {
   const max = document.documentElement.scrollHeight - window.innerHeight;
   const progress = max > 0 ? (window.scrollY / max) * 100 : 0;
   document.getElementById("scrollProgress").style.width = `${progress}%`;
-});
+  scrollTicking = false;
+}
+window.addEventListener("scroll", () => {
+  if (scrollTicking) return;
+  scrollTicking = true;
+  requestAnimationFrame(updateScrollProgress);
+}, { passive: true });
+updateScrollProgress();
 
 document.getElementById("inquiryForm").addEventListener("submit", event => {
   event.preventDefault();
@@ -331,24 +439,29 @@ document.getElementById("inquiryForm").addEventListener("submit", event => {
     "Please contact me with product recommendations, MOQ, packaging options, lead time and quotation.",
     "",
     "Best regards,"
-  ].join("\\n");
+  ].join("\n");
   window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
 const slides = Array.from(document.querySelectorAll(".slide"));
 const dotWrap = document.getElementById("carouselDots");
+const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 let slideIndex = 0;
 let slideTimer;
 
 function showSlide(index) {
   slideIndex = (index + slides.length) % slides.length;
   slides.forEach((slide, i) => slide.classList.toggle("active", i === slideIndex));
-  dotWrap.querySelectorAll("button").forEach((dot, i) => dot.classList.toggle("active", i === slideIndex));
+  dotWrap.querySelectorAll("button").forEach((dot, i) => {
+    const isActive = i === slideIndex;
+    dot.classList.toggle("active", isActive);
+    dot.setAttribute("aria-current", String(isActive));
+  });
 }
 
 function startCarousel() {
   clearInterval(slideTimer);
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (reduceMotionQuery.matches || document.hidden) return;
   slideTimer = setInterval(() => showSlide(slideIndex + 1), 3600);
 }
 
@@ -364,16 +477,20 @@ slides.forEach((_, i) => {
 });
 showSlide(0);
 startCarousel();
+document.addEventListener("visibilitychange", startCarousel);
+reduceMotionQuery.addEventListener?.("change", startCarousel);
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.animationPlayState = "running";
-      observer.unobserve(entry.target);
-    }
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = "running";
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: .12 });
+  document.querySelectorAll(".reveal").forEach(el => {
+    el.style.animationPlayState = "paused";
+    observer.observe(el);
   });
-}, { threshold: .12 });
-document.querySelectorAll(".reveal").forEach(el => {
-  el.style.animationPlayState = "paused";
-  observer.observe(el);
-});
+}
