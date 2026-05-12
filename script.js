@@ -114,8 +114,8 @@ const translations = {
     eyebrow: "便携照明与安全警示解决方案", heroTitle: "面向全球品牌的制造实力。", heroText: "我们是工厂与贸易一体化伙伴，提供 LED 警示灯、工作灯、磁吸警示灯、户外应急灯及 OEM/ODM 定制服务。", explore: "查看产品", customize: "定制品牌",
     proof1: "自有工厂生产", proof2: "外贸服务团队", proof3: "OEM/ODM品牌支持", signatureEyebrow: "核心系列", signatureTitle: "为高可见度而设计，为真实安全场景而制造。", flagshipEyebrow: "旗舰产品矩阵", flagshipTitle: "一条产品线，覆盖多种安全场景。", flagshipText: "从迷你警示灯、工作灯，到安全信标和道路应急灯，帮助客户快速搭建市场产品组合。", prestige1: "现代化生产基地", prestige2: "核心制造模块", prestige3: "专业生产人员", prestige4: "质量体系与出口认证支持", metricFactory: "现代化工厂", metricTeam: "专业团队", metricService: "全链路定制", metricExport: "全球交付",
     floatingLabel: "实力工厂", floatingText: "注塑 · 模具 · 装配 · 质检", strip1: "全球供应", strip2: "品质稳定", strip3: "价格有竞争力", strip4: "支持批量订单", strip5: "响应快速",
-    productsEyebrow: "主营产品线", productsTitle: "适用于道路、户外、应急场景的便携照明。", productsText: "从手持工作灯到道路 LED 警示灯和磁吸安全信标，支持零售包装、贴牌项目和工程采购。",
-    collectionsEyebrow: "新增户外系列", collectionsTitle: "太阳能、露营、安防照明产品已可快速询盘。", collectionsText: "快速浏览新增 XG 系列，帮助零售、批发和工程客户扩展产品组合。", collectionSolarTitle: "太阳能工程照明", collectionSolarText: "投光灯、壁挂灯、庭院灯，适合庭院、农场和工程供货。", collectionCampingTitle: "露营与氛围灯", collectionCampingText: "便携露营灯与氛围灯，适合户外零售和季节性项目。", collectionSecurityTitle: "安防警示灯", collectionSecurityText: "仿真摄像头警示灯，适合周界警示、店铺和庭院安防。", collectionWorkTitle: "便携工作灯系列", collectionWorkText: "充电工作灯和应急灯，适用于维修、车库和工地场景。", collectionCta: "查看系列",
+    productsEyebrow: "主营产品线", productsTitle: "警示灯为主，兼顾工作灯与户外照明。", productsText: "首页产品区优先展示道路 LED 警示灯、磁吸安全信标和应急警示灯，工作灯、太阳能灯和露营灯作为补充系列穿插展示。",
+    collectionsEyebrow: "核心产品系列", collectionsTitle: "先看警示灯，再扩展户外照明。", collectionsText: "核心仍是 HENGBO 警示灯和安全信标，XG 太阳能、露营、安防照明作为补充产品线。", collectionWarningTitle: "道路警示灯", collectionWarningText: "多模式 LED 警示灯，适合道路救援、车辆应急包和零售套装。", collectionBeaconTitle: "安全警示信标", collectionBeaconText: "磁吸信标、红蓝警示灯，适合车辆、工程和应急现场。", collectionSolarTitle: "太阳能工程照明", collectionSolarText: "投光灯、壁挂灯、庭院灯，适合庭院、农场和工程供货。", collectionCampingTitle: "露营与氛围灯", collectionCampingText: "便携露营灯与氛围灯，适合户外零售和季节性项目。", collectionSecurityTitle: "安防警示灯", collectionSecurityText: "仿真摄像头警示灯，适合周界警示、店铺和庭院安防。", collectionWorkTitle: "便携工作灯系列", collectionWorkText: "充电工作灯和应急灯，适用于维修、车库和工地场景。", collectionCta: "查看系列",
     factoryEyebrow: "制造实力", factoryTitle: "端到端生产能力，服务全球品牌。", factoryText: "我们将生产制造与出口服务整合：注塑、精密模具、装配线、包装仓储和专职质检在 ISO9001 质量管理体系要求下协同运行。",
     cap1: "先进注塑", cap2: "精密模具车间", cap3: "标准化装配", cap4: "环保包装", cap5: "专职质量控制", cap6: "可扩展产能",
     customEyebrow: "OEM/ODM 定制", customTitle: "从想法到品牌成品，一个团队全程负责。",
@@ -237,10 +237,20 @@ function productCategoryLabel(item) {
   return t("categoryWarning");
 }
 
+const featuredProductOrder = [
+  "HB-328", "HB-329", "HB-330", "HB-331",
+  "HB-361", "HB-327", "HB-321", "HB-325",
+  "XG-T31", "XG-T30", "XG-C8505-COB", "XG-T53-400W",
+  "HB-326", "XG-T28-SMD", "XG-152-COB", "XG-T51",
+  "XG-T28-COB", "XG-152-SMD", "XG-T8501-COB", "XG-T8502-SMD"
+];
+
 function productRank(item) {
+  const featuredIndex = featuredProductOrder.indexOf(item.model);
+  if (featuredIndex !== -1) return featuredIndex;
   const category = productCategory(item);
-  const categoryOrder = { warning: 0, beacon: 1, work: 2, solar: 3, security: 4, camping: 5 };
-  return categoryOrder[category] ?? 9;
+  const categoryOrder = { warning: 100, beacon: 110, work: 120, solar: 130, security: 140, camping: 150 };
+  return (categoryOrder[category] ?? 190) + products.indexOf(item);
 }
 
 function updateProductToggle(total = products.length) {
