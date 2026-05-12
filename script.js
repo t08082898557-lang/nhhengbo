@@ -238,10 +238,10 @@ function productCategoryLabel(item) {
 }
 
 const featuredProductOrder = [
-  "HB-328", "HB-329", "HB-330", "HB-331",
-  "HB-361", "HB-327", "HB-321", "HB-325",
-  "XG-T31", "XG-T30", "XG-C8505-COB", "XG-T53-400W",
-  "HB-326", "XG-T28-SMD", "XG-152-COB", "XG-T51",
+  "HB-328", "XG-T31", "HB-329", "HB-321",
+  "HB-330", "XG-C8505-COB", "HB-361", "HB-327",
+  "XG-T30", "HB-331", "XG-T53-400W", "HB-325",
+  "XG-T28-SMD", "HB-326", "XG-152-COB", "XG-T51",
   "XG-T28-COB", "XG-152-SMD", "XG-T8501-COB", "XG-T8502-SMD"
 ];
 
