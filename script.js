@@ -100,7 +100,7 @@ const productDetails = {
 const translations = {
   en: {
     brandTag: "Industry & Trade Integrated Factory", navProducts: "Products", navFactory: "Factory", navCustom: "OEM/ODM", navQuality: "Quality", navContact: "Contact", quote: "Request Quote",
-    eyebrow: "Portable Lighting & Safety Warning Solutions", heroTitle: "LED warning lights built for global safety buyers.", heroText: "A factory + trading integrated partner focused on LED road warning lights, magnetic safety beacons, portable work lights and OEM/ODM customization for export orders.", explore: "Explore Products", customize: "Customize Your Brand", heroWarning: "Warning Lights", heroBeacon: "Safety Beacons", heroWork: "Work Lights", heroSourcingLabel: "Hot warning models",
+    eyebrow: "Portable Lighting & Safety Warning Solutions", heroTitle: "LED warning light factory for wholesale & OEM.", heroText: "Road safety warning lights, magnetic beacons, rechargeable and battery warning lamps supplied by a factory + trading integrated export team.", explore: "Explore Products", customize: "Customize Your Brand", heroWarning: "Warning Lights", heroBeacon: "Safety Beacons", heroWork: "Work Lights", heroSourcingLabel: "Hot warning models",
     proof1: "Factory-owned production", proof2: "Export service team", proof3: "OEM/ODM brand support", signatureEyebrow: "Signature Warning Series", signatureTitle: "Designed for visibility. Built for roadside and emergency safety.", flagshipEyebrow: "Core Warning Product Matrix", flagshipTitle: "Road warning lights, beacons and work lights for safety markets.", flagshipText: "Build your safety lighting range from compact warning lights to magnetic beacons, road emergency lamps and portable work lights.", prestige1: "modern production base", prestige2: "core manufacturing modules", prestige3: "trained production staff", prestige4: "quality & export compliance", metricFactory: "Modern factory", metricTeam: "Skilled employees", metricService: "Full customization", metricExport: "Export ready",
     floatingLabel: "Factory Verified", floatingText: "Injection molding · Tooling · Assembly · QC", strip1: "Global supply", strip2: "Stable quality", strip3: "Competitive pricing", strip4: "Bulk order support", strip5: "Fast response",
     productsEyebrow: "Main Product Lines", productsTitle: "Warning lights first, with wider outdoor lighting options.", productsText: "Our core range covers LED road warning lights, safety beacons and portable work lights; newly added solar, camping and security lights help buyers expand the catalog.",
@@ -111,11 +111,11 @@ const translations = {
     qualityEyebrow: "Quality & Service", qualityTitle: "ISO 9001-oriented quality management for stable export orders.", qualityText: "We build our daily production around ISO 9001 quality management principles, with documented checkpoints from incoming materials to final shipment.", qualityIso: "Process-based quality management", qualityStages: "Incoming, in-process and final checks", qualityAql: "Sampling inspection before shipment", qualityFlowEyebrow: "Quality Delivery Path", qualityFlowTitle: "From order review to shipment, every step leaves a check point.", qualityFlow1: "Material verification", qualityFlow2: "Assembly inspection", qualityFlow3: "Function testing", qualityFlow4: "Packing & shipment check", qualityFlowNote: "Clear inspection records and order-specific sampling help professional buyers reduce repeat-order risk.", certEyebrow: "Compliance Portfolio", certTitle: "Documented compliance support for professional buyers.", certText: "For importers, distributors and project buyers, we provide selected third-party documents for initial review. Available files include ISO 9001, CE/EMC, FCC and RoHS documents related to lighting product series.", certNote: "Documents are provided for buyer reference; applicable requirements may vary by model, market and order specification.", certIso: "Quality management system certificate for lighting production scope", certCe: "Electromagnetic compatibility documentation", certFcc: "Supplier's Declaration of Conformity documentation", certRohs: "Restriction of hazardous substances documentation", certOpen: "View PDF",
     showroomEyebrow: "Scenario Ready", showroomTitle: "Roadside safety · Cycling & outdoor · Emergency warning · Portable utility",
     contactEyebrow: "Start A Project", contactTitle: "Send your market, quantity and customization needs.", contactText: "We will prepare product recommendations, packaging options, lead time and quotation details for your target market.",
-    formName: "Your name", formEmail: "Email / WhatsApp", formProduct: "Product interest", formMessage: "Quantity, logo, packaging, destination market", formSubmit: "Send Inquiry", footerText: "Integrated manufacturer & trading partner for portable lighting and safety warning products.", searchProducts: "Search model or product", filterAll: "All", filterWork: "Work Lights", filterWarning: "Warning Lights", filterBeacon: "Beacons", filterSolar: "Solar Lights", filterCamping: "Camping", filterSecurity: "Security", floatingInquiry: "Quick Inquiry", backTop: "Back to top", moreProducts: "More Products", lessProducts: "Show Less", customBadge: "OEM / ODM", customLogo: "Custom Logo", customLogoText: "Your brand on product", customPack: "Custom Packaging", customPackText: "Retail-ready box design", productCta: "View details", modalInquiry: "Inquire this product", categoryWork: "Work light", categoryWarning: "Warning light", categoryBeacon: "Beacon", categorySolar: "Solar light", categoryCamping: "Camping light", categorySecurity: "Security light", thanks: "Thank you. We will contact you soon."
+    formName: "Your name", formEmail: "Email / WhatsApp", formProduct: "Product interest", formMessage: "Quantity, logo, packaging, destination market", formSubmit: "Send Inquiry", footerText: "Integrated manufacturer & trading partner for portable lighting and safety warning products.", searchProducts: "Search model or product", filterAll: "All", filterWork: "Work Lights", filterWarning: "Warning Lights", filterBeacon: "Beacons", filterSolar: "Solar Lights", filterCamping: "Camping", filterSecurity: "Security", floatingInquiry: "Quick Inquiry", backTop: "Back to top", moreProducts: "More Products", lessProducts: "Show Less", customBadge: "OEM / ODM", customLogo: "Custom Logo", customLogoText: "Your brand on product", customPack: "Custom Packaging", customPackText: "Retail-ready box design", productCta: "View details", modalInquiry: "Inquire this product", modalSupport: "OEM/ODM, packaging and quotation support within 24h.", categoryWork: "Work light", categoryWarning: "Warning light", categoryBeacon: "Beacon", categorySolar: "Solar light", categoryCamping: "Camping light", categorySecurity: "Security light", tagNew: "New", tagHot: "Hot", tagWarning: "Warning", tagBeacon: "Beacon", tagRechargeable: "Rechargeable", tagBattery: "Battery", tagWork: "Work", tagSolar: "Solar", tagSecurity: "Security", tagCamping: "Camping", tagOem: "OEM Ready", tagExtended: "Extended Range", modalVersion: "Version", modalApplication: "Application", modalOem: "OEM/ODM", modalOemValue: "Logo, color box and export packaging available", applicationWarning: "Roadside rescue, vehicle emergency kits and safety warning scenes", applicationBeacon: "Vehicle safety, project sites and emergency visibility", applicationWork: "Inspection, repair, garage and job-site lighting", applicationSolar: "Garden, yard, farm and project outdoor lighting", applicationSecurity: "Perimeter deterrence, storefronts and yard security", applicationCamping: "Camping, outdoor leisure and emergency backup", newSeriesEyebrow: "New HB-363 Series", newSeriesTitle: "Rechargeable and battery warning lights for road safety kits.", newSeriesText: "Two versions of the orange magnetic road warning light are now available for samples, wholesale orders and OEM packaging.", newSeriesPoint1: "Magnetic back", newSeriesPoint2: "Vehicle emergency", newSeriesPoint3: "OEM ready", newSeriesRechargeable: "Rechargeable Type", newSeriesBattery: "Battery Type", thanks: "Thank you. We will contact you soon."
   },
   zh: {
     brandTag: "工贸一体实力工厂", navProducts: "产品", navFactory: "工厂", navCustom: "定制", navQuality: "质量", navContact: "联系", quote: "获取报价",
-    eyebrow: "便携照明与安全警示解决方案", heroTitle: "面向全球品牌的制造实力。", heroText: "我们是工厂与贸易一体化伙伴，提供 LED 警示灯、工作灯、磁吸警示灯、户外应急灯及 OEM/ODM 定制服务。", explore: "查看产品", customize: "定制品牌",
+    eyebrow: "便携照明与安全警示解决方案", heroTitle: "LED 警示灯批发与 OEM 实力工厂。", heroText: "工贸一体外贸团队供应道路安全警示灯、磁吸警示信标、充电款和电池款警示灯，支持批发、样品和贴牌包装。", explore: "查看产品", customize: "定制品牌",
     proof1: "自有工厂生产", proof2: "外贸服务团队", proof3: "OEM/ODM品牌支持", signatureEyebrow: "核心系列", signatureTitle: "为高可见度而设计，为真实安全场景而制造。", flagshipEyebrow: "旗舰产品矩阵", flagshipTitle: "一条产品线，覆盖多种安全场景。", flagshipText: "从迷你警示灯、工作灯，到安全信标和道路应急灯，帮助客户快速搭建市场产品组合。", prestige1: "现代化生产基地", prestige2: "核心制造模块", prestige3: "专业生产人员", prestige4: "质量体系与出口认证支持", metricFactory: "现代化工厂", metricTeam: "专业团队", metricService: "全链路定制", metricExport: "全球交付",
     floatingLabel: "实力工厂", floatingText: "注塑 · 模具 · 装配 · 质检", strip1: "全球供应", strip2: "品质稳定", strip3: "价格有竞争力", strip4: "支持批量订单", strip5: "响应快速",
     productsEyebrow: "主营产品线", productsTitle: "警示灯为主，兼顾工作灯与户外照明。", productsText: "首页产品区优先展示道路 LED 警示灯、磁吸安全信标和应急警示灯，工作灯、太阳能灯和露营灯作为补充系列穿插展示。",
@@ -127,7 +127,7 @@ const translations = {
     qualityFlowEyebrow: "质量交付路径", qualityFlowTitle: "从订单评审到出货，每一步都有对应检查节点。", qualityFlow1: "来料核验", qualityFlow2: "装配巡检", qualityFlow3: "功能测试", qualityFlow4: "包装与出货检查", qualityFlowNote: "清晰的检验记录与按订单要求抽检，帮助专业买家降低复购风险。", showroomEyebrow: "多场景适配", showroomTitle: "道路安全 · 骑行户外 · 应急警示 · 便携工具",
     contactEyebrow: "开启项目", contactTitle: "告诉我们市场、数量和定制需求。", contactText: "我们会根据目标市场提供产品推荐、包装方案、交期和报价。",
     certEyebrow: "合规文件", certTitle: "面向专业买家的认证资料支持。", certText: "我们为进口商、经销商和项目采购提供部分第三方文件用于初步审核，包含照明产品系列相关的 ISO9001、CE/EMC、FCC、RoHS 文件。", certNote: "文件仅供买家参考，具体适用要求会因型号、市场和订单规格而不同。", certIso: "照明灯具生产范围的质量管理体系证书", certCe: "电磁兼容文件", certFcc: "FCC 符合性文件", certRohs: "有害物质限制文件", certOpen: "查看 PDF",
-    formName: "您的姓名", formEmail: "邮箱 / WhatsApp", formProduct: "感兴趣的产品", formMessage: "数量、LOGO、包装、目标市场", formSubmit: "发送询盘", footerText: "便携照明与安全警示产品的工贸一体合作伙伴。", searchProducts: "搜索型号或产品", filterAll: "全部", filterWork: "工作灯", filterWarning: "警示灯", filterBeacon: "警示信标", filterSolar: "太阳能灯", filterCamping: "露营灯", filterSecurity: "安防灯", floatingInquiry: "快速询盘", backTop: "返回顶部", moreProducts: "更多产品", lessProducts: "收起产品", customBadge: "OEM / ODM", customLogo: "定制 LOGO", customLogoText: "产品印制您的品牌", customPack: "定制包装", customPackText: "适合零售渠道的彩盒", productCta: "查看详情", modalInquiry: "咨询此产品", categoryWork: "工作灯", categoryWarning: "警示灯", categoryBeacon: "信标", categorySolar: "太阳能灯", categoryCamping: "露营灯", categorySecurity: "安防灯", thanks: "感谢咨询，我们会尽快联系您。"
+    formName: "您的姓名", formEmail: "邮箱 / WhatsApp", formProduct: "感兴趣的产品", formMessage: "数量、LOGO、包装、目标市场", formSubmit: "发送询盘", footerText: "便携照明与安全警示产品的工贸一体合作伙伴。", searchProducts: "搜索型号或产品", filterAll: "全部", filterWork: "工作灯", filterWarning: "警示灯", filterBeacon: "警示信标", filterSolar: "太阳能灯", filterCamping: "露营灯", filterSecurity: "安防灯", floatingInquiry: "快速询盘", backTop: "返回顶部", moreProducts: "更多产品", lessProducts: "收起产品", customBadge: "OEM / ODM", customLogo: "定制 LOGO", customLogoText: "产品印制您的品牌", customPack: "定制包装", customPackText: "适合零售渠道的彩盒", productCta: "查看详情", modalInquiry: "咨询此产品", modalSupport: "支持 OEM/ODM、包装方案和 24 小时内报价沟通。", categoryWork: "工作灯", categoryWarning: "警示灯", categoryBeacon: "信标", categorySolar: "太阳能灯", categoryCamping: "露营灯", categorySecurity: "安防灯", tagNew: "新品", tagHot: "热卖", tagWarning: "警示", tagBeacon: "信标", tagRechargeable: "充电款", tagBattery: "电池款", tagWork: "工作灯", tagSolar: "太阳能", tagSecurity: "安防", tagCamping: "露营", tagOem: "可贴牌", tagExtended: "扩展系列", modalVersion: "版本", modalApplication: "适用场景", modalOem: "OEM/ODM", modalOemValue: "支持 LOGO、彩盒和出口包装定制", applicationWarning: "道路救援、车辆应急包和安全警示场景", applicationBeacon: "车辆安全、工程现场和应急高可见度警示", applicationWork: "检修、车库、工地和随车照明", applicationSolar: "庭院、农场、户外工程和项目供货", applicationSecurity: "周界警示、店铺和庭院安防", applicationCamping: "露营、户外休闲和应急备用", newSeriesEyebrow: "HB-363 新品系列", newSeriesTitle: "充电款和电池款道路安全警示灯。", newSeriesText: "橙色磁吸圆形警示灯已新增两种版本，支持样品、批发订单和 OEM 包装。", newSeriesPoint1: "磁吸背面", newSeriesPoint2: "车辆应急", newSeriesPoint3: "支持贴牌", newSeriesRechargeable: "充电款", newSeriesBattery: "电池款", thanks: "感谢咨询，我们会尽快联系您。"
   },
   es: { navProducts:"Productos",navFactory:"Fábrica",navCustom:"OEM/ODM",navQuality:"Calidad",navContact:"Contacto",quote:"Cotizar",heroTitle:"Capacidad industrial para marcas globales.",heroText:"Fabricante y socio comercial integrado para luces LED de advertencia, trabajo, balizas magnéticas y emergencia.",explore:"Ver productos",customize:"Personalizar marca",productsTitle:"Iluminación portátil para carretera, exterior y emergencias.",factoryTitle:"Capacidad integral para marcas globales.",customTitle:"De la idea al producto de marca.",qualityTitle:"Control estricto desde materia prima hasta producto final.",contactTitle:"Envíenos mercado, cantidad y requisitos.",formSubmit:"Enviar consulta",thanks:"Gracias. Le contactaremos pronto." },
   fr: { navProducts:"Produits",navFactory:"Usine",navCustom:"OEM/ODM",navQuality:"Qualité",navContact:"Contact",quote:"Devis",heroTitle:"Puissance industrielle pour les marques mondiales.",heroText:"Partenaire usine + commerce pour feux LED d'avertissement, lampes de travail, balises magnétiques et éclairage d'urgence.",explore:"Voir les produits",customize:"Personnaliser",productsTitle:"Éclairage portable pour route, extérieur et urgence.",factoryTitle:"Capacité complète pour marques mondiales.",customTitle:"De l'idée au produit de marque.",qualityTitle:"Contrôle qualité strict du matériau au produit fini.",contactTitle:"Envoyez marché, quantité et besoins.",formSubmit:"Envoyer",thanks:"Merci. Nous vous contacterons bientôt." },
@@ -241,6 +241,39 @@ function productCategoryLabel(item) {
   return t("categoryWarning");
 }
 
+function productBadges(item) {
+  const category = productCategory(item);
+  const badges = [];
+  if (item.model === "HB-363C") badges.push(t("tagNew"), t("tagRechargeable"));
+  if (item.model === "HB-363B") badges.push(t("tagNew"), t("tagBattery"));
+  if (["HB-328", "HB-329", "HB-363C", "HB-363B"].includes(item.model)) badges.push(t("tagHot"));
+  if (category === "warning") badges.push(t("tagWarning"));
+  if (category === "beacon") badges.push(t("tagBeacon"));
+  if (category === "work") badges.push(t("tagWork"));
+  if (category === "solar") badges.push(t("tagSolar"));
+  if (category === "security") badges.push(t("tagSecurity"));
+  if (category === "camping") badges.push(t("tagCamping"));
+  if (item.model.startsWith("XG-")) badges.push(t("tagExtended"));
+  if (["HB-363C", "HB-363B", "HB-328", "HB-329"].includes(item.model)) badges.push(t("tagOem"));
+  return [...new Set(badges)].slice(0, 3);
+}
+
+function productApplication(item) {
+  const category = productCategory(item);
+  if (category === "beacon") return t("applicationBeacon");
+  if (category === "work") return t("applicationWork");
+  if (category === "solar") return t("applicationSolar");
+  if (category === "security") return t("applicationSecurity");
+  if (category === "camping") return t("applicationCamping");
+  return t("applicationWarning");
+}
+
+function productVersion(item) {
+  if (item.model === "HB-363C") return t("newSeriesRechargeable");
+  if (item.model === "HB-363B") return t("newSeriesBattery");
+  return productCategoryLabel(item);
+}
+
 const featuredProductOrder = [
   "HB-328", "XG-T31", "HB-363C", "HB-329",
   "HB-321", "HB-363B", "HB-330", "XG-C8505-COB",
@@ -283,10 +316,13 @@ function renderStaticLists() {
     const safeDesc = escapeHtml(desc);
     const category = escapeHtml(productCategoryLabel(item));
     const image = escapeHtml(item.img);
+    const badges = productBadges(item).map(badge => `<span>${escapeHtml(badge)}</span>`).join("");
+    const cardClass = `product-card reveal ${index >= 8 ? "is-extra" : ""} is-${escapeHtml(productCategory(item))} ${item.model.startsWith("HB-363") ? "is-new-series" : ""}`;
     return `
-      <button class="product-card reveal ${index >= 8 ? "is-extra" : ""}" type="button" data-model="${model}" aria-label="${model} ${safeName}">
+      <button class="${cardClass}" type="button" data-model="${model}" aria-label="${model} ${safeName}">
         <div class="product-card-top">
           <div class="product-meta"><span>${model}</span><span>${category}</span></div>
+          <div class="product-badges">${badges}</div>
           <img src="assets/${image}" alt="${safeName}" loading="${index < 4 ? "eager" : "lazy"}" decoding="async">
         </div>
         <div class="product-info"><h3>${safeName}</h3><p>${safeDesc}</p><span class="product-action">${escapeHtml(t("productCta"))}</span></div>
@@ -379,25 +415,33 @@ function openProductModal(model) {
   document.getElementById("modalModel").textContent = model;
   document.getElementById("modalTitle").textContent = name;
   document.getElementById("modalDesc").textContent = desc;
+  document.getElementById("modalBadges").innerHTML = productBadges(item)
+    .map(badge => `<span>${escapeHtml(badge)}</span>`)
+    .join("");
   const labels = currentLang === "zh"
     ? { spec: "产品解析", moq: "起订量", lead: "交货期", cert: "认证", packing: "装箱信息", note: "备注", price: "报价方式" }
     : { spec: "Product details", moq: "MOQ", lead: "Lead time", cert: "Certificates", packing: "Carton info", note: "Notes", price: "Quotation" };
   const quoteValue = currentLang === "zh" ? "请联系业务获取最新报价" : "Contact sales for current quotation";
   const specRows = [
+    [t("modalVersion"), productVersion(item)],
+    [t("modalApplication"), productApplication(item)],
     [labels.spec, detail.spec || "-"],
     [labels.moq, detail.moq || "-"],
     [labels.lead, detail.lead || "-"],
     [labels.cert, detail.cert || "-"],
     detail.packing ? [labels.packing, detail.packing] : null,
     detail.note ? [labels.note, detail.note] : null,
+    [t("modalOem"), t("modalOemValue")],
     [labels.price, quoteValue]
   ].filter(Boolean);
   document.getElementById("modalSpecs").innerHTML = specRows.map(([k,v]) => `<dt>${escapeHtml(k)}</dt><dd>${escapeHtml(v)}</dd>`).join("");
+  document.getElementById("modalInquiry").textContent = `${t("modalInquiry")} ${model}`;
   document.getElementById("productModal").classList.add("open");
   document.getElementById("productModal").setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-is-open");
   document.getElementById("modalClose").focus();
 }
+
 
 function closeProductModal() {
   document.getElementById("productModal").classList.remove("open");
@@ -447,7 +491,7 @@ document.getElementById("productSearch").addEventListener("input", event => {
   renderStaticLists();
 });
 
-document.querySelectorAll(".signature-products button, .flagship-board button, .hero-sourcing-card button").forEach(button => {
+document.querySelectorAll(".signature-products button, .flagship-board button, .hero-sourcing-card button, .new-series-card").forEach(button => {
   button.addEventListener("click", () => openProductModal(button.dataset.model));
 });
 
