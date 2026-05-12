@@ -117,7 +117,7 @@ const translations = {
   },
   zh: {
     brandTag: "工贸一体实力工厂", navProducts: "产品", navFactory: "工厂", navCustom: "定制", navQuality: "质量", navContact: "联系", quote: "获取报价",
-    eyebrow: "便携照明与安全警示解决方案", heroTitle: "LED 警示灯批发与 OEM 实力工厂。", heroText: "工贸一体外贸团队供应道路安全警示灯、磁吸警示信标、充电款和电池款警示灯，支持批发、样品和贴牌包装。", explore: "查看产品", customize: "定制品牌",
+    eyebrow: "便携照明与安全警示解决方案", heroTitle: "LED 警示灯批发与 OEM 实力工厂。", heroText: "工贸一体外贸团队供应道路安全警示灯、磁吸警示信标、充电款和电池款警示灯，支持批发、样品和贴牌包装。", explore: "查看产品", customize: "定制品牌", heroWarning: "警示灯", heroBeacon: "安全信标", heroWork: "工作灯", heroSourcingLabel: "热询警示型号",
     proof1: "自有工厂生产", proof2: "外贸服务团队", proof3: "OEM/ODM品牌支持", signatureEyebrow: "核心系列", signatureTitle: "为高可见度而设计，为真实安全场景而制造。", flagshipEyebrow: "旗舰产品矩阵", flagshipTitle: "一条产品线，覆盖多种安全场景。", flagshipText: "从迷你警示灯、工作灯，到安全信标和道路应急灯，帮助客户快速搭建市场产品组合。", prestige1: "现代化生产基地", prestige2: "核心制造模块", prestige3: "专业生产人员", prestige4: "质量体系与出口认证支持", metricFactory: "现代化工厂", metricTeam: "专业团队", metricService: "全链路定制", metricExport: "全球交付",
     floatingLabel: "实力工厂", floatingText: "注塑 · 模具 · 装配 · 质检", strip1: "全球供应", strip2: "品质稳定", strip3: "价格有竞争力", strip4: "支持批量订单", strip5: "响应快速",
     productsEyebrow: "主营产品线", productsTitle: "警示灯为主，兼顾工作灯与户外照明。", productsText: "首页产品区优先展示道路 LED 警示灯、磁吸安全信标和应急警示灯，工作灯、太阳能灯和露营灯作为补充系列穿插展示。",
