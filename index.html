@@ -14,7 +14,7 @@
   <link rel="canonical" href="https://nhhengbo.com/">
   <link rel="preload" as="image" href="assets/hero_factory.webp">
   <link rel="preload" as="image" href="assets/p328.webp">
-  <link rel="stylesheet" href="styles.css?v=20260512-seo-products">
+  <link rel="stylesheet" href="styles.css?v=20260512-seo-products2">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -550,34 +550,112 @@
     </div>
   </div>
 
-  <script src="script.js?v=20260512-cn-scenes3"></script>
+  <script src="script.js?v=20260512-seo-products2"></script>
   <script type="application/ld+json">
-    {
+{
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "HENGBO",
-      "url": "https://nhhengbo.com/",
-      "logo": "https://nhhengbo.com/assets/hengbo-logo.svg",
-      "description": "Integrated manufacturer and trading partner for portable lighting and safety warning products.",
-      "email": "19858215314@163.com",
-      "contactPoint": [
-        {
-          "@type": "ContactPoint",
-          "contactType": "sales",
-          "email": "19858215314@163.com"
-        },
-        {
-          "@type": "ContactPoint",
-          "contactType": "sales",
-          "email": "cyanpeter@hotmail.com"
-        },
-        {
-          "@type": "ContactPoint",
-          "contactType": "sales",
-          "email": "bshong@126.com"
-        }
+      "@graph": [
+          {
+              "@type": "Organization",
+              "@id": "https://nhhengbo.com/#organization",
+              "name": "HENGBO",
+              "url": "https://nhhengbo.com/",
+              "logo": "https://nhhengbo.com/assets/hengbo-logo.svg",
+              "description": "Integrated manufacturer and trading partner for LED warning lights, safety beacons, road safety flares and portable safety lighting products.",
+              "email": "19858215314@163.com",
+              "contactPoint": [
+                  {
+                      "@type": "ContactPoint",
+                      "contactType": "sales",
+                      "email": "19858215314@163.com",
+                      "availableLanguage": [
+                          "English",
+                          "Chinese"
+                      ]
+                  },
+                  {
+                      "@type": "ContactPoint",
+                      "contactType": "sales",
+                      "email": "cyanpeter@hotmail.com",
+                      "availableLanguage": [
+                          "English",
+                          "Chinese"
+                      ]
+                  },
+                  {
+                      "@type": "ContactPoint",
+                      "contactType": "sales",
+                      "email": "bshong@126.com",
+                      "availableLanguage": [
+                          "English",
+                          "Chinese"
+                      ]
+                  }
+              ]
+          },
+          {
+              "@type": "WebSite",
+              "@id": "https://nhhengbo.com/#website",
+              "url": "https://nhhengbo.com/",
+              "name": "HENGBO LED Warning Lights",
+              "publisher": {
+                  "@id": "https://nhhengbo.com/#organization"
+              },
+              "inLanguage": [
+                  "en",
+                  "zh"
+              ],
+              "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": "https://nhhengbo.com/?q={search_term_string}",
+                  "query-input": "required name=search_term_string"
+              }
+          },
+          {
+              "@type": "ItemList",
+              "@id": "https://nhhengbo.com/#warning-products",
+              "name": "Core LED Warning Light Products",
+              "itemListElement": [
+                  {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "HB-362 Battery LED Safety Flare",
+                      "url": "https://nhhengbo.com/products/hb-362-led-safety-flare.html"
+                  },
+                  {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "HB-363C Rechargeable Road Warning Light",
+                      "url": "https://nhhengbo.com/products/hb-363-rechargeable-warning-light.html"
+                  },
+                  {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "HB-363B Battery Road Warning Light",
+                      "url": "https://nhhengbo.com/products/hb-363-battery-warning-light.html"
+                  },
+                  {
+                      "@type": "ListItem",
+                      "position": 4,
+                      "name": "HB-329 Magnetic Safety Beacon",
+                      "url": "https://nhhengbo.com/products/hb-329-magnetic-safety-beacon.html"
+                  },
+                  {
+                      "@type": "ListItem",
+                      "position": 5,
+                      "name": "HB-331 Triangle Work Warning Light",
+                      "url": "https://nhhengbo.com/products/hb-331-triangle-warning-light.html"
+                  },
+                  {
+                      "@type": "ListItem",
+                      "position": 6,
+                      "name": "HB-361 Red Blue Emergency Beacon",
+                      "url": "https://nhhengbo.com/products/hb-361-red-blue-emergency-beacon.html"
+                  }
+              ]
+          }
       ]
-    }
+  }
   </script>
 </body>
 </html>
