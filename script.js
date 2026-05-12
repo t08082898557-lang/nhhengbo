@@ -146,7 +146,15 @@ const fallback = translations.en;
 let currentLang = "en";
 let activeFilter = "all";
 let searchTerm = "";
+let selectedModalProduct = "";
 const inquiryEmails = ["19858215314@163.com", "cyanpeter@hotmail.com", "bshong@126.com"];
+
+const collectionCards = [
+  { filter: "solar", model: "XG-T53-400W", title: "collectionSolarTitle", text: "collectionSolarText" },
+  { filter: "security", model: "XG-T30", title: "collectionSecurityTitle", text: "collectionSecurityText" },
+  { filter: "camping", model: "XG-T51", title: "collectionCampingTitle", text: "collectionCampingText" },
+  { filter: "work", model: "XG-C8505-COB", title: "collectionWorkTitle", text: "collectionWorkText" }
+];
 
 function escapeHtml(value) {
   return String(value).replace(/[&<>"']/g, char => ({
@@ -229,6 +237,11 @@ function productCategoryLabel(item) {
   return t("categoryWarning");
 }
 
+function productRank(item) {
+  if (item.model.startsWith("XG-")) return 0;
+  return 1;
+}
+
 function updateProductToggle(total = products.length) {
   const grid = document.getElementById("productGrid");
   const toggle = document.getElementById("toggleProducts");
@@ -247,7 +260,7 @@ function renderStaticLists() {
     const okSearch = !searchTerm || haystack.includes(searchTerm.toLowerCase());
     const okFilter = activeFilter === "all" || productCategory(item) === activeFilter;
     return okSearch && okFilter;
-  });
+  }).sort((a, b) => productRank(a) - productRank(b));
   grid.innerHTML = filtered.map((item, index) => {
     const [name, desc] = localized(item);
     const model = escapeHtml(item.model);
@@ -288,6 +301,34 @@ function renderStaticLists() {
   });
 }
 
+function renderCollections() {
+  const grid = document.getElementById("collectionGrid");
+  if (!grid) return;
+  grid.innerHTML = collectionCards.map(card => {
+    const item = products.find(product => product.model === card.model);
+    if (!item) return "";
+    const [name] = localized(item);
+    return `
+      <article class="collection-card" data-filter="${escapeHtml(card.filter)}">
+        <div class="collection-image">
+          <img src="assets/${escapeHtml(item.img)}" alt="${escapeHtml(name)}" loading="lazy" decoding="async">
+        </div>
+        <div class="collection-copy">
+          <span>${escapeHtml(productCategoryLabel(item))}</span>
+          <h3>${escapeHtml(t(card.title))}</h3>
+          <p>${escapeHtml(t(card.text))}</p>
+          <button class="btn glass" type="button" data-filter="${escapeHtml(card.filter)}">${escapeHtml(t("collectionCta"))}</button>
+        </div>
+      </article>`;
+  }).join("");
+  grid.querySelectorAll("button[data-filter]").forEach(button => {
+    button.addEventListener("click", () => {
+      setActiveFilter(button.dataset.filter);
+      document.getElementById("products").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+}
+
 function renderProductOptions() {
   const select = document.getElementById("productInterest");
   const first = `<option value="" data-i18n="formProduct">${escapeHtml(t("formProduct"))}</option>`;
@@ -314,6 +355,7 @@ function renderSlides() {
 function openProductModal(model) {
   const item = products.find(p => p.model === model);
   if (!item) return;
+  selectedModalProduct = model;
   const [name, desc] = localized(item);
   const detail = productDetails[model] || {};
   document.getElementById("modalImage").src = `assets/${item.img}`;
@@ -356,6 +398,7 @@ function applyLanguage(lang) {
   window.currentThanks = t("thanks");
   saveLanguage(lang);
   renderStaticLists();
+  renderCollections();
   renderProductOptions();
   renderSlides();
 }
@@ -394,10 +437,34 @@ document.querySelectorAll(".signature-products button, .flagship-board button").
 
 document.querySelectorAll(".chip").forEach(chip => {
   chip.addEventListener("click", () => {
-    activeFilter = chip.dataset.filter;
-    document.querySelectorAll(".chip").forEach(item => item.classList.toggle("active", item === chip));
-    renderStaticLists();
+    setActiveFilter(chip.dataset.filter);
   });
+});
+
+function setActiveFilter(filter) {
+  activeFilter = filter;
+  searchTerm = "";
+  document.getElementById("productSearch").value = "";
+  document.querySelectorAll(".chip").forEach(item => item.classList.toggle("active", item.dataset.filter === filter));
+  const grid = document.getElementById("productGrid");
+  grid.classList.remove("show-all");
+  renderStaticLists();
+}
+
+document.getElementById("modalInquiry").addEventListener("click", () => {
+  const item = products.find(product => product.model === selectedModalProduct);
+  if (!item) return;
+  const [name] = localized(item);
+  const interest = `${item.model} - ${name}`;
+  closeProductModal();
+  const select = document.getElementById("productInterest");
+  select.value = interest;
+  if (select.value !== interest) {
+    select.insertAdjacentHTML("beforeend", `<option value="${escapeHtml(interest)}">${escapeHtml(interest)}</option>`);
+    select.value = interest;
+  }
+  document.getElementById("messageText").value = `I am interested in ${interest}. Please send quotation, MOQ, packaging and lead time.`;
+  document.getElementById("contact").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 let scrollTicking = false;
