@@ -96,11 +96,11 @@ const productDetails = {
 const translations = {
   en: {
     brandTag: "Industry & Trade Integrated Factory", navProducts: "Products", navFactory: "Factory", navCustom: "OEM/ODM", navQuality: "Quality", navContact: "Contact", quote: "Request Quote",
-    eyebrow: "Portable Lighting & Safety Warning Solutions", heroTitle: "Solar, safety and portable lighting built for export programs.", heroText: "A factory + trading integrated partner delivering solar flood lights, camera-style security lights, camping lanterns, LED warning lights and OEM/ODM packaging for global buyers.", explore: "Explore Products", customize: "Customize Your Brand", heroSolar: "Solar Lighting", heroSecurity: "Security Lights", heroCamping: "Camping Range", heroSourcingLabel: "Hot inquiry models",
-    proof1: "Factory-owned production", proof2: "Export service team", proof3: "OEM/ODM brand support", signatureEyebrow: "New Hero Products", signatureTitle: "High-demand outdoor products for fast catalog expansion.", flagshipEyebrow: "Buyer-ready Product Matrix", flagshipTitle: "Solar, security and portable work lighting in one supply system.", flagshipText: "Build your product range from solar flood lights and camera-style security lights to camping lanterns and rechargeable work lights.", prestige1: "modern production base", prestige2: "core manufacturing modules", prestige3: "trained production staff", prestige4: "quality & export compliance", metricFactory: "Modern factory", metricTeam: "Skilled employees", metricService: "Full customization", metricExport: "Export ready",
+    eyebrow: "Portable Lighting & Safety Warning Solutions", heroTitle: "LED warning lights built for global safety buyers.", heroText: "A factory + trading integrated partner focused on LED road warning lights, magnetic safety beacons, portable work lights and OEM/ODM customization for export orders.", explore: "Explore Products", customize: "Customize Your Brand", heroWarning: "Warning Lights", heroBeacon: "Safety Beacons", heroWork: "Work Lights", heroSourcingLabel: "Hot warning models",
+    proof1: "Factory-owned production", proof2: "Export service team", proof3: "OEM/ODM brand support", signatureEyebrow: "Signature Warning Series", signatureTitle: "Designed for visibility. Built for roadside and emergency safety.", flagshipEyebrow: "Core Warning Product Matrix", flagshipTitle: "Road warning lights, beacons and work lights for safety markets.", flagshipText: "Build your safety lighting range from compact warning lights to magnetic beacons, road emergency lamps and portable work lights.", prestige1: "modern production base", prestige2: "core manufacturing modules", prestige3: "trained production staff", prestige4: "quality & export compliance", metricFactory: "Modern factory", metricTeam: "Skilled employees", metricService: "Full customization", metricExport: "Export ready",
     floatingLabel: "Factory Verified", floatingText: "Injection molding · Tooling · Assembly · QC", strip1: "Global supply", strip2: "Stable quality", strip3: "Competitive pricing", strip4: "Bulk order support", strip5: "Fast response",
-    productsEyebrow: "Main Product Lines", productsTitle: "Portable lighting for roadside, outdoor and emergency scenarios.", productsText: "From handheld work lights to LED road warning lights and magnetic safety beacons, our catalog supports retail packs, private label programs and project procurement.",
-    collectionsEyebrow: "New Outdoor Range", collectionsTitle: "Solar, camping and security lighting now ready for inquiry.", collectionsText: "Quickly browse the newly added XG series and build a wider catalog for retail, wholesale and project buyers.", collectionSolarTitle: "Solar project lighting", collectionSolarText: "Flood lights, wall lights and garden lighting for yards, farms and project supply.", collectionCampingTitle: "Camping & ambience", collectionCampingText: "Portable lanterns and ambience lights for outdoor retail and seasonal programs.", collectionSecurityTitle: "Security warning lights", collectionSecurityText: "Camera-style warning lights for perimeter deterrence and storefront protection.", collectionWorkTitle: "Portable work range", collectionWorkText: "Rechargeable work lights and emergency lights for repair, garage and job-site use.", collectionCta: "View range",
+    productsEyebrow: "Main Product Lines", productsTitle: "Warning lights first, with wider outdoor lighting options.", productsText: "Our core range covers LED road warning lights, safety beacons and portable work lights; newly added solar, camping and security lights help buyers expand the catalog.",
+    collectionsEyebrow: "Product Range", collectionsTitle: "Core warning products plus extended outdoor lighting.", collectionsText: "Start with HENGBO warning lights and beacons, then add solar, camping and security lighting for a wider catalog.", collectionWarningTitle: "Road warning lights", collectionWarningText: "Multi-mode LED warning lamps for roadside safety, vehicle emergency kits and retail packs.", collectionBeaconTitle: "Safety beacons", collectionBeaconText: "Magnetic beacons and red-blue warning lights for vehicles, projects and emergency scenes.", collectionSolarTitle: "Solar project lighting", collectionSolarText: "Flood lights, wall lights and garden lighting for yards, farms and project supply.", collectionCampingTitle: "Camping & ambience", collectionCampingText: "Portable lanterns and ambience lights for outdoor retail and seasonal programs.", collectionSecurityTitle: "Security warning lights", collectionSecurityText: "Camera-style warning lights for perimeter deterrence and storefront protection.", collectionWorkTitle: "Portable work range", collectionWorkText: "Rechargeable work lights and emergency lights for repair, garage and job-site use.", collectionCta: "View range",
     factoryEyebrow: "Manufacturing Excellence", factoryTitle: "End-to-end capability, built for global brands.", factoryText: "We combine production ownership with export service: injection molding, precision tooling, assembly lines, packaging warehouse and dedicated QC are coordinated under an ISO 9001-oriented management system.",
     cap1: "Advanced injection molding", cap2: "Precision tooling workshop", cap3: "Standardized assembly", cap4: "Sustainable packaging", cap5: "Dedicated quality control", cap6: "Scalable production capacity",
     customEyebrow: "OEM & ODM Customization", customTitle: "From idea to branded product, one accountable team.",
@@ -150,10 +150,10 @@ let selectedModalProduct = "";
 const inquiryEmails = ["19858215314@163.com", "cyanpeter@hotmail.com", "bshong@126.com"];
 
 const collectionCards = [
-  { filter: "solar", model: "XG-T53-400W", title: "collectionSolarTitle", text: "collectionSolarText" },
-  { filter: "security", model: "XG-T30", title: "collectionSecurityTitle", text: "collectionSecurityText" },
-  { filter: "camping", model: "XG-T51", title: "collectionCampingTitle", text: "collectionCampingText" },
-  { filter: "work", model: "XG-C8505-COB", title: "collectionWorkTitle", text: "collectionWorkText" }
+  { filter: "warning", model: "HB-328", title: "collectionWarningTitle", text: "collectionWarningText" },
+  { filter: "beacon", model: "HB-329", title: "collectionBeaconTitle", text: "collectionBeaconText" },
+  { filter: "work", model: "HB-321", title: "collectionWorkTitle", text: "collectionWorkText" },
+  { filter: "solar", model: "XG-T53-400W", title: "collectionSolarTitle", text: "collectionSolarText" }
 ];
 
 function escapeHtml(value) {
@@ -238,8 +238,9 @@ function productCategoryLabel(item) {
 }
 
 function productRank(item) {
-  if (item.model.startsWith("XG-")) return 0;
-  return 1;
+  const category = productCategory(item);
+  const categoryOrder = { warning: 0, beacon: 1, work: 2, solar: 3, security: 4, camping: 5 };
+  return categoryOrder[category] ?? 9;
 }
 
 function updateProductToggle(total = products.length) {
@@ -340,7 +341,7 @@ function renderProductOptions() {
 }
 
 function renderSlides() {
-  const slideModels = ["XG-T53-400W", "XG-T30", "XG-T51", "XG-C8505-COB", "HB-328"];
+  const slideModels = ["HB-328", "HB-327", "HB-329", "HB-361", "XG-T53-400W"];
   document.querySelectorAll(".slide").forEach((slide, index) => {
     const item = products.find(product => product.model === slideModels[index]) || products[index];
     if (!item) return;
