@@ -96,8 +96,8 @@ const productDetails = {
 const translations = {
   en: {
     brandTag: "Industry & Trade Integrated Factory", navProducts: "Products", navFactory: "Factory", navCustom: "OEM/ODM", navQuality: "Quality", navContact: "Contact", quote: "Request Quote",
-    eyebrow: "Portable Lighting & Safety Warning Solutions", heroTitle: "Manufacturing strength for global safety brands.", heroText: "A factory + trading integrated partner delivering LED warning lights, work lights, magnetic beacons and outdoor emergency lighting with OEM/ODM customization.", explore: "Explore Products", customize: "Customize Your Brand",
-    proof1: "Factory-owned production", proof2: "Export service team", proof3: "OEM/ODM brand support", signatureEyebrow: "Signature Series", signatureTitle: "Designed for visibility. Built for real-world safety.", flagshipEyebrow: "Flagship Product Matrix", flagshipTitle: "One product line, multiple safety scenarios.", flagshipText: "Build your market range from compact warning lights to work lights, safety beacons and road emergency lamps.", prestige1: "modern production base", prestige2: "core manufacturing modules", prestige3: "trained production staff", prestige4: "quality & export compliance", metricFactory: "Modern factory", metricTeam: "Skilled employees", metricService: "Full customization", metricExport: "Export ready",
+    eyebrow: "Portable Lighting & Safety Warning Solutions", heroTitle: "Solar, safety and portable lighting built for export programs.", heroText: "A factory + trading integrated partner delivering solar flood lights, camera-style security lights, camping lanterns, LED warning lights and OEM/ODM packaging for global buyers.", explore: "Explore Products", customize: "Customize Your Brand", heroSolar: "Solar Lighting", heroSecurity: "Security Lights", heroCamping: "Camping Range", heroSourcingLabel: "Hot inquiry models",
+    proof1: "Factory-owned production", proof2: "Export service team", proof3: "OEM/ODM brand support", signatureEyebrow: "New Hero Products", signatureTitle: "High-demand outdoor products for fast catalog expansion.", flagshipEyebrow: "Buyer-ready Product Matrix", flagshipTitle: "Solar, security and portable work lighting in one supply system.", flagshipText: "Build your product range from solar flood lights and camera-style security lights to camping lanterns and rechargeable work lights.", prestige1: "modern production base", prestige2: "core manufacturing modules", prestige3: "trained production staff", prestige4: "quality & export compliance", metricFactory: "Modern factory", metricTeam: "Skilled employees", metricService: "Full customization", metricExport: "Export ready",
     floatingLabel: "Factory Verified", floatingText: "Injection molding · Tooling · Assembly · QC", strip1: "Global supply", strip2: "Stable quality", strip3: "Competitive pricing", strip4: "Bulk order support", strip5: "Fast response",
     productsEyebrow: "Main Product Lines", productsTitle: "Portable lighting for roadside, outdoor and emergency scenarios.", productsText: "From handheld work lights to LED road warning lights and magnetic safety beacons, our catalog supports retail packs, private label programs and project procurement.",
     collectionsEyebrow: "New Outdoor Range", collectionsTitle: "Solar, camping and security lighting now ready for inquiry.", collectionsText: "Quickly browse the newly added XG series and build a wider catalog for retail, wholesale and project buyers.", collectionSolarTitle: "Solar project lighting", collectionSolarText: "Flood lights, wall lights and garden lighting for yards, farms and project supply.", collectionCampingTitle: "Camping & ambience", collectionCampingText: "Portable lanterns and ambience lights for outdoor retail and seasonal programs.", collectionSecurityTitle: "Security warning lights", collectionSecurityText: "Camera-style warning lights for perimeter deterrence and storefront protection.", collectionWorkTitle: "Portable work range", collectionWorkText: "Rechargeable work lights and emergency lights for repair, garage and job-site use.", collectionCta: "View range",
@@ -332,7 +332,7 @@ function renderCollections() {
 function renderProductOptions() {
   const select = document.getElementById("productInterest");
   const first = `<option value="" data-i18n="formProduct">${escapeHtml(t("formProduct"))}</option>`;
-  select.innerHTML = first + products.map(item => {
+  select.innerHTML = first + [...products].sort((a, b) => productRank(a) - productRank(b)).map(item => {
     const [name] = localized(item);
     const label = `${item.model} - ${name}`;
     return `<option value="${escapeHtml(label)}">${escapeHtml(label)}</option>`;
@@ -340,8 +340,9 @@ function renderProductOptions() {
 }
 
 function renderSlides() {
+  const slideModels = ["XG-T53-400W", "XG-T30", "XG-T51", "XG-C8505-COB", "HB-328"];
   document.querySelectorAll(".slide").forEach((slide, index) => {
-    const item = products[[0,3,4,5,1][index] || index];
+    const item = products.find(product => product.model === slideModels[index]) || products[index];
     if (!item) return;
     const [name, desc] = localized(item);
     const img = slide.querySelector("img");
@@ -431,8 +432,15 @@ document.getElementById("productSearch").addEventListener("input", event => {
   renderStaticLists();
 });
 
-document.querySelectorAll(".signature-products button, .flagship-board button").forEach(button => {
+document.querySelectorAll(".signature-products button, .flagship-board button, .hero-sourcing-card button").forEach(button => {
   button.addEventListener("click", () => openProductModal(button.dataset.model));
+});
+
+document.querySelectorAll(".hero-filter button").forEach(button => {
+  button.addEventListener("click", () => {
+    setActiveFilter(button.dataset.filter);
+    document.getElementById("products").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
 });
 
 document.querySelectorAll(".chip").forEach(chip => {
@@ -454,18 +462,24 @@ function setActiveFilter(filter) {
 document.getElementById("modalInquiry").addEventListener("click", () => {
   const item = products.find(product => product.model === selectedModalProduct);
   if (!item) return;
-  const [name] = localized(item);
-  const interest = `${item.model} - ${name}`;
   closeProductModal();
+  fillInquiryProduct(item);
+  document.getElementById("contact").scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+function fillInquiryProduct(item) {
+  const [name] = localized(item);
   const select = document.getElementById("productInterest");
+  const interest = `${item.model} - ${name}`;
   select.value = interest;
   if (select.value !== interest) {
     select.insertAdjacentHTML("beforeend", `<option value="${escapeHtml(interest)}">${escapeHtml(interest)}</option>`);
     select.value = interest;
   }
-  document.getElementById("messageText").value = `I am interested in ${interest}. Please send quotation, MOQ, packaging and lead time.`;
-  document.getElementById("contact").scrollIntoView({ behavior: "smooth", block: "start" });
-});
+  document.getElementById("messageText").value = currentLang === "zh"
+    ? `我对 ${interest} 感兴趣，请发送报价、起订量、包装方式和交期。`
+    : `I am interested in ${interest}. Please send quotation, MOQ, packaging and lead time.`;
+}
 
 let scrollTicking = false;
 function updateScrollProgress() {
