@@ -9,6 +9,8 @@ const products = [
   { model: "HB-330", img: "p330.webp", en: ["Triangle Roadside Warning Lamp", "Foldable triangle warning lamp for night roadside emergencies."], zh: ["三角道路警示灯", "折叠式三角警示灯，适合夜间道路应急。"] },
   { model: "HB-331", img: "p331.webp", en: ["Triangle Work Warning Light", "Portable triangle warning light with strong safety illumination."], zh: ["三角工作警示灯", "便携式三角警示灯，安全警示效果明显。"] },
   { model: "HB-361", img: "p361.webp", en: ["Red Blue Emergency Beacon", "Red and blue emergency beacon for roadside and field warning."], zh: ["红蓝应急警示灯", "红蓝应急警示灯，适合道路和户外警示场景。"] },
+  { model: "HB-363C", img: "hb-363-rechargeable.webp", en: ["Rechargeable Road Warning Light", "Rechargeable magnetic warning light with USB charging port for vehicle, roadside and emergency safety."], zh: ["HB-363 充电款警示灯", "USB 充电款磁吸警示灯，适合车辆、道路救援和应急安全警示。"] },
+  { model: "HB-363B", img: "hb-363-battery.webp", en: ["Battery Road Warning Light", "Battery-powered magnetic warning light for roadside emergency kits, vehicles and portable safety use."], zh: ["HB-363 电池款警示灯", "电池款磁吸警示灯，适合道路应急包、车辆和便携安全警示。"] },
   {"model": "XG-T31", "img": "xg-t31.webp", "cat": "solar", "en": ["Solar Wall Sensor Garden Light", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["XG-T31 壁挂感应灯", "壁挂感应灯/庭院灯，1200MA/18650*1；140+12LED；5.5v/ 2w；太阳能+人体感应；高亮白光+警示灯；防水+遥控功能。"]},
   {"model": "XG-T30", "img": "xg-t30.webp", "cat": "security", "en": ["Solar Dummy Camera Security Light", "Camera-style warning and security light for perimeter deterrence, yards, storefronts and outdoor sites."], "zh": ["XG-T30 监控摄像头灯", "监控摄像头灯/仿真摄像头灯，1200MA/18650*2；6大功率+8LED；5.5v/ 3w。"]},
   {"model": "XG-T28-SMD", "img": "xg-t28-smd.webp", "cat": "security", "en": ["SMD Solar Camera Sensor Light", "Camera-style warning and security light for perimeter deterrence, yards, storefronts and outdoor sites."], "zh": ["XG-T28-SMD 监控摄像头灯", "监控摄像头灯/仿真摄像头灯，1200MA/18650*1；33LED；5.5v/ 1.5w。"]},
@@ -62,6 +64,8 @@ const productDetails = {
   "HB-330": { moq: "100", lead: "1~7天", cert: "CE, RoHS, FCC", price: "干电池14元 / 锂电池22元", spec: "材料 PC+TPR+ABS；黄光33LED，白光3SMD；5种模式；尺寸 10*11.5*2.8CM。" },
   "HB-331": { moq: "100", lead: "1~7天", cert: "CE, RoHS, FCC", price: "干电池14元 / 锂电池22元", spec: "材料 PC+TPR+ABS；黄光30LED，白光3SMD；5种模式；尺寸 10.1*11.2*3.3CM。" },
   "HB-361": { moq: "500", lead: "5~25天", cert: "CE, RoHS, FCC", price: "55元", spec: "材料 PC+ABS；前面 SMD 96颗，侧面 SMD 48颗；白光高亮700LM，红蓝警示48LM。" },
+  "HB-363C": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "USB 充电款圆形道路警示灯；橙色防护外壳，磁吸背面，适合车辆应急、道路救援和安全警示。", note: "新款 363 充电款，可用于询盘、样品和贴牌项目。" },
+  "HB-363B": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "电池款圆形道路警示灯；橙色防护外壳，磁吸背面，适合道路应急包、车辆随车安全和便携警示。", note: "新款 363 电池款，可与充电款组合报价。" },
   "HB-321": { moq: "1000", lead: "10~25天", cert: "CE, RoHS, FCC", price: "8.5元（不含电池）", spec: "材料 ABS；COB 3W，190LM；尺寸 19.5*6.5*2.5CM；重量 96g。" },
   "HB-325": { moq: "1000", lead: "7~25天", cert: "CE, RoHS, FCC", price: "22元", spec: "材料 TPR；COB 160LM + 1LED 60LM；尺寸 15.5*4*2.5CM；重量 123g。" },
   "HB-326": { moq: "1000", lead: "7~25天", cert: "CE, RoHS, FCC", price: "10元（不含电池）", spec: "材料 ABS；COB 180LM，3W；尺寸 13*6*3CM；重量 97g。" },
@@ -238,10 +242,10 @@ function productCategoryLabel(item) {
 }
 
 const featuredProductOrder = [
-  "HB-328", "XG-T31", "HB-329", "HB-321",
-  "HB-330", "XG-C8505-COB", "HB-361", "HB-327",
-  "XG-T30", "HB-331", "XG-T53-400W", "HB-325",
-  "XG-T28-SMD", "HB-326", "XG-152-COB", "XG-T51",
+  "HB-328", "XG-T31", "HB-363C", "HB-329",
+  "HB-321", "HB-363B", "HB-330", "XG-C8505-COB",
+  "HB-361", "HB-327", "XG-T30", "HB-331",
+  "XG-T53-400W", "HB-325", "XG-T28-SMD", "HB-326", "XG-152-COB", "XG-T51",
   "XG-T28-COB", "XG-152-SMD", "XG-T8501-COB", "XG-T8502-SMD"
 ];
 
