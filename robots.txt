@@ -3,3 +3,4 @@ Allow: /
 
 Sitemap: https://nhhengbo.com/sitemap.xml
 Host: nhhengbo.com
+Sitemap: https://nhhengbo.com/image-sitemap.xml
