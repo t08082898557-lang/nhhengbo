@@ -272,7 +272,63 @@
     "Can I start with a trial order?": "可以先从试单开始吗？",
     "Trial orders and sample packs can be discussed depending on model and packaging requirement.": "可根据型号和包装要求沟通试单和样品套装。",
     "What information should I send first?": "我应该先提供哪些信息？",
-    "Send model, quantity, market, logo or packaging needs and target delivery time.": "请提供型号、数量、市场、Logo 或包装需求以及目标交期。"
+    "Send model, quantity, market, logo or packaging needs and target delivery time.": "请提供型号、数量、市场、Logo 或包装需求以及目标交期。",
+    "Mini LED warning light": "迷你 LED 警示灯",
+    "HB-327 Mini LED Warning Light": "HB-327 迷你 LED 警示灯",
+    "HB-327 is a compact mini LED warning light for buyers who need a small, lightweight safety light for vehicles, retail packs and portable roadside warning use.": "HB-327 是一款紧凑型迷你 LED 警示灯，适合车辆安全包、零售套装和便携道路警示使用。",
+    "HB-327 mini LED warning light for compact vehicle safety kits, roadside visibility and promotional warning light programs.": "HB-327 迷你 LED 警示灯，适合紧凑车辆安全套装、道路可视警示和促销型安全产品项目。",
+    "Why buyers choose HB-327": "采购商选择 HB-327 的原因",
+    "Compact 6.5 x 2 cm mini body": "6.5 x 2 cm 迷你紧凑机身",
+    "8 LED warning light source": "8 颗 LED 警示光源",
+    "Lightweight 42 g design": "42 g 轻量化设计",
+    "Powered by 2 x CR2032 batteries": "使用 2 节 CR2032 电池供电",
+    "Good fit for small vehicle safety kits": "适合小型车辆安全套装",
+    "6.5 x 2 cm": "6.5 x 2 cm",
+    "42 g": "42 g",
+    "Light source": "光源",
+    "CE, RoHS, FCC": "CE、RoHS、FCC",
+    "Vehicle safety kits": "车辆安全套装",
+    "Compact roadside warning": "紧凑道路警示",
+    "Retail emergency packs": "零售应急包",
+    "Promotional safety programs": "促销安全产品项目",
+    "Questions about HB-327": "关于 HB-327 的问题",
+    "LED road warning light": "LED 道路警示灯",
+    "HB-328 LED Road Warning Light": "HB-328 LED 道路警示灯",
+    "HB-328 is a multi-mode LED road warning light with red warning functions and white SMD lighting for vehicle emergency kits, roadside safety and wholesale programs.": "HB-328 是一款多模式 LED 道路警示灯，带红色警示和白光 SMD 照明，适合车辆应急包、道路安全和批发项目。",
+    "HB-328 9-mode LED road warning light for vehicle emergency kits, roadside safety and OEM wholesale programs.": "HB-328 9 模式 LED 道路警示灯，适合车辆应急包、道路安全和 OEM 批发项目。",
+    "Why buyers choose HB-328": "采购商选择 HB-328 的原因",
+    "9 selectable warning modes": "9 种可选警示模式",
+    "Red 12 LED warning with white 3 SMD light": "红光 12 LED 警示，搭配白光 3 SMD",
+    "Hook and portable body for flexible placement": "挂钩与便携机身，方便灵活摆放",
+    "Good visibility for night roadside use": "适合夜间道路高可见度警示",
+    "Suitable for OEM safety kit packaging": "适合 OEM 安全套装包装",
+    "10 x 10 x 3.5 cm": "10 x 10 x 3.5 cm",
+    "120 g": "120 g",
+    "PC + TPR + ABS hook": "PC + TPR + ABS 挂钩",
+    "Red 12 LED, white 3 SMD": "红光 12 LED，白光 3 SMD",
+    "3 x AAA, not included": "3 节 AAA 电池，不含电池",
+    "Vehicle breakdown warning": "车辆故障警示",
+    "Night safety marking": "夜间安全标识",
+    "Questions about HB-328": "关于 HB-328 的问题",
+    "Triangle roadside warning lamp": "三角道路警示灯",
+    "HB-330 Triangle Roadside Warning Lamp": "HB-330 三角道路警示灯",
+    "HB-330 is a triangle roadside warning lamp for temporary road safety, work areas, vehicle emergency scenes and retail safety product lines.": "HB-330 是一款三角道路警示灯，适合临时道路安全、作业区域、车辆应急场景和零售安全产品线。",
+    "HB-330 triangle roadside warning lamp for temporary road work, vehicle safety and emergency warning programs.": "HB-330 三角道路警示灯，适合临时道路作业、车辆安全和应急警示项目。",
+    "Why buyers choose HB-330": "采购商选择 HB-330 的原因",
+    "Triangle warning body for clear road visibility": "三角警示外形，道路识别更清晰",
+    "Yellow 33 LED warning with white 3 SMD light": "黄光 33 LED 警示，搭配白光 3 SMD",
+    "5 warning modes for temporary safety scenes": "5 种警示模式，适合临时安全场景",
+    "Portable body for quick placement": "便携机身，方便快速摆放",
+    "10 x 11.5 x 2.8 cm": "10 x 11.5 x 2.8 cm",
+    "Yellow 33 LED, white 3 SMD": "黄光 33 LED，白光 3 SMD",
+    "5 warning modes": "5 种警示模式",
+    "Temporary road lanes": "临时道路车道",
+    "Construction warning": "施工警示",
+    "Vehicle emergency packs": "车辆应急包",
+    "Project safety supply": "项目安全供货",
+    "Need samples, OEM packaging or a mixed warning light quotation?": "需要样品、OEM 包装或警示灯组合报价吗？",
+    "Tell HENGBO your quantity, destination market and whether you need battery versions, rechargeable versions, retail kits or private label packaging. We can recommend a practical product mix for your warning light program.": "请告诉恒博您的数量、目标市场，以及是否需要电池款、充电款、零售套装或自有品牌包装。我们可以为您的警示灯项目推荐合适的产品组合。",
+    "Questions about HB-330": "关于 HB-330 的问题"
   };
 
   const ATTRIBUTE_COPY_ZH = {
@@ -292,7 +348,14 @@
       "OEM safety warning lights for private label and wholesale programs.": "面向自有品牌和批发项目的 OEM 安全警示灯。",
       "Roadside emergency warning lights for vehicle safety kits.": "适用于车辆安全套装的道路应急警示灯。",
       "LED warning light manufacturer for wholesale and OEM buyers.": "面向批发和 OEM 采购商的 LED 警示灯制造商。",
-      "HENGBO LED warning light product": "恒博 LED 警示灯产品"
+      "HENGBO LED warning light product": "恒博 LED 警示灯产品",
+      "HENGBO": "恒博",
+      "HB-327 Mini LED Warning Light": "HB-327 迷你 LED 警示灯",
+      "HENGBO warning light product range for HB-327 buyers": "面向 HB-327 买家的恒博警示灯产品系列",
+      "HB-328 LED Road Warning Light": "HB-328 LED 道路警示灯",
+      "Roadside safety warning light application scene": "道路安全警示灯应用场景",
+      "HB-330 Triangle Roadside Warning Lamp": "HB-330 三角道路警示灯",
+      "Triangle warning light construction and road work scene": "三角警示灯施工与道路作业场景"
     },
     "aria-label": {
       "HENGBO home": "恒博首页"
@@ -310,7 +373,10 @@
     "/solutions/index.html": "警示灯采购解决方案 | 恒博",
     "/solutions/led-warning-light-manufacturer.html": "中国 LED 警示灯制造商 | 恒博工厂与 OEM 供应商",
     "/solutions/roadside-emergency-warning-light-supplier.html": "道路应急警示灯供应商 | 车辆安全警示灯批发",
-    "/solutions/oem-safety-warning-light-wholesale.html": "OEM 安全警示灯批发 | 自有品牌 LED 道路安全警示灯"
+    "/solutions/oem-safety-warning-light-wholesale.html": "OEM 安全警示灯批发 | 自有品牌 LED 道路安全警示灯",
+    "/products/hb-327-mini-led-warning-light.html": "HB-327 迷你 LED 警示灯 | 紧凑车辆安全警示灯",
+    "/products/hb-328-led-road-warning-light.html": "HB-328 LED 道路警示灯 | 9 模式车辆安全灯",
+    "/products/hb-330-triangle-roadside-warning-lamp.html": "HB-330 三角道路警示灯 | 车辆安全警示灯"
   };
 
   const WHATSAPP_COPY_ZH = {
@@ -319,7 +385,10 @@
     "/products/hb-363-battery-type-warning-light.html": "你好 HENGBO，我想咨询 HB-363 的工厂报价，请发送起订量、包装方案和交期。",
     "/products/hb-329-magnetic-safety-beacon.html": "你好 HENGBO，我想咨询 HB-329 的工厂报价，请发送起订量、包装方案和交期。",
     "/products/hb-331-triangle-warning-light.html": "你好 HENGBO，我想咨询 HB-331 的工厂报价，请发送起订量、包装方案和交期。",
-    "/products/hb-361-red-blue-emergency-beacon.html": "你好 HENGBO，我想咨询 HB-361 的工厂报价，请发送起订量、包装方案和交期。"
+    "/products/hb-361-red-blue-emergency-beacon.html": "你好 HENGBO，我想咨询 HB-361 的工厂报价，请发送起订量、包装方案和交期。",
+    "/products/hb-327-mini-led-warning-light.html": "你好 HENGBO，我想咨询 HB-327 的工厂报价，请发送起订量、包装方案和交期。",
+    "/products/hb-328-led-road-warning-light.html": "你好 HENGBO，我想咨询 HB-328 的工厂报价，请发送起订量、包装方案和交期。",
+    "/products/hb-330-triangle-roadside-warning-lamp.html": "你好 HENGBO，我想咨询 HB-330 的工厂报价，请发送起订量、包装方案和交期。"
   };
 
   function normalizePath(pathname) {
