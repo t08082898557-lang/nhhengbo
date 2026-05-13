@@ -37,7 +37,15 @@ const products = [
   {"model": "XG-T53-200W", "img": "xg-t53-200w.webp", "cat": "solar", "en": ["200W LED Solar Flood Light", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["LED太阳能投光灯庭院灯", "太阳能投光灯/庭院灯，200W；13-15小时；光控、遥控、定时；5000毫安锂电池；6V6W分体太阳能充电。"]},
   {"model": "XG-T53-300W", "img": "xg-t53-300w.webp", "cat": "solar", "en": ["300W LED Solar Flood Light", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["LED太阳能投光灯庭院灯", "太阳能投光灯/庭院灯，300W；13-15小时；光控、遥控、定时；10000毫安锂电池；6V12W分体太阳能充电。"]},
   {"model": "XG-T53-400W", "img": "xg-t53-400w.webp", "cat": "solar", "en": ["400W LED Solar Flood Light", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["LED太阳能投光灯庭院灯", "太阳能投光灯/庭院灯，400W；13-15小时；光控、遥控、定时；15000毫安锂电池；6V18W分体太阳能充电。"]},
-  {"model": "XG-T51", "img": "xg-t51.webp", "cat": "camping", "en": ["Solar Camping Ambience Light", "Portable camping and ambience light for outdoor leisure, emergency backup and retail channels."], "zh": ["太阳能露营氛围灯", "露营/野营灯，白光4小时；暖光12小时；七彩灯8小时；白光、暖光、七彩灯；3000毫安锂电池。"]}
+  {"model": "XG-T51", "img": "xg-t51.webp", "cat": "camping", "en": ["Solar Camping Ambience Light", "Portable camping and ambience light for outdoor leisure, emergency backup and retail channels."], "zh": ["太阳能露营氛围灯", "露营/野营灯，白光4小时；暖光12小时；七彩灯8小时；白光、暖光、七彩灯；3000毫安锂电池。"]},
+
+  {"model": "K-352", "img": "kt-k352.webp", "cat": "work", "en": ["COB Headlamp", "Compact headlamp with wide COB illumination for repair, inspection, camping and outdoor work."], "zh": ["K-352 COB 头灯", "紧凑型 COB 头灯，适合检修、巡查、露营和户外作业照明。"]},
+  {"model": "K-354", "img": "kt-k354.webp", "cat": "work", "en": ["Multi-LED Outdoor Headlamp", "Multi-LED headlamp for hands-free lighting in repair, outdoor activity and emergency backup scenes."], "zh": ["K-354 多灯珠户外头灯", "多灯珠头戴式照明，适合维修、户外活动和应急备用场景。"]},
+  {"model": "K-362", "img": "kt-k362.webp", "cat": "work", "en": ["Multifunction LED Headlamp", "Headlamp with front LEDs and side light design for job-site, camping and roadside service use."], "zh": ["K-362 多功能 LED 头灯", "前置灯珠搭配侧面照明设计，适合工地、露营和道路服务使用。"]},
+  {"model": "K-371", "img": "kt-k371.webp", "cat": "work", "en": ["Wide Beam COB Headlamp", "Wide-beam COB headlamp for close-range work, night walking, garage repair and outdoor lighting."], "zh": ["K-371 宽光 COB 头灯", "宽光 COB 头灯，适合近距离作业、夜间行走、车库维修和户外照明。"]},
+  {"model": "Z-818", "img": "kt-z818.webp", "cat": "camping", "en": ["Portable Emergency Flashlight", "Portable flashlight with side light and display design for camping, emergency backup and travel kits."], "zh": ["Z-818 便携应急手电", "带侧灯和显示设计的便携手电，适合露营、应急备用和旅行套装。"]},
+  {"model": "Z-828", "img": "kt-z828.webp", "cat": "camping", "en": ["Outdoor Emergency Work Flashlight", "Outdoor flashlight with dual front light and side work light for camping, repair and emergency use."], "zh": ["Z-828 户外应急工作手电", "双前灯搭配侧面工作灯，适合露营、检修和应急使用。"]},
+  {"model": "Z-838", "img": "kt-z838.webp", "cat": "camping", "en": ["Camping Emergency Flashlight", "High-visibility camping flashlight with side light for outdoor retail, emergency kits and portable lighting programs."], "zh": ["Z-838 露营应急手电", "高可见度露营手电，带侧面照明，适合户外零售、应急包和便携照明项目。"]}
 ];
 
 const process = [
@@ -96,7 +104,15 @@ const productDetails = {
   "XG-T53-200W": {"spec": "200W；13-15小时；光控、遥控、定时；5000毫安锂电池；6V6W分体太阳能充电", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "46 元", "packing": "20PCS；28G.M；58×40×47", "note": ""},
   "XG-T53-300W": {"spec": "300W；13-15小时；光控、遥控、定时；10000毫安锂电池；6V12W分体太阳能充电", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "62 元", "packing": "12PCS；23G.M；56×37×53", "note": ""},
   "XG-T53-400W": {"spec": "400W；13-15小时；光控、遥控、定时；15000毫安锂电池；6V18W分体太阳能充电", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "75 元", "packing": "10PCS；25G.M；51×37×63", "note": ""},
-  "XG-T51": {"spec": "白光4小时；暖光12小时；七彩灯8小时；白光、暖光、七彩灯；3000毫安锂电池", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "22 元", "packing": "60PCS；26G.M；74×36×55", "note": ""}
+  "XG-T51": {"spec": "白光4小时；暖光12小时；七彩灯8小时；白光、暖光、七彩灯；3000毫安锂电池", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "22 元", "packing": "60PCS；26G.M；74×36×55", "note": ""},
+
+  "K-352": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "COB headlamp; wide flood lighting; head-mounted elastic strap; suitable for inspection, repair and outdoor work.", note: "New headlamp series, can be quoted with warning lights as add-on catalog products." },
+  "K-354": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "Multi-LED headlamp; hands-free lighting; adjustable head strap; suitable for outdoor, repair and emergency lighting.", note: "New headlamp series, suitable for retail and wholesale outdoor lighting programs." },
+  "K-362": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "Multifunction LED headlamp; front LED plus side light layout; suitable for job-site, camping and roadside service scenes.", note: "Can be combined with portable work lights and emergency lights for mixed quotation." },
+  "K-371": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "Wide beam COB headlamp; close-range work lighting; adjustable head strap; suitable for night work and outdoor use.", note: "New headlamp model for extended work light and camping light range." },
+  "Z-818": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "Portable emergency flashlight with side light and display design; suitable for camping, travel and emergency backup.", note: "Available as an outdoor emergency lighting add-on product." },
+  "Z-828": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "Outdoor flashlight with dual front light, side work light and carry loop; suitable for camping, repair and emergency kits.", note: "Orange shell option fits safety and emergency product programs." },
+  "Z-838": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "Camping emergency flashlight with dual front light and side light; portable body for outdoor and backup lighting.", note: "High-visibility yellow shell for outdoor retail and emergency lighting sets." }
 };
 
 const translations = {
@@ -313,7 +329,8 @@ function productBadges(item) {
   if (category === "solar") badges.push(t("tagSolar"));
   if (category === "security") badges.push(t("tagSecurity"));
   if (category === "camping") badges.push(t("tagCamping"));
-  if (item.model.startsWith("XG-")) badges.push(t("tagExtended"));
+  if (["K-352", "K-354", "K-362", "K-371", "Z-818", "Z-828", "Z-838"].includes(item.model)) badges.push(t("tagNew"));
+  if (item.model.startsWith("XG-") || item.model.startsWith("K-") || item.model.startsWith("Z-")) badges.push(t("tagExtended"));
   if (["HB-362", "HB-363C", "HB-363", "HB-328", "HB-329"].includes(item.model)) badges.push(t("tagOem"));
   return [...new Set(badges)].slice(0, 3);
 }
