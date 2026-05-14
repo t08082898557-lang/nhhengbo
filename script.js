@@ -43,9 +43,9 @@ const products = [
   {"model": "K-354", "img": "kt-k354.webp", "cat": "work", "en": ["Multi-LED Outdoor Headlamp", "Multi-LED headlamp for hands-free lighting in repair, outdoor activity and emergency backup scenes."], "zh": ["K-354 多灯珠户外头灯", "多灯珠头戴式照明，适合维修、户外活动和应急备用场景。"]},
   {"model": "K-362", "img": "kt-k362.webp", "cat": "work", "en": ["Multifunction LED Headlamp", "Headlamp with front LEDs and side light design for job-site, camping and roadside service use."], "zh": ["K-362 多功能 LED 头灯", "前置灯珠搭配侧面照明设计，适合工地、露营和道路服务使用。"]},
   {"model": "K-371", "img": "kt-k371.webp", "cat": "work", "en": ["Wide Beam COB Headlamp", "Wide-beam COB headlamp for close-range work, night walking, garage repair and outdoor lighting."], "zh": ["K-371 宽光 COB 头灯", "宽光 COB 头灯，适合近距离作业、夜间行走、车库维修和户外照明。"]},
-  {"model": "Z-818", "img": "kt-z818.webp", "cat": "work", "en": ["Power Bank Work Light", "Rechargeable power bank work light with side lighting for repair, outdoor use and emergency backup."], "zh": ["Z-818 充电宝工作灯", "带侧灯的充电宝工作灯，适合检修、户外使用和应急备用。"]},
-  {"model": "Z-828", "img": "kt-z828.webp", "cat": "work", "en": ["Power Bank Work Light", "Power bank work light with dual front LEDs and side work light for repair, outdoor use and emergency backup."], "zh": ["Z-828 充电宝工作灯", "双前灯搭配侧面工作灯，适合检修、户外使用和应急备用。"]},
-  {"model": "Z-838", "img": "kt-z838.webp", "cat": "work", "en": ["Power Bank Work Light", "High-visibility power bank work light with dual front LEDs and side light for repair and outdoor programs."], "zh": ["Z-838 充电宝工作灯", "高可见度充电宝工作灯，双前灯搭配侧灯，适合检修和户外项目。"]}
+  {"model": "Z-818", "img": "kt-z818.webp", "cat": "work", "en": ["Power Bank Work Light", "Rechargeable work light with power-bank USB output, side lighting and battery display for repair, outdoor use and emergency phone charging."], "zh": ["Z-818 充电宝工作灯", "带 USB 输出充电功能、侧灯和电量显示，可作工作灯，也可给手机等设备应急补电。"]},
+  {"model": "Z-828", "img": "kt-z828.webp", "cat": "work", "en": ["Power Bank Work Light", "Power-bank work light with USB output, dual front LEDs and side work light for repair, outdoor use and emergency device charging."], "zh": ["Z-828 充电宝工作灯", "带 USB 输出充电功能，双前灯搭配侧面工作灯，适合检修、户外使用和手机应急充电。"]},
+  {"model": "Z-838", "img": "kt-z838.webp", "cat": "work", "en": ["Power Bank Work Light", "High-visibility power-bank work light with USB output, dual front LEDs and side light for outdoor, repair and emergency charging programs."], "zh": ["Z-838 充电宝工作灯", "高可见度充电宝工作灯，支持 USB 输出应急充电，双前灯搭配侧灯，适合户外和检修场景。"]}
 ];
 
 const process = [
@@ -110,9 +110,9 @@ const productDetails = {
   "K-354": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Multi-LED headlamp; hands-free lighting; adjustable head strap; suitable for outdoor, repair and emergency lighting.", zh: "多灯珠头灯；解放双手照明；可调节头带；适合户外、检修和应急照明。" }, note: { en: "New headlamp series for outdoor lighting retail and wholesale programs.", zh: "新款头灯系列，适合户外照明零售和批发项目。" } },
   "K-362": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Multifunction LED headlamp; front LEDs with side lighting; suitable for job-site, outdoor and roadside service scenes.", zh: "多功能 LED 头灯；前置灯珠搭配侧面照明；适合工地、户外和道路服务场景。" }, note: { en: "Can be combined with portable work lights and emergency lights for mixed quotation.", zh: "可与便携工作灯、应急灯组合报价。" } },
   "K-371": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Wide beam COB headlamp; close-range work lighting; adjustable head strap; suitable for night work and outdoor use.", zh: "宽光 COB 头灯；适合近距离作业照明；可调节头带；适合夜间作业和户外使用。" }, note: { en: "New headlamp model for extending the work light and outdoor lighting range.", zh: "新款头灯型号，用于扩展工作灯和户外照明系列。" } },
-  "Z-818": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Power bank work light; side lighting and battery display design; suitable for repair, outdoor work, emergency backup and in-car lighting.", zh: "充电宝工作灯；带侧面照明和电量显示设计；适合检修、户外作业、应急备用和随车照明。" }, note: { en: "Can be used as a work light, outdoor emergency light and add-on product for mixed orders.", zh: "可作为工作灯、户外应急照明和组合订单补充产品。" } },
-  "Z-828": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Power bank work light; dual front LEDs, side work light and lanyard design; suitable for repair, outdoor use, emergency kits and in-car backup.", zh: "充电宝工作灯；双前灯、侧面工作灯和挂绳设计；适合检修、户外使用、应急包和随车备用。" }, note: { en: "Orange shell fits safety and emergency product lines and can be quoted together with warning lights.", zh: "橙色外壳适合安全应急类产品线，可与警示灯组合报价。" } },
-  "Z-838": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Power bank work light; dual front LEDs with side lighting; portable body for outdoor, repair and emergency backup lighting.", zh: "充电宝工作灯；双前灯搭配侧面照明；便携机身，适合户外、检修和应急备用照明。" }, note: { en: "High-visibility yellow shell for outdoor retail and emergency lighting sets.", zh: "高可见度黄色外壳，适合户外零售和应急照明套装。" } }
+  "Z-818": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Power bank work light; USB output for emergency phone/device charging; side lighting and battery display design; suitable for repair, outdoor work, emergency backup and in-car lighting.", zh: "充电宝工作灯；支持 USB 输出，可给手机等设备应急充电；带侧面照明和电量显示设计；适合检修、户外作业、应急备用和随车照明。" }, note: { en: "Promote as a 2-in-1 work light and emergency power bank for outdoor, vehicle and safety kit orders.", zh: "建议作为“工作照明 + 应急充电宝”两用卖点推广，适合户外、车辆和应急套装订单。" } },
+  "Z-828": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Power bank work light; USB output for emergency device charging; dual front LEDs, side work light and lanyard design; suitable for repair, outdoor use, emergency kits and in-car backup.", zh: "充电宝工作灯；支持 USB 输出，可给手机等设备应急充电；双前灯、侧面工作灯和挂绳设计；适合检修、户外使用、应急包和随车备用。" }, note: { en: "Orange shell fits safety and emergency product lines; the power-bank function makes it stronger for retail and gift-kit programs.", zh: "橙色外壳适合安全应急类产品线，充电宝功能更适合零售和礼品应急套装卖点。" } },
+  "Z-838": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Power bank work light; USB output for emergency phone/device charging; dual front LEDs with side lighting; portable body for outdoor, repair and backup lighting.", zh: "充电宝工作灯；支持 USB 输出，可给手机等设备应急充电；双前灯搭配侧面照明；便携机身，适合户外、检修和应急备用照明。" }, note: { en: "High-visibility yellow shell plus power-bank charging function for outdoor retail, emergency kits and vehicle backup sets.", zh: "高可见度黄色外壳叠加充电宝功能，适合户外零售、应急包和车辆备用套装。" } }
 };
 
 const translations = {
@@ -330,6 +330,7 @@ function productBadges(item) {
   if (item.model === "HB-362") badges.push(t("tagNew"), t("tagBattery"));
   if (item.model === "HB-363C") badges.push(t("tagNew"), t("tagRechargeable"));
   if (item.model === "HB-363") badges.push(t("tagNew"), t("tagBattery"));
+  if (["Z-818", "Z-828", "Z-838"].includes(item.model)) badges.push(currentLang === "zh" ? "充电宝" : "Power Bank", t("tagRechargeable"));
   if (["HB-328", "HB-329", "HB-362", "HB-363C", "HB-363"].includes(item.model)) badges.push(t("tagHot"));
   if (category === "warning") badges.push(t("tagWarning"));
   if (category === "beacon") badges.push(t("tagBeacon"));
@@ -362,8 +363,9 @@ function productVersion(item) {
 
 const featuredProductOrder = [
   "HB-362", "HB-321", "HB-363C", "HB-329",
-  "XG-C8505-COB", "HB-363", "HB-331", "HB-361",
-  "HB-328", "XG-152-COB", "HB-330", "HB-327",
+  "Z-838", "Z-828", "Z-818", "HB-363",
+  "XG-C8505-COB", "HB-331", "HB-361", "HB-328",
+  "XG-152-COB", "HB-330", "HB-327",
   "XG-T31", "HB-325", "XG-T30", "HB-326",
   "XG-T53-400W", "XG-T28-SMD", "XG-T51", "XG-T28-COB",
   "XG-152-SMD", "XG-T8501-COB", "XG-T8502-SMD"
