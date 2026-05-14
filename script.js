@@ -43,9 +43,9 @@ const products = [
   {"model": "K-354", "img": "kt-k354.webp", "cat": "work", "en": ["Multi-LED Outdoor Headlamp", "Multi-LED headlamp for hands-free lighting in repair, outdoor activity and emergency backup scenes."], "zh": ["K-354 多灯珠户外头灯", "多灯珠头戴式照明，适合维修、户外活动和应急备用场景。"]},
   {"model": "K-362", "img": "kt-k362.webp", "cat": "work", "en": ["Multifunction LED Headlamp", "Headlamp with front LEDs and side light design for job-site, camping and roadside service use."], "zh": ["K-362 多功能 LED 头灯", "前置灯珠搭配侧面照明设计，适合工地、露营和道路服务使用。"]},
   {"model": "K-371", "img": "kt-k371.webp", "cat": "work", "en": ["Wide Beam COB Headlamp", "Wide-beam COB headlamp for close-range work, night walking, garage repair and outdoor lighting."], "zh": ["K-371 宽光 COB 头灯", "宽光 COB 头灯，适合近距离作业、夜间行走、车库维修和户外照明。"]},
-  {"model": "Z-818", "img": "kt-z818.webp", "cat": "camping", "en": ["Portable Emergency Flashlight", "Portable flashlight with side light and display design for camping, emergency backup and travel kits."], "zh": ["Z-818 便携应急手电", "带侧灯和显示设计的便携手电，适合露营、应急备用和旅行套装。"]},
-  {"model": "Z-828", "img": "kt-z828.webp", "cat": "camping", "en": ["Outdoor Emergency Work Flashlight", "Outdoor flashlight with dual front light and side work light for camping, repair and emergency use."], "zh": ["Z-828 户外应急工作手电", "双前灯搭配侧面工作灯，适合露营、检修和应急使用。"]},
-  {"model": "Z-838", "img": "kt-z838.webp", "cat": "camping", "en": ["Camping Emergency Flashlight", "High-visibility camping flashlight with side light for outdoor retail, emergency kits and portable lighting programs."], "zh": ["Z-838 露营应急手电", "高可见度露营手电，带侧面照明，适合户外零售、应急包和便携照明项目。"]}
+  {"model": "Z-818", "img": "kt-z818.webp", "cat": "work", "en": ["Power Bank Work Light", "Rechargeable power bank work light with side lighting for repair, outdoor use and emergency backup."], "zh": ["Z-818 充电宝工作灯", "带侧灯的充电宝工作灯，适合检修、户外使用和应急备用。"]},
+  {"model": "Z-828", "img": "kt-z828.webp", "cat": "work", "en": ["Power Bank Work Light", "Power bank work light with dual front LEDs and side work light for repair, outdoor use and emergency backup."], "zh": ["Z-828 充电宝工作灯", "双前灯搭配侧面工作灯，适合检修、户外使用和应急备用。"]},
+  {"model": "Z-838", "img": "kt-z838.webp", "cat": "work", "en": ["Power Bank Work Light", "High-visibility power bank work light with dual front LEDs and side light for repair and outdoor programs."], "zh": ["Z-838 充电宝工作灯", "高可见度充电宝工作灯，双前灯搭配侧灯，适合检修和户外项目。"]}
 ];
 
 const process = [
@@ -106,13 +106,13 @@ const productDetails = {
   "XG-T53-400W": {"spec": "400W；13-15小时；光控、遥控、定时；15000毫安锂电池；6V18W分体太阳能充电", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "75 元", "packing": "10PCS；25G.M；51×37×63", "note": ""},
   "XG-T51": {"spec": "白光4小时；暖光12小时；七彩灯8小时；白光、暖光、七彩灯；3000毫安锂电池", "moq": "Contact sales", "lead": "Contact sales", "cert": "Contact sales", "price": "22 元", "packing": "60PCS；26G.M；74×36×55", "note": ""},
 
-  "K-352": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "COB headlamp; wide flood lighting; head-mounted elastic strap; suitable for inspection, repair and outdoor work.", note: "New headlamp series, can be quoted with warning lights as add-on catalog products." },
-  "K-354": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "Multi-LED headlamp; hands-free lighting; adjustable head strap; suitable for outdoor, repair and emergency lighting.", note: "New headlamp series, suitable for retail and wholesale outdoor lighting programs." },
-  "K-362": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "Multifunction LED headlamp; front LED plus side light layout; suitable for job-site, camping and roadside service scenes.", note: "Can be combined with portable work lights and emergency lights for mixed quotation." },
-  "K-371": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "Wide beam COB headlamp; close-range work lighting; adjustable head strap; suitable for night work and outdoor use.", note: "New headlamp model for extended work light and camping light range." },
-  "Z-818": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "Portable emergency flashlight with side light and display design; suitable for camping, travel and emergency backup.", note: "Available as an outdoor emergency lighting add-on product." },
-  "Z-828": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "Outdoor flashlight with dual front light, side work light and carry loop; suitable for camping, repair and emergency kits.", note: "Orange shell option fits safety and emergency product programs." },
-  "Z-838": { moq: "Contact sales", lead: "Contact sales", cert: "Contact sales", price: "Contact sales", spec: "Camping emergency flashlight with dual front light and side light; portable body for outdoor and backup lighting.", note: "High-visibility yellow shell for outdoor retail and emergency lighting sets." }
+  "K-352": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "COB headlamp; wide flood lighting; elastic head strap; suitable for inspection, patrol and outdoor work lighting.", zh: "COB 头灯；宽光照明；弹力头带；适合检修、巡查、户外作业照明。" }, note: { en: "New headlamp series, can be quoted as add-on catalog products with warning light orders.", zh: "新款头灯系列，可作为警示灯订单的补充产品组合报价。" } },
+  "K-354": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Multi-LED headlamp; hands-free lighting; adjustable head strap; suitable for outdoor, repair and emergency lighting.", zh: "多灯珠头灯；解放双手照明；可调节头带；适合户外、检修和应急照明。" }, note: { en: "New headlamp series for outdoor lighting retail and wholesale programs.", zh: "新款头灯系列，适合户外照明零售和批发项目。" } },
+  "K-362": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Multifunction LED headlamp; front LEDs with side lighting; suitable for job-site, outdoor and roadside service scenes.", zh: "多功能 LED 头灯；前置灯珠搭配侧面照明；适合工地、户外和道路服务场景。" }, note: { en: "Can be combined with portable work lights and emergency lights for mixed quotation.", zh: "可与便携工作灯、应急灯组合报价。" } },
+  "K-371": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Wide beam COB headlamp; close-range work lighting; adjustable head strap; suitable for night work and outdoor use.", zh: "宽光 COB 头灯；适合近距离作业照明；可调节头带；适合夜间作业和户外使用。" }, note: { en: "New headlamp model for extending the work light and outdoor lighting range.", zh: "新款头灯型号，用于扩展工作灯和户外照明系列。" } },
+  "Z-818": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Power bank work light; side lighting and battery display design; suitable for repair, outdoor work, emergency backup and in-car lighting.", zh: "充电宝工作灯；带侧面照明和电量显示设计；适合检修、户外作业、应急备用和随车照明。" }, note: { en: "Can be used as a work light, outdoor emergency light and add-on product for mixed orders.", zh: "可作为工作灯、户外应急照明和组合订单补充产品。" } },
+  "Z-828": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Power bank work light; dual front LEDs, side work light and lanyard design; suitable for repair, outdoor use, emergency kits and in-car backup.", zh: "充电宝工作灯；双前灯、侧面工作灯和挂绳设计；适合检修、户外使用、应急包和随车备用。" }, note: { en: "Orange shell fits safety and emergency product lines and can be quoted together with warning lights.", zh: "橙色外壳适合安全应急类产品线，可与警示灯组合报价。" } },
+  "Z-838": { moq: { en: "Contact sales", zh: "联系销售" }, lead: { en: "Contact sales", zh: "联系销售" }, cert: { en: "Contact sales", zh: "联系销售" }, price: { en: "Contact sales", zh: "联系销售" }, spec: { en: "Power bank work light; dual front LEDs with side lighting; portable body for outdoor, repair and emergency backup lighting.", zh: "充电宝工作灯；双前灯搭配侧面照明；便携机身，适合户外、检修和应急备用照明。" }, note: { en: "High-visibility yellow shell for outdoor retail and emergency lighting sets.", zh: "高可见度黄色外壳，适合户外零售和应急照明套装。" } }
 };
 
 const translations = {
@@ -294,6 +294,14 @@ function t(key) {
 
 function localized(item) {
   return item[currentLang] || item.en;
+}
+
+function localizedDetail(value) {
+  if (!value) return "";
+  if (typeof value === "object") return value[currentLang] || value.en || value.zh || "";
+  if (currentLang === "zh" && value === "Contact sales") return "联系销售";
+  if (currentLang !== "zh" && value === "联系销售") return "Contact sales";
+  return value;
 }
 
 function productCategory(item) {
@@ -532,12 +540,12 @@ function openProductModal(model) {
   const specRows = [
     [t("modalVersion"), productVersion(item)],
     [t("modalApplication"), productApplication(item)],
-    [labels.spec, detail.spec || "-"],
-    [labels.moq, detail.moq || "-"],
-    [labels.lead, detail.lead || "-"],
-    [labels.cert, detail.cert || "-"],
-    detail.packing ? [labels.packing, detail.packing] : null,
-    detail.note ? [labels.note, detail.note] : null,
+    [labels.spec, localizedDetail(detail.spec) || "-"],
+    [labels.moq, localizedDetail(detail.moq) || "-"],
+    [labels.lead, localizedDetail(detail.lead) || "-"],
+    [labels.cert, localizedDetail(detail.cert) || "-"],
+    detail.packing ? [labels.packing, localizedDetail(detail.packing)] : null,
+    detail.note ? [labels.note, localizedDetail(detail.note)] : null,
     [t("modalOem"), t("modalOemValue")],
     [labels.price, quoteValue]
   ].filter(Boolean);
