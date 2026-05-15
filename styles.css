@@ -1354,6 +1354,81 @@ h1 {
   background: var(--deep);
 }
 
+.seo-route-entry {
+  grid-template-columns: .72fr 1.6fr;
+  align-items: stretch;
+  padding: clamp(22px, 4vw, 32px);
+}
+.seo-route-entry > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.seo-route-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.seo-route-groups article {
+  display: flex;
+  flex-direction: column;
+  min-height: 270px;
+  padding: 18px;
+  border: 1px solid rgba(8,26,46,.1);
+  border-radius: var(--radius-card);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.96), rgba(247,250,252,.92));
+  box-shadow: 0 12px 28px rgba(8,26,46,.06);
+}
+.seo-route-groups article:first-child {
+  border-color: rgba(249,115,22,.24);
+  box-shadow: 0 16px 34px rgba(249,115,22,.09);
+}
+.seo-route-groups span {
+  width: fit-content;
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: var(--gold-dark);
+  font-size: .72rem;
+  font-weight: 950;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+}
+.seo-route-groups h4 {
+  margin: 14px 0 8px;
+  color: var(--deep);
+  font-size: 1.12rem;
+  line-height: 1.2;
+}
+.seo-route-groups p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: .94rem;
+}
+.seo-route-groups div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 16px;
+}
+.seo-route-groups a {
+  padding: 10px 12px;
+  border: 1px solid rgba(8,26,46,.1);
+  border-radius: 14px;
+  color: var(--deep);
+  background: #fff;
+  font-size: .88rem;
+  font-weight: 900;
+  box-shadow: 0 8px 18px rgba(8,26,46,.05);
+}
+.seo-route-groups a:hover {
+  color: #fff;
+  background: var(--deep);
+  transform: translateY(-2px);
+}
+
 .category-showcase {
   position: relative;
   z-index: 2;
@@ -2984,6 +3059,7 @@ h1 {
   .seo-product-visual,
   .seo-detail-grid,
   .seo-index-grid,
+  .seo-route-groups,
   .seo-related .seo-link-grid,
   .seo-conversion-band .seo-link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -2992,6 +3068,7 @@ h1 {
   .seo-product-visual,
   .seo-detail-grid,
   .seo-index-grid,
+  .seo-route-groups,
   .seo-product-entry-links,
   .seo-related .seo-link-grid,
   .seo-conversion-band .seo-link-grid { grid-template-columns: 1fr; }
