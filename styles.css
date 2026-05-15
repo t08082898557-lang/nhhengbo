@@ -3454,3 +3454,142 @@ h2 {
     padding: 16px;
   }
 }
+
+/* Final readability repair: keep the premium look, but never let light panels inherit white text. */
+.site-header .brand {
+  min-width: 250px;
+  gap: 14px;
+}
+
+.brand-logo {
+  width: clamp(150px, 12vw, 190px);
+  height: auto;
+  max-height: 48px;
+  object-fit: contain;
+}
+
+.brand small {
+  flex: 0 0 auto;
+  max-width: 180px;
+  color: #475467;
+  font-size: .76rem;
+  line-height: 1.25;
+}
+
+.warning-buying-path {
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.12);
+  background:
+    linear-gradient(120deg, rgba(5,17,31,.94), rgba(9,47,85,.88) 58%, rgba(88,38,12,.76)),
+    url("assets/scenario-362-roadside.webp") center/cover;
+  box-shadow: 0 28px 80px rgba(15,23,42,.18);
+}
+
+.warning-path-head h3,
+.warning-path-card h4 {
+  color: #fff;
+}
+
+.warning-path-head p:not(.eyebrow),
+.warning-path-card p {
+  color: rgba(255,255,255,.78);
+}
+
+.warning-path-card {
+  border-color: rgba(255,255,255,.16);
+  background:
+    linear-gradient(160deg, rgba(255,255,255,.16), rgba(255,255,255,.055)),
+    rgba(8,26,46,.20);
+}
+
+.warning-path-card.is-addon {
+  background:
+    linear-gradient(160deg, rgba(255,255,255,.18), rgba(249,115,22,.12)),
+    rgba(8,26,46,.18);
+}
+
+.product-info {
+  color: #fff;
+  background:
+    linear-gradient(90deg, rgba(249,115,22,.18), transparent 44%),
+    linear-gradient(135deg, #0b2741, #04101f);
+}
+
+.product-info h3 {
+  color: #fff;
+}
+
+.product-info p {
+  color: rgba(226,232,240,.78);
+}
+
+.product-action {
+  color: #fff;
+}
+
+.quality-card {
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.12);
+  background:
+    radial-gradient(circle at 88% 10%, rgba(249,115,22,.22), transparent 15rem),
+    linear-gradient(150deg, #07111f 0%, #12315a 58%, #0b3b45 100%);
+  box-shadow: 0 24px 70px rgba(15,23,42,.16);
+}
+
+.quality-card h2 {
+  color: #fff;
+}
+
+.quality-card p {
+  color: rgba(226,232,240,.78);
+}
+
+.quality-card .eyebrow,
+.quality-system b {
+  color: #ffb45c;
+}
+
+.quality-system div {
+  border-color: rgba(255,255,255,.18);
+  background: rgba(255,255,255,.10);
+}
+
+.quality-system span {
+  color: rgba(255,255,255,.88);
+}
+
+.showroom.impact-carousel {
+  color: #fff;
+  background:
+    radial-gradient(circle at 74% 12%, rgba(249,115,22,.24), transparent 23rem),
+    linear-gradient(135deg, #06111f 0%, #102b4d 52%, #040914 100%);
+  box-shadow: 0 28px 86px rgba(15,23,42,.18);
+}
+
+.showroom.impact-carousel .slide h3 {
+  color: #fff;
+  text-shadow: 0 12px 36px rgba(0,0,0,.28);
+}
+
+.showroom.impact-carousel .slide p {
+  color: rgba(226,232,240,.78);
+}
+
+.showroom-copy {
+  color: #fff;
+  background: rgba(15,23,42,.64);
+}
+
+.showroom-copy h2 {
+  color: #fff;
+}
+
+@media (max-width: 720px) {
+  .site-header .brand {
+    min-width: 0;
+  }
+  .brand-logo {
+    width: 132px;
+    max-height: 40px;
+  }
+}
