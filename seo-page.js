@@ -430,7 +430,55 @@
     "130 g": "130 g",
     "120PCS/CTN, 57.5 x 44 x 26 cm": "120PCS/箱，57.5 x 44 x 26 cm",
     "Orange protective shell": "橙色防护外壳",
-    "HENGBO combines factory production and export service to help overseas buyers build reliable warning light product lines for roadside safety, vehicle kits and retail channels.": "恒博结合工厂生产和外贸服务，帮助海外买家为道路安全、车辆套装和零售渠道建立稳定的警示灯产品线。"
+    "HENGBO combines factory production and export service to help overseas buyers build reliable warning light product lines for roadside safety, vehicle kits and retail channels.": "恒博结合工厂生产和外贸服务，帮助海外买家为道路安全、车辆套装和零售渠道建立稳定的警示灯产品线。",
+    "Warning Light Buyer Guide": "警示灯采购指南",
+    "Buyer Guide": "采购指南",
+    "How to choose LED warning lights for your market.": "如何为你的市场选择 LED 警示灯。",
+    "Different buyers do not need the same warning light. Vehicle emergency kits, rechargeable safety programs, towing rescue products and road-work visibility projects each need a different model mix. This guide helps overseas buyers decide before requesting samples or OEM packaging.": "不同买家需要的警示灯并不一样。车辆应急套装、充电款安全项目、拖车救援产品和道路作业可视项目，都需要不同的型号组合。本指南帮助海外买家在申请样品或 OEM 包装前先做判断。",
+    "Ask HENGBO for model advice": "让 HENGBO 推荐型号",
+    "View warning light products": "查看警示灯产品",
+    "Step 1": "步骤 1",
+    "Choose by use case first.": "先按使用场景选择。",
+    "Roadside emergency kits: compact battery flares and triangle warning lights": "道路应急套装：紧凑型电池警示灯和三角警示灯",
+    "Reusable fleet programs: rechargeable warning lights and magnetic beacons": "可重复使用车队项目：充电款警示灯和磁吸信标",
+    "Towing or rescue vehicles: high-visibility magnetic beacons and red-blue emergency lights": "拖车或救援车辆：高可见度磁吸信标和红蓝应急灯",
+    "Retail packs: easy battery replacement, clear packaging and simple instructions": "零售套装：易更换电池、包装清晰、说明简单",
+    "Step 2": "步骤 2",
+    "Battery vs rechargeable.": "电池款与充电款怎么选。",
+    "Battery type": "电池款",
+    "Best for emergency kits, backup stock, retail shelves and markets that prefer low first cost.": "适合应急套装、备货库存、零售货架，以及更看重首批成本的市场。",
+    "Rechargeable type": "充电款",
+    "Best for reusable safety products, professional buyers, fleet programs and higher perceived value.": "适合可重复使用安全产品、专业采购商、车队项目，以及需要更高价值感的市场。",
+    "Mixed order": "混合订单",
+    "Many importers quote both types to test the market before a larger OEM order.": "很多进口商会同时询价两种版本，在更大的 OEM 订单前先测试市场。",
+    "Model Map": "型号地图",
+    "Recommended HENGBO starting models": "推荐从这些 HENGBO 型号开始",
+    "Battery LED safety flare for emergency packs and roadside kits.": "电池款 LED 安全警示灯，适合应急包和道路安全套装。",
+    "Rechargeable road warning light for reusable safety programs.": "充电款道路警示灯，适合可重复使用的安全项目。",
+    "Battery type road warning light for portable safety kits.": "电池款道路警示灯，适合便携式安全套装。",
+    "Triangle warning lamps for road work, vehicle visibility and retail sets.": "三角警示灯，适合道路作业、车辆可视警示和零售套装。",
+    "Magnetic beacons and red-blue emergency lights for vehicles and rescue scenes.": "磁吸信标和红蓝应急灯，适合车辆和救援场景。",
+    "RFQ Checklist": "询价清单",
+    "Send this for a faster quotation.": "发送这些信息，报价会更快。",
+    "Target model or application": "目标型号或应用场景",
+    "Quantity and destination market": "数量和目的市场",
+    "Battery or rechargeable preference": "偏好电池款还是充电款",
+    "Logo, color box and instruction needs": "Logo、彩盒和说明书需求",
+    "Target delivery time and sample requirement": "目标交期和样品需求",
+    "Factory Recommendation": "工厂选型建议",
+    "Do not choose only by model number.": "不要只按型号选择。",
+    "Tell us your buyer type and target use. HENGBO can recommend a practical model mix for roadside kits, rechargeable programs, vehicle beacons or retail safety packs.": "告诉我们你的客户类型和目标用途。HENGBO 可以为道路套装、充电款项目、车辆信标或零售安全包推荐更实用的型号组合。",
+    "HB-362 Battery Safety Flare": "HB-362 电池款安全警示灯",
+    "HB-363C Rechargeable": "HB-363C 充电款",
+    "HB-330 Triangle Lamp": "HB-330 三角警示灯",
+    "HB-331 Triangle Light": "HB-331 三角警示灯",
+    "Common selection questions": "常见选型问题",
+    "Should I choose battery or rechargeable LED warning lights?": "应该选择电池款还是充电款 LED 警示灯？",
+    "Battery warning lights are easy for emergency kits and backup stock. Rechargeable warning lights are better for reusable programs, fleet buyers and repeat-use safety products.": "电池款警示灯更适合应急套装和备货库存。充电款警示灯更适合可重复使用项目、车队采购和反复使用的安全产品。",
+    "Which HENGBO models are best for roadside emergency kits?": "哪些 HENGBO 型号更适合道路应急套装？",
+    "HB-362, HB-363, HB-363C, HB-330 and HB-331 are strong starting models for roadside emergency kits and OEM warning light packs.": "HB-362、HB-363、HB-363C、HB-330 和 HB-331 都适合作为道路应急套装和 OEM 警示灯组合的起始型号。",
+    "What should overseas buyers send for a warning light quotation?": "海外买家询价警示灯时应该发送什么信息？",
+    "Send model, target quantity, battery or rechargeable preference, target market, packaging requirements, logo needs and expected delivery time.": "请发送型号、目标数量、电池款或充电款偏好、目标市场、包装要求、Logo 需求和期望交期。"
   };
 
   const ATTRIBUTE_COPY_ZH = {
@@ -457,7 +505,9 @@
       "HB-328 LED Road Warning Light": "HB-328 LED 道路警示灯",
       "Roadside safety warning light application scene": "道路安全警示灯应用场景",
       "HB-330 Triangle Roadside Warning Lamp": "HB-330 三角道路警示灯",
-      "Triangle warning light construction and road work scene": "三角警示灯施工与道路作业场景"
+      "Triangle warning light construction and road work scene": "三角警示灯施工与道路作业场景",
+      "LED warning light buyer guide product example": "LED 警示灯采购指南产品示例",
+      "Roadside LED warning light application scene": "道路 LED 警示灯应用场景"
     },
     "aria-label": {
       "HENGBO home": "恒博首页"
@@ -481,7 +531,8 @@
     "/products/hb-330-triangle-roadside-warning-lamp.html": "HB-330 三角道路警示灯 | 车辆安全警示灯",
     "/solutions/led-road-flare-wholesale.html": "LED 道路警示灯批发 | 道路安全警示灯",
     "/solutions/vehicle-emergency-warning-light-wholesale.html": "车辆应急警示灯批发 | 恒博安全灯",
-    "/solutions/magnetic-safety-beacon-manufacturer.html": "磁吸安全信标制造商 | 车辆警示灯"
+    "/solutions/magnetic-safety-beacon-manufacturer.html": "磁吸安全信标制造商 | 车辆警示灯",
+    "/solutions/how-to-choose-led-warning-lights.html": "如何选择 LED 警示灯 | 恒博道路安全采购指南"
   };
 
   const WHATSAPP_COPY_ZH = {
