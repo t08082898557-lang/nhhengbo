@@ -21,7 +21,7 @@
   <link rel="preload" as="image" href="assets/product-mains/hb-328-main.png">
   <link rel="stylesheet" href="styles.css?v=20260713-ui-refresh">
 </head>
-<body class="site-refresh template-v2">
+<body class="site-refresh template-v2 industrial-v3">
   <a class="skip-link" href="#main">Skip to main content</a>
   <div class="grain"></div>
   <div class="scroll-progress" id="scrollProgress"></div>
@@ -38,10 +38,10 @@
     </a>
     <nav class="nav" aria-label="Primary navigation">
       <a href="#products" data-i18n="navProducts">Products</a>
-      <a href="#oem" data-i18n="navCustom">OEM/ODM</a>
-      <a href="#factory-legacy">Manufacturing</a>
-      <a href="#proof" data-i18n="navQuality">Quality</a>
-      <a href="#factory-legacy">About</a>
+      <a href="#manufacturing" data-i18n="navCustom">OEM/ODM</a>
+      <a href="#manufacturing">Manufacturing</a>
+      <a href="#manufacturing" data-i18n="navQuality">Quality</a>
+      <a href="#manufacturing">About</a>
       <a href="#contact" data-i18n="navContact">Contact</a>
     </nav>
     <div class="header-actions">
@@ -95,36 +95,34 @@
           <div><strong>OEM/ODM</strong><span data-i18n="metricExport">Packaging support</span></div>
         </div>
       </div>
-      <div class="hero-visual hero-product-stage reveal">
-        <div class="stage-ring"></div>
-        <img class="hero-main-product" src="assets/product-mains/hb-328-main.png" alt="HB-328 LED road warning light">
-        <img class="hero-side-product side-left" src="assets/product-mains/hb-330-main.png" alt="HB-330 battery triangle warning light">
-        <img class="hero-side-product side-right" src="assets/product-mains/hb-331-main.png" alt="HB-331 battery triangle warning light">
-        <div class="factory-peek">
-          <img src="assets/hero_factory.webp" alt="HENGBO factory and production capability">
+      <div class="hero-visual hero-product-stage reveal" aria-label="HENGBO core warning light series">
+        <div class="hero-template-strip">
+          <img src="assets/product-mains/hb-330-main.png" alt="HB-330 battery warning light">
+          <img src="assets/product-mains/hb-330c-main.png" alt="HB-330C Type-C rechargeable warning light">
+          <span>HB-330 SERIES</span>
         </div>
-        <div class="hero-sourcing-card">
-          <span data-i18n="heroSourcingLabel">Core inquiry models</span>
-          <button type="button" data-model="HB-328">HB-328</button>
-          <button type="button" data-model="HB-330C">HB-330C</button>
-          <button type="button" data-model="HB-331C">HB-331C</button>
+        <div class="hero-template-product-card hero-template-product-card-a">
+          <img src="assets/product-mains/hb-328-main.png" alt="HB-328 LED road warning light">
+          <strong>HB-328</strong>
         </div>
-        <div class="floating-card">
-          <span data-i18n="floatingLabel">Factory Verified</span>
-          <strong data-i18n="floatingText">Injection molding · Tooling · Assembly · QC</strong>
+        <div class="hero-template-product-card hero-template-product-card-b">
+          <img src="assets/product-mains/hb-331-main.png" alt="HB-331 battery warning light">
+          <strong>HB-331 / HB-331C</strong>
         </div>
+        <span class="hero-template-caption">REAL PRODUCTS · OEM / ODM READY</span>
       </div>
     </section>
 
     <section class="signature reveal" aria-label="Signature products">
       <div class="signature-copy">
-        <p class="eyebrow" data-i18n="signatureEyebrow">Signature Series</p>
-        <h2 data-i18n="signatureTitle">Designed for visibility. Built for real-world safety.</h2>
+        <p class="eyebrow" data-i18n="signatureEyebrow">Product Families</p>
+        <h2 data-i18n="signatureTitle">Warning lights built for demanding environments.</h2>
       </div>
       <div class="signature-products">
-        <button type="button" data-model="HB-327"><img src="assets/p327.webp" alt="HB-327 mini LED warning light"><span>HB-327</span></button>
-        <button type="button" data-model="HB-328"><img src="assets/product-mains/hb-328-main.png" alt="HB-328 LED road warning light"><span>HB-328</span></button>
-        <button type="button" data-model="HB-329"><img src="assets/product-mains/hb-329-main.png" alt="HB-329 magnetic safety beacon"><span>HB-329</span></button>
+        <button type="button" data-model="HB-328"><img src="assets/product-mains/hb-328-main.png" alt="HB-328 road warning light"><span>Road Warning Lights</span><b>HB-328</b></button>
+        <button type="button" data-model="HB-330C"><img src="assets/product-mains/hb-330c-main.png" alt="HB-330C rechargeable warning light"><span>Triangle Series</span><b>HB-330 / 331</b></button>
+        <button type="button" data-model="HB-329"><img src="assets/product-mains/hb-329-main.png" alt="HB-329 magnetic safety beacon"><span>Magnetic Beacons</span><b>HB-329 / 361</b></button>
+        <button type="button" data-model="Z-818"><img src="assets/product-mains/z818-main.png" alt="Z-818 magnetic hook work light"><span>Portable Work Lights</span><b>Z-818 / K SERIES</b></button>
       </div>
     </section>
 
@@ -144,18 +142,22 @@
       </div>
       <div class="core-product-grid template-product-lines" aria-label="Four core product lines">
         <article class="core-product-card is-priority">
+          <div class="template-card-title"><span>HB-328</span><b data-i18n="coreCard1Title">LED ROAD WARNING LIGHT</b></div>
           <div class="core-product-image"><img src="assets/product-mains/hb-328-main.png" alt="HB-328 LED road warning light" loading="eager" decoding="async"><span data-i18n="coreBestSeller">Best seller</span></div>
           <div class="core-product-copy"><p>HB-328</p><h3 data-i18n="coreCard1Title">LED Road Warning Light</h3><small data-i18n="coreCard1Text">Mature bestseller for roadside kits, retail and repeat wholesale orders.</small><div class="core-product-meta"><b data-i18n="templateUseLabel">Use</b><span data-i18n="templateRoadside">Roadside safety</span><b data-i18n="coreVersionLabel">Version</b><span data-i18n="coreBatteryLabel">Battery</span></div><div class="core-product-actions"><a href="products/hb-328-led-road-warning-light.html" data-i18n="coreDetails">View product page</a><button type="button" class="core-product-quote" data-model="HB-328" data-i18n="coreQuote">Request quote</button></div></div>
         </article>
         <article class="core-product-card is-priority">
+          <div class="template-card-title"><span>HB-330 / HB-330C</span><b data-i18n="template330Title">LED ROAD WARNING LIGHT</b></div>
           <div class="core-product-image"><img src="assets/product-mains/hb-330-main.png" alt="HB-330 and HB-330C triangle warning light series" loading="lazy" decoding="async"><span data-i18n="coreNewSeries">New series</span></div>
           <div class="core-product-copy"><p>HB-330 / HB-330C</p><h3 data-i18n="template330Title">LED Road Warning Light</h3><small data-i18n="template330Text">A new triangle warning light line with a battery version and a Type-C rechargeable version.</small><div class="core-product-meta"><b data-i18n="templateUseLabel">Use</b><span data-i18n="templateRoadside">Roadside safety</span><b data-i18n="coreVersionLabel">Version</b><span>Battery / Type-C</span></div><div class="core-product-actions"><a href="products/hb-330-triangle-roadside-warning-lamp.html" data-i18n="coreDetails">View product page</a><button type="button" class="core-product-quote" data-model="HB-330C" data-i18n="coreQuote">Request quote</button></div></div>
         </article>
         <article class="core-product-card">
+          <div class="template-card-title"><span>HB-331 / HB-331C</span><b data-i18n="template331Title">LED ROAD WARNING LIGHT</b></div>
           <div class="core-product-image"><img src="assets/product-mains/hb-331-main.png" alt="HB-331 and HB-331C triangle warning light series" loading="lazy" decoding="async"><span data-i18n="coreNewSeries">New series</span></div>
           <div class="core-product-copy"><p>HB-331 / HB-331C</p><h3 data-i18n="template331Title">Portable COB Work Light</h3><small data-i18n="template331Text">A new triangle warning light line for work zones, temporary lanes and repeat-use safety programs.</small><div class="core-product-meta"><b data-i18n="templateUseLabel">Use</b><span data-i18n="templateWorksite">Work zones</span><b data-i18n="coreVersionLabel">Version</b><span>Battery / Type-C</span></div><div class="core-product-actions"><a href="products/hb-331-triangle-warning-light.html" data-i18n="coreDetails">View product page</a><button type="button" class="core-product-quote" data-model="HB-331C" data-i18n="coreQuote">Request quote</button></div></div>
         </article>
         <article class="core-product-card">
+          <div class="template-card-title"><span>Z-818 / K SERIES</span><b data-i18n="templateWorkTitle">MAGNETIC HOOK WORK LIGHT</b></div>
           <div class="core-product-image"><img src="assets/product-mains/z818-main.png" alt="Portable power bank work light" loading="lazy" decoding="async"><span data-i18n="coreSupporting">Supporting model</span></div>
           <div class="core-product-copy"><p>Z-818 / K SERIES</p><h3 data-i18n="templateWorkTitle">Magnetic Hook Work Light</h3><small data-i18n="templateWorkText">Portable work lights and headlamps extend the safety range for repair, vehicle and outdoor programs.</small><div class="core-product-meta"><b data-i18n="templateUseLabel">Use</b><span data-i18n="templateWorkUse">Repair / outdoor</span><b data-i18n="coreVersionLabel">Version</b><span data-i18n="templateWorkVersion">Rechargeable</span></div><div class="core-product-actions"><a href="products/power-bank-work-lights.html" data-i18n="coreDetails">View product page</a><button type="button" class="core-product-quote" data-model="Z-818" data-i18n="coreQuote">Request quote</button></div></div>
         </article>
