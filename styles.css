@@ -6018,3 +6018,283 @@ body.site-refresh .grain {
   .industrial-v3 .template-timeline > div { flex: 0 0 76px; }
   .industrial-v3 .template-timeline i { flex: 0 0 24px; }
 }
+
+/* Final brand pass: one type system, one navy/orange palette, one page rhythm. */
+body.industrial-v3 {
+  --industrial-dark: #102330;
+  --industrial-dark-2: #173448;
+  --industrial-ink: #172b3d;
+  --industrial-muted: #687987;
+  --industrial-line: #d8e0e5;
+  --industrial-red: #e96a2d;
+  --industrial-orange: #e96a2d;
+  --brand-paper: #f3f5f6;
+  color: var(--industrial-ink);
+  font-family: "Microsoft YaHei", "Noto Sans SC", Arial, sans-serif;
+  background: var(--brand-paper);
+}
+
+body.industrial-v3 h1,
+body.industrial-v3 h2,
+body.industrial-v3 h3,
+body.industrial-v3 p,
+body.industrial-v3 a,
+body.industrial-v3 button,
+body.industrial-v3 span,
+body.industrial-v3 strong,
+body.industrial-v3 small {
+  font-family: "Microsoft YaHei", "Noto Sans SC", Arial, sans-serif;
+}
+
+.industrial-v3 .eyebrow,
+.industrial-v3 .hero h1,
+.industrial-v3 .template-process-head h2,
+.industrial-v3 .contact-copy h2 {
+  font-family: "Microsoft YaHei", "Noto Sans SC", Arial, sans-serif !important;
+  text-transform: none;
+  letter-spacing: -.035em;
+}
+
+.industrial-v3 .eyebrow,
+.industrial-v3 .signature-copy .eyebrow,
+.industrial-v3 .template-process .eyebrow,
+.industrial-v3 .contact-copy .eyebrow {
+  color: var(--industrial-orange) !important;
+  letter-spacing: .08em;
+}
+
+.industrial-v3 .hero h1 {
+  line-height: 1.06;
+  font-weight: 900;
+}
+
+.industrial-v3 .site-header .btn,
+.industrial-v3 .hero .btn.primary {
+  color: #fff;
+  background: var(--industrial-orange);
+  border-color: var(--industrial-orange);
+  box-shadow: none;
+}
+
+.industrial-v3 .signature {
+  background: var(--industrial-dark);
+  border-top: 3px solid var(--industrial-orange);
+}
+
+.industrial-v3 .signature-copy h2 {
+  max-width: 430px;
+  font-weight: 800;
+  line-height: 1.13;
+}
+
+.industrial-v3 #products {
+  background: var(--brand-paper);
+}
+
+.industrial-v3 .core-product-card {
+  border-color: var(--industrial-line);
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(16, 35, 48, .045);
+}
+
+.industrial-v3 .core-product-card:hover {
+  border-color: var(--industrial-orange);
+  box-shadow: 0 16px 28px rgba(16, 35, 48, .1);
+}
+
+.industrial-v3 .template-card-title {
+  min-height: 74px;
+  padding: 18px 18px 10px;
+}
+
+.industrial-v3 .template-card-title span {
+  color: var(--industrial-orange);
+  letter-spacing: .04em;
+}
+
+.industrial-v3 .template-card-title b {
+  color: var(--industrial-ink);
+  font-weight: 800;
+  letter-spacing: -.02em;
+}
+
+.industrial-v3 .core-product-image {
+  background: #fff;
+  border-top: 1px solid var(--industrial-line);
+}
+
+.industrial-v3 .core-product-actions {
+  border-top-color: var(--industrial-line);
+}
+
+.industrial-v3 .core-product-actions a {
+  color: var(--industrial-orange);
+}
+
+.industrial-v3 .template-version-note {
+  border-left-color: var(--industrial-orange);
+  background: #fff;
+}
+
+.industrial-v3 #products > .template-process {
+  margin-top: 72px;
+  padding-top: 68px;
+  padding-bottom: 48px;
+  background: var(--industrial-dark);
+}
+
+.industrial-v3 .template-process-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(240px, .8fr);
+  max-width: 1380px;
+  margin: 0 auto 34px;
+  align-items: end;
+  gap: 48px;
+}
+
+.industrial-v3 .template-process-head h2 {
+  max-width: 700px;
+  margin-top: 10px;
+  color: #fff;
+  font-size: clamp(2rem, 3.4vw, 3.4rem);
+  font-weight: 900;
+  line-height: 1.08;
+}
+
+.industrial-v3 .template-process-head > p {
+  max-width: 380px;
+  margin: 0 0 5px auto;
+  color: rgba(255,255,255,.68);
+  line-height: 1.7;
+}
+
+.industrial-v3 .template-capability-grid {
+  max-width: 1380px;
+  gap: 14px;
+}
+
+.industrial-v3 .template-capability-grid article {
+  min-height: 166px;
+  padding: 18px 18px 22px;
+  border: 1px solid rgba(255,255,255,.16);
+  border-top: 3px solid var(--industrial-orange);
+  border-radius: 3px;
+  background: var(--industrial-dark-2);
+}
+
+.industrial-v3 .template-capability-grid article > span {
+  padding: 0;
+  color: var(--industrial-orange);
+  font-size: .8rem;
+  letter-spacing: .08em;
+}
+
+.industrial-v3 .template-capability-grid h3 {
+  min-height: 0;
+  margin: 20px 0 0;
+  color: #fff;
+  font-size: 1.06rem;
+  font-weight: 800;
+  line-height: 1.35;
+  text-transform: none;
+}
+
+/* The supplied factory collages contain baked-in typography; keep this section clean until original factory photos are ready. */
+.industrial-v3 .template-image-slot {
+  display: none;
+}
+
+.industrial-v3 .template-timeline {
+  max-width: 1380px;
+  margin-top: 42px;
+}
+
+.industrial-v3 .template-timeline > div {
+  color: rgba(255,255,255,.82);
+}
+
+.industrial-v3 .template-timeline b {
+  color: #fff;
+  background: var(--industrial-orange);
+}
+
+.industrial-v3 .template-timeline i {
+  border-top-color: rgba(233,106,45,.6);
+}
+
+.site-refresh.industrial-v3 .contact {
+  padding-top: 68px;
+  padding-bottom: 68px;
+  background: var(--industrial-dark) !important;
+  border-top: 3px solid var(--industrial-orange);
+  background-image: none !important;
+}
+
+.industrial-v3 .contact-copy {
+  max-width: 1380px;
+}
+
+.industrial-v3 .contact-copy h2 {
+  max-width: 760px;
+  color: #fff;
+  font-size: clamp(2rem, 3.5vw, 3.45rem);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.industrial-v3 .contact-copy > p {
+  max-width: 620px;
+  color: rgba(255,255,255,.68);
+}
+
+.industrial-v3 .quick-contact-card,
+.industrial-v3 .sales-email-list a,
+.industrial-v3 .quick-contact-card.whatsapp {
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.2);
+  border-left: 3px solid var(--industrial-orange);
+  border-radius: 3px;
+  background: rgba(255,255,255,.055) !important;
+  box-shadow: none;
+}
+
+.industrial-v3 .quick-contact-card span,
+.industrial-v3 .sales-email-list span {
+  color: var(--industrial-orange);
+}
+
+.industrial-v3 .quick-contact-card strong,
+.industrial-v3 .sales-email-list strong {
+  color: #fff;
+}
+
+.industrial-v3 .footer {
+  background: #0b1822;
+}
+
+@media (max-width: 980px) {
+  .industrial-v3 .template-process-head {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .industrial-v3 .template-process-head > p {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .industrial-v3 .hero h1 {
+    line-height: 1.1;
+  }
+
+  .industrial-v3 .template-process-head h2,
+  .industrial-v3 .contact-copy h2 {
+    font-size: 2.15rem;
+  }
+
+  .industrial-v3 .template-capability-grid article {
+    min-height: 132px;
+  }
+}
