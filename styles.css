@@ -5691,6 +5691,7 @@ body.site-refresh .grain {
 
 /* Industrial reference direction: dark hero, clear product families, restrained factory system. */
 .industrial-v3 {
+  overflow-x: hidden;
   --industrial-dark: #11171e;
   --industrial-dark-2: #1a222b;
   --industrial-ink: #1b2733;
