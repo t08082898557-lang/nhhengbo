@@ -1,19 +1,19 @@
 
 const products = [
-  { model: "HB-330C", img: "p330.webp", en: ["Triangle Roadside Warning Lamp · Rechargeable", "Type-C rechargeable version of the HB-330 triangle warning light."], zh: ["HB-330C 三角道路警示灯充电款", "HB-330 三角警示灯的 Type-C 充电版本。"] },
-  { model: "HB-331C", img: "p331.webp", en: ["Triangle Work Warning Light · Rechargeable", "Type-C rechargeable version of the HB-331 triangle warning light."], zh: ["HB-331C 三角工作警示灯充电款", "HB-331 三角警示灯的 Type-C 充电版本。"] },
-  { model: "HB-321", img: "p321.webp", en: ["LED Work Light", "COB handheld work light for inspection, repair and outdoor utility."], zh: ["LED 工作灯", "COB 手持工作灯，适用于检修、维修、户外便携照明。"] },
-  { model: "HB-325", img: "p325.webp", en: ["Portable Work Light", "Portable work light with COB + LED illumination for job sites."], zh: ["便携式工作灯", "COB + LED 组合照明，适用于工地、车库、维修场景。"] },
-  { model: "HB-326", img: "p326.webp", en: ["Outdoor Emergency Light", "Hook design emergency light for camping, repair and garage use."], zh: ["户外应急灯", "挂钩式应急照明，适合露营、维修、车库等场景。"] },
+  { model: "HB-330C", img: "product-mains/hb-330c-main.png", en: ["Triangle Roadside Warning Lamp · Rechargeable", "Type-C rechargeable version of the HB-330 triangle warning light."], zh: ["HB-330C 三角道路警示灯充电款", "HB-330 三角警示灯的 Type-C 充电版本。"] },
+  { model: "HB-331C", img: "product-mains/hb-331c-main.png", en: ["Triangle Work Warning Light · Rechargeable", "Type-C rechargeable version of the HB-331 triangle warning light."], zh: ["HB-331C 三角工作警示灯充电款", "HB-331 三角警示灯的 Type-C 充电版本。"] },
+  { model: "HB-321", img: "product-mains/hb-321-main.png", en: ["LED Work Light", "COB handheld work light for inspection, repair and outdoor utility."], zh: ["LED 工作灯", "COB 手持工作灯，适用于检修、维修、户外便携照明。"] },
+  { model: "HB-325", img: "product-mains/hb-325-main.png", en: ["Portable Work Light", "Portable work light with COB + LED illumination for job sites."], zh: ["便携式工作灯", "COB + LED 组合照明，适用于工地、车库、维修场景。"] },
+  { model: "HB-326", img: "product-mains/hb-326-main.png", en: ["Outdoor Emergency Light", "Hook design emergency light for camping, repair and garage use."], zh: ["户外应急灯", "挂钩式应急照明，适合露营、维修、车库等场景。"] },
   { model: "HB-327", img: "p327.webp", en: ["Mini LED Warning Light", "Magnetic mini LED warning light for vehicle and roadside safety."], zh: ["迷你 LED 警示灯", "磁吸式迷你 LED 警示灯，适用于车辆与道路安全警示。"] },
-  { model: "HB-328", img: "p328.webp", en: ["LED Road Warning Light", "Multi-mode LED road warning light with strong visibility."], zh: ["LED 道路警示灯", "多模式道路警示灯，亮度高、穿透力强。"] },
-  { model: "HB-329", img: "p329.webp", en: ["Magnetic Safety Beacon", "Magnetic safety beacon for vehicles, projects and emergency scenes."], zh: ["磁吸安全警示灯", "磁吸式安全警示灯，适用于车辆、工程与应急现场。"] },
-  { model: "HB-330", img: "p330.webp", en: ["Triangle Roadside Warning Lamp", "Foldable triangle warning lamp for night roadside emergencies."], zh: ["三角道路警示灯", "折叠式三角警示灯，适合夜间道路应急。"] },
-  { model: "HB-331", img: "p331.webp", en: ["Triangle Work Warning Light", "Portable triangle warning light with strong safety illumination."], zh: ["三角工作警示灯", "便携式三角警示灯，安全警示效果明显。"] },
-  { model: "HB-361", img: "p361.webp", en: ["Red Blue Emergency Beacon", "Red and blue emergency beacon for roadside and field warning."], zh: ["红蓝应急警示灯", "红蓝应急警示灯，适合道路和户外警示场景。"] },
-  { model: "HB-362", img: "hb-362.webp", en: ["Battery LED Safety Flare", "Battery-powered magnetic LED safety flare with 9 modes for roadside rescue and vehicle emergency kits."], zh: ["HB-362 电池款警示灯", "电池款磁吸 LED 安全警示灯，9种模式，适合道路救援和车辆应急包。"] },
-  { model: "HB-363C", img: "hb-363-rechargeable.webp", en: ["Rechargeable Road Warning Light", "Rechargeable magnetic warning light with USB charging port for vehicle, roadside and emergency safety."], zh: ["HB-363C 充电款警示灯", "USB 充电款磁吸警示灯，适合车辆、道路救援和应急安全警示。"] },
-  { model: "HB-363", img: "hb-363-battery.webp", en: ["Battery Type Road Warning Light", "Battery-powered magnetic warning light for roadside emergency kits, vehicles and portable safety use."], zh: ["HB-363 电池款警示灯", "电池款磁吸警示灯，适合道路应急包、车辆和便携安全警示。"] },
+  { model: "HB-328", img: "product-mains/hb-328-main.png", en: ["LED Road Warning Light", "Multi-mode LED road warning light with strong visibility."], zh: ["LED 道路警示灯", "多模式道路警示灯，亮度高、穿透力强。"] },
+  { model: "HB-329", img: "product-mains/hb-329-main.png", en: ["Magnetic Safety Beacon", "Magnetic safety beacon for vehicles, projects and emergency scenes."], zh: ["磁吸安全警示灯", "磁吸式安全警示灯，适用于车辆、工程与应急现场。"] },
+  { model: "HB-330", img: "product-mains/hb-330-main.png", en: ["Triangle Roadside Warning Lamp", "Foldable triangle warning lamp for night roadside emergencies."], zh: ["三角道路警示灯", "折叠式三角警示灯，适合夜间道路应急。"] },
+  { model: "HB-331", img: "product-mains/hb-331-main.png", en: ["Triangle Work Warning Light", "Portable triangle warning light with strong safety illumination."], zh: ["三角工作警示灯", "便携式三角警示灯，安全警示效果明显。"] },
+  { model: "HB-361", img: "product-mains/hb-361-main.png", en: ["Red Blue Emergency Beacon", "Red and blue emergency beacon for roadside and field warning."], zh: ["红蓝应急警示灯", "红蓝应急警示灯，适合道路和户外警示场景。"] },
+  { model: "HB-362", img: "product-mains/hb-362-main.png", en: ["Battery LED Safety Flare", "Battery-powered magnetic LED safety flare with 9 modes for roadside rescue and vehicle emergency kits."], zh: ["HB-362 电池款警示灯", "电池款磁吸 LED 安全警示灯，9种模式，适合道路救援和车辆应急包。"] },
+  { model: "HB-363C", img: "product-mains/hb-363c-main.png", en: ["Rechargeable Road Warning Light", "Rechargeable magnetic warning light with USB charging port for vehicle, roadside and emergency safety."], zh: ["HB-363C 充电款警示灯", "USB 充电款磁吸警示灯，适合车辆、道路救援和应急安全警示。"] },
+  { model: "HB-363", img: "product-mains/hb-363-main.png", en: ["Battery Type Road Warning Light", "Battery-powered magnetic warning light for roadside emergency kits, vehicles and portable safety use."], zh: ["HB-363 电池款警示灯", "电池款磁吸警示灯，适合道路应急包、车辆和便携安全警示。"] },
   {"model": "XG-T31", "img": "xg-t31.webp", "cat": "solar", "en": ["Solar Wall Sensor Garden Light", "Solar-powered lighting for gardens, yards, construction projects and outdoor retail programs."], "zh": ["XG-T31 壁挂感应灯", "壁挂感应灯/庭院灯，1200MA/18650*1；140+12LED；5.5v/ 2w；太阳能+人体感应；高亮白光+警示灯；防水+遥控功能。"]},
   {"model": "XG-T30", "img": "xg-t30.webp", "cat": "security", "en": ["Solar Dummy Camera Security Light", "Camera-style warning and security light for perimeter deterrence, yards, storefronts and outdoor sites."], "zh": ["XG-T30 监控摄像头灯", "监控摄像头灯/仿真摄像头灯，1200MA/18650*2；6大功率+8LED；5.5v/ 3w。"]},
   {"model": "XG-T28-SMD", "img": "xg-t28-smd.webp", "cat": "security", "en": ["SMD Solar Camera Sensor Light", "Camera-style warning and security light for perimeter deterrence, yards, storefronts and outdoor sites."], "zh": ["XG-T28-SMD 监控摄像头灯", "监控摄像头灯/仿真摄像头灯，1200MA/18650*1；33LED；5.5v/ 1.5w。"]},
@@ -50,9 +50,9 @@ const products = [
   {"model": "K-363", "img": "kt-k363.webp", "cat": "work", "en": ["Four-XPE COB Sensor Headlamp", "Rechargeable headlamp with four XPE spot LEDs, COB flood light, red light and sensor mode for professional outdoor work."], "zh": ["K-363 四颗 XPE+COB 感应头灯", "四颗 XPE 聚光搭配 COB 泛光和红光，适合专业户外作业、露营和应急照明。"]},
   {"model": "K-371", "img": "kt-k371.webp", "cat": "work", "en": ["Wide Beam COB Headlamp", "Wide-beam COB headlamp for close-range work, night walking, garage repair and outdoor lighting."], "zh": ["K-371 宽光 COB 头灯", "宽光 COB 头灯，适合近距离作业、夜间行走、车库维修和户外照明。"]},
   {"model": "K-372", "img": "kt-k372.webp", "cat": "work", "en": ["COB Sensor Rechargeable Headlamp", "Rechargeable COB headlamp with red light, red flash, sensor mode and Type-C charging for camping, inspection and emergency backup."], "zh": ["K-372 COB 感应充电头灯", "COB 白光搭配红光、红闪和感应模式，Type-C 充电，适合露营、巡查和应急备用。"]},
-  {"model": "Z-818", "img": "kt-z818.webp", "cat": "work", "en": ["Power Bank Work Light", "Rechargeable work light with power-bank USB output, side lighting and battery display for repair, outdoor use and emergency phone charging."], "zh": ["Z-818 充电宝工作灯", "带 USB 输出充电功能、侧灯和电量显示，可作工作灯，也可给手机等设备应急补电。"]},
+  {"model": "Z-818", "img": "product-mains/z818-main.png", "cat": "work", "en": ["Power Bank Work Light", "Rechargeable work light with power-bank USB output, side lighting and battery display for repair, outdoor use and emergency phone charging."], "zh": ["Z-818 充电宝工作灯", "带 USB 输出充电功能、侧灯和电量显示，可作工作灯，也可给手机等设备应急补电。"]},
   {"model": "Z-828", "img": "kt-z828.webp", "cat": "work", "en": ["Power Bank Work Light", "Power-bank work light with USB output, dual front LEDs and side work light for repair, outdoor use and emergency device charging."], "zh": ["Z-828 充电宝工作灯", "带 USB 输出充电功能，双前灯搭配侧面工作灯，适合检修、户外使用和手机应急充电。"]},
-  {"model": "Z-838", "img": "kt-z838.webp", "cat": "work", "en": ["Power Bank Work Light", "High-visibility power-bank work light with USB output, dual front LEDs and side light for outdoor, repair and emergency charging programs."], "zh": ["Z-838 充电宝工作灯", "高可见度充电宝工作灯，支持 USB 输出应急充电，双前灯搭配侧灯，适合户外和检修场景。"]}
+  {"model": "Z-838", "img": "product-mains/z838-main.png", "cat": "work", "en": ["Power Bank Work Light", "High-visibility power-bank work light with USB output, dual front LEDs and side light for outdoor, repair and emergency charging programs."], "zh": ["Z-838 充电宝工作灯", "高可见度充电宝工作灯，支持 USB 输出应急充电，双前灯搭配侧灯，适合户外和检修场景。"]}
 ];
 
 const process = [
@@ -239,6 +239,30 @@ Object.assign(translations.zh, {
   versionBattery: "电池款", versionRechargeable: "充电款",
   applicationsTitle: "在真实采购场景中理解警示灯产品线。", applicationsText: "HB-328 承接成熟道路警示需求，HB-330 和 HB-331 面向三角警示、施工区域和零售项目。", appRoadLabel: "HB-328 道路应急", appRoadTitle: "成熟爆款适合道路应急包", appRoadText: "HB-328 适合车辆应急包、道路安全和长期批发补货，是稳定的起步型号。", appVehicleLabel: "HB-330 / HB-330C", appVehicleTitle: "电池款和充电款可选", appVehicleText: "HB-330 系列可选择 3 节 AAA 电池款或 Type-C 充电款。", appWorksiteLabel: "HB-331 / HB-331C", appWorksiteTitle: "施工区域的三角警示", appWorksiteText: "HB-331 系列适合施工区域、临时车道，以及需要电池款或充电款的采购项目。",
   trust3Title: "样品支持", trust3Text: "批量采购前，可对比 HB-328 与 HB-330 / HB-331 的电池款和充电款。", faq3Q: "有电池款和充电款吗？", faq3A: "有。HB-330C 和 HB-331C 是充电款，HB-330 和 HB-331 是电池款；HB-328 是成熟爆款道路警示灯。"
+});
+
+Object.assign(translations.en, {
+  eyebrow: "Portable Lighting & Safety Warning Products", heroTitle: "Portable lighting and safety warning products for global buyers.", heroText: "OEM/ODM manufacturing from tooling to finished product, led by the proven HB-328 bestseller and new HB-330 / HB-331 warning light series.", explore: "View Products", customize: "Start an OEM Project", productsEyebrow: "Product Lines", productsTitle: "Portable lighting and safety warning products for wholesale and OEM.", productsText: "Start with the proven HB-328 bestseller, compare the new HB-330 / HB-330C and HB-331 / HB-331C series, then extend your range with portable work lights.",
+  templateUseLabel: "Use", templateRoadside: "Roadside safety", templateWorksite: "Work zones", templateWorkUse: "Repair / outdoor", templateWorkVersion: "Rechargeable",
+  template330Title: "Triangle Warning Light Series", template330Text: "A new triangle warning light line with a battery version and a Type-C rechargeable version.",
+  template331Title: "Triangle Warning Light Series", template331Text: "A new triangle warning light line for work zones, temporary lanes and repeat-use safety programs.",
+  templateWorkTitle: "Magnetic Hook Work Light", templateWorkText: "Portable work lights and headlamps extend the safety range for repair, vehicle and outdoor programs.",
+  templateVersionTitle: "Version rule", templateVersionText: "No C = battery version · C = Type-C rechargeable version.",
+  templateProcessEyebrow: "From Tooling To Delivery", templateProcessTitle: "One accountable team from tooling to finished product.", templateProcessText: "Injection molding, precision tooling, standardized assembly and quality control are organized for stable OEM and wholesale supply.",
+  templateCapability1: "Injection Molding", templateCapability2: "Precision Tooling", templateCapability3: "Standardized Assembly", templateCapability4: "Quality Control & Packaging",
+  templateStep1: "Inquiry", templateStep2: "Sampling", templateStep3: "Customization", templateStep4: "Mass Production", templateStep5: "Quality Check", templateStep6: "Delivery"
+});
+
+Object.assign(translations.zh, {
+  eyebrow: "便携照明与安全警示产品", heroTitle: "面向全球采购商的便携照明与安全警示产品。", heroText: "从模具开发到成品交付，围绕 HB-328 成熟爆款和 HB-330 / HB-331 新品系列提供 OEM/ODM 制造支持。", explore: "查看产品", customize: "启动 OEM 项目", productsEyebrow: "产品线", productsTitle: "面向批发与 OEM 的便携照明和安全警示产品。", productsText: "从 HB-328 成熟爆款开始，对比 HB-330 / HB-330C 与 HB-331 / HB-331C 新品系列，再扩展便携工作灯产品线。",
+  templateUseLabel: "适用场景", templateRoadside: "道路安全", templateWorksite: "施工区域", templateWorkUse: "维修 / 户外", templateWorkVersion: "充电款",
+  template330Title: "三角警示灯系列", template330Text: "HB-330 新品系列，提供电池款和 Type-C 充电款。",
+  template331Title: "三角警示灯系列", template331Text: "适合施工区域、临时车道和重复使用安全项目。",
+  templateWorkTitle: "磁吸挂钩工作灯", templateWorkText: "便携工作灯和头灯作为配套产品，覆盖维修、车辆和户外照明场景。",
+  templateVersionTitle: "版本规则", templateVersionText: "不带 C = 电池款 · 带 C = Type-C 充电款。",
+  templateProcessEyebrow: "从模具到交付", templateProcessTitle: "从模具开发到成品交付，由一支团队负责。", templateProcessText: "注塑、精密模具、标准化装配和质量控制，为 OEM 与批发采购提供稳定支持。",
+  templateCapability1: "注塑成型", templateCapability2: "精密模具", templateCapability3: "标准化装配", templateCapability4: "质量控制与包装",
+  templateStep1: "询盘", templateStep2: "打样", templateStep3: "定制", templateStep4: "量产", templateStep5: "质量检查", templateStep6: "交付"
 });
 
 const fallback = translations.en;
