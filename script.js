@@ -667,7 +667,7 @@ function openProductModal(model) {
     detail.packing ? [labels.packing, localizedDetail(detail.packing)] : null,
     detail.note ? [labels.note, localizedDetail(detail.note)] : null,
     [t("modalOem"), t("modalOemValue")],
-    [labels.price, quoteValue]
+    // Prices stay internal; public product modals show verified specs and ask buyers to contact sales.
   ].filter(Boolean);
   document.getElementById("modalSpecs").innerHTML = specRows.map(([k,v]) => `<dt>${escapeHtml(k)}</dt><dd>${escapeHtml(v)}</dd>`).join("");
   document.getElementById("modalInquiry").textContent = `${t("modalInquiry")} ${model}`;
