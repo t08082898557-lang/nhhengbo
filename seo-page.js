@@ -47,6 +47,7 @@
     "LED warning lights, magnetic beacons and roadside safety flares.": "LED 警示灯、磁吸警示灯与道路安全警示灯。",
     "These pages help importers, distributors and safety product buyers find HENGBO core warning light models through search engines and compare product applications quickly.": "这些页面帮助进口商、分销商和安全产品采购商通过搜索引擎快速找到恒博核心警示灯型号并快速比较应用场景。",
     "Back to home": "返回首页",
+    "Privacy notice": "隐私说明",
     "HB-362 Battery LED Safety Flare": "HB-362 电池款 LED 安全警示灯",
     "HB-362 battery LED safety flare for roadside rescue kits, vehicle emergency packs and OEM warning light wholesale orders.": "HB-362 电池款 LED 安全警示灯，适用于道路救援套装、车辆应急包和 OEM 警示灯批发项目。",
     "HB-363C Rechargeable Road Warning Light": "HB-363C 充电款道路警示灯",
@@ -846,12 +847,61 @@
     });
   }
 
+  function ensurePrivacyLink() {
+    const footer = document.querySelector(".footer");
+    if (!footer || footer.querySelector('a[href$="privacy.html"]')) return;
+
+    const link = document.createElement("a");
+    const inSection = /^\/(products|solutions)(?:\/|$)/.test(window.location.pathname);
+    link.href = `${inSection ? "../" : ""}privacy.html`;
+    link.textContent = "Privacy notice";
+    footer.appendChild(link);
+  }
+
+  function ensureProductProcurementStrip(lang) {
+    if (!document.body.classList.contains("product-detail-page") || document.querySelector(".seo-procurement-strip")) return;
+    const detailGrid = document.querySelector(".seo-detail-grid");
+    if (!detailGrid) return;
+    const model = (document.querySelector("h1")?.textContent.match(/HB-\d+[A-Z]?/i) || [""])[0].toUpperCase();
+    const fixedMeta = {
+      "HB-327": { moq: "1,000", lead: "1–7 days", cert: "CE / RoHS / FCC" },
+      "HB-328": { moq: "100", lead: "1–7 days", cert: "CE / RoHS / FCC" },
+      "HB-329": { moq: "100", lead: "1–7 days", cert: "CE / RoHS / FCC" },
+      "HB-330": { moq: "100", lead: "1–7 days", cert: "CE / RoHS / FCC" },
+      "HB-331": { moq: "100", lead: "1–7 days", cert: "CE / RoHS / FCC" },
+      "HB-361": { moq: "500", lead: "5–25 days", cert: "CE / RoHS / FCC" }
+    }[model] || { moq: "Confirm by model", lead: "Confirm by model", cert: "Confirm by model" };
+    const zh = lang === "zh";
+    const copy = zh ? {
+      eyebrow: "采购信息概览", moq: "起订量", lead: "交期", packaging: "包装", cert: "认证资料",
+      packagingValue: "标准包装 / OEM 包装", certFallback: "按型号确认"
+    } : {
+      eyebrow: "Procurement snapshot", moq: "MOQ", lead: "Lead time", packaging: "Packaging", cert: "Certificates",
+      packagingValue: "Standard / OEM packaging", certFallback: "Confirm by model"
+    };
+    const value = (en, zhValue) => zh ? zhValue : en;
+    const section = document.createElement("section");
+    section.className = "seo-procurement-strip reveal";
+    section.setAttribute("aria-label", copy.eyebrow);
+    section.innerHTML = `
+      <div class="seo-procurement-heading"><p class="eyebrow">${copy.eyebrow}</p><strong>${zh ? "统一模板中的关键采购字段" : "The key fields buyers need in one place"}</strong></div>
+      <div class="seo-procurement-grid">
+        <article><b>${copy.moq}</b><span>${value(fixedMeta.moq, fixedMeta.moq === "Confirm by model" ? "按型号确认" : fixedMeta.moq)}</span></article>
+        <article><b>${copy.lead}</b><span>${value(fixedMeta.lead, fixedMeta.lead === "Confirm by model" ? "按型号确认" : fixedMeta.lead)}</span></article>
+        <article><b>${copy.packaging}</b><span>${copy.packagingValue}</span></article>
+        <article><b>${copy.cert}</b><span>${fixedMeta.cert === "Confirm by model" ? copy.certFallback : fixedMeta.cert}</span></article>
+      </div>`;
+    detailGrid.parentNode.insertBefore(section, detailGrid);
+  }
+
   function applyLanguage(lang) {
     const safeLang = SUPPORTED_LANGS.has(lang) ? lang : "en";
     const pathname = normalizePath(window.location.pathname);
 
     document.documentElement.lang = safeLang === "zh" ? "zh-CN" : "en";
     saveLanguage(safeLang);
+    ensurePrivacyLink();
+    ensureProductProcurementStrip(safeLang);
     updateCurrentUrl(safeLang);
     localizeInternalLinks(safeLang);
 

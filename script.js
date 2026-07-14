@@ -1,5 +1,7 @@
 
 const products = [
+  { model: "HB-330C", img: "p330.webp", en: ["Triangle Roadside Warning Lamp · Rechargeable", "Type-C rechargeable version of the HB-330 triangle warning light."], zh: ["HB-330C 三角道路警示灯充电款", "HB-330 三角警示灯的 Type-C 充电版本。"] },
+  { model: "HB-331C", img: "p331.webp", en: ["Triangle Work Warning Light · Rechargeable", "Type-C rechargeable version of the HB-331 triangle warning light."], zh: ["HB-331C 三角工作警示灯充电款", "HB-331 三角警示灯的 Type-C 充电版本。"] },
   { model: "HB-321", img: "p321.webp", en: ["LED Work Light", "COB handheld work light for inspection, repair and outdoor utility."], zh: ["LED 工作灯", "COB 手持工作灯，适用于检修、维修、户外便携照明。"] },
   { model: "HB-325", img: "p325.webp", en: ["Portable Work Light", "Portable work light with COB + LED illumination for job sites."], zh: ["便携式工作灯", "COB + LED 组合照明，适用于工地、车库、维修场景。"] },
   { model: "HB-326", img: "p326.webp", en: ["Outdoor Emergency Light", "Hook design emergency light for camping, repair and garage use."], zh: ["户外应急灯", "挂钩式应急照明，适合露营、维修、车库等场景。"] },
@@ -72,6 +74,8 @@ const advantages = [
 ];
 
 const productDetails = {
+  "HB-330C": { moq: "100", lead: "1~7 days", cert: "CE, RoHS, FCC", price: "Contact sales", spec: { en: "PC + TPR + ABS body; 33 yellow LEDs plus 3 white SMD; 5 modes; Type-C rechargeable; 650mAh polymer lithium battery.", zh: "PC + TPR + ABS；33 颗黄色 LED 和 3 颗白色 SMD；5 种模式；Type-C 充电；650mAh 聚合物锂电池。" }, use: { en: "Reusable roadside safety programs, vehicle emergency kits and retail rechargeable lines.", zh: "适合重复使用的道路安全项目、车辆应急包和充电款零售产品线。" }, custom: { en: "Logo, color box, instruction sheet and mixed battery / rechargeable quotation.", zh: "支持 LOGO、彩盒、说明书以及电池款 / 充电款组合报价。" }, sample: { en: "Compare with HB-330 battery version before confirming the market program.", zh: "确认市场方案前，建议与 HB-330 电池款一起对比。" } },
+  "HB-331C": { moq: "100", lead: "1~7 days", cert: "CE, RoHS, FCC", price: "Contact sales", spec: { en: "PC + TPR + ABS body; 30 yellow LEDs plus 3 white SMD; 5 modes; Type-C rechargeable version.", zh: "PC + TPR + ABS；30 颗黄色 LED 和 3 颗白色 SMD；5 种模式；Type-C 充电版本。" }, use: { en: "Construction warning, temporary lanes and repeat-use triangle warning light programs.", zh: "适合施工警示、临时车道和重复使用的三角警示灯项目。" }, custom: { en: "Logo, color box, instruction sheet and mixed battery / rechargeable quotation.", zh: "支持 LOGO、彩盒、说明书以及电池款 / 充电款组合报价。" }, sample: { en: "Compare with HB-331 battery version for work-zone and retail programs.", zh: "适合与 HB-331 电池款一起做施工和零售项目对比。" } },
   "HB-327": { moq: "1000", lead: "1~7天", cert: "CE, RoHS, FCC", price: "8.5元", spec: { en: "TPR + PC body; 8 LEDs; 6.5*2CM; 42g; powered by 2*CR2032 batteries.", zh: "材料 TPR+PC；8LED；尺寸 6.5*2CM；重量 42g；电池 2*CR2032。" }, use: { en: "Retail safety packs, compact warning light displays and add-on emergency products.", zh: "适合零售安全包、迷你警示灯陈列和应急补充产品。" }, custom: { en: "Logo label, blister/card packaging and mixed warning light sets.", zh: "支持 LOGO 标签、吸塑/卡装包装和警示灯组合套装。" }, sample: { en: "Good entry sample for distributors comparing compact warning lights.", zh: "适合作为经销商测试迷你警示灯市场的入门样品。" } },
   "HB-328": { moq: "100", lead: "1~7天", cert: "CE, RoHS, FCC", price: "12元", spec: { en: "PC + TPR + ABS hook; red 12 LED plus white 3 SMD; 9 modes; 10*10*3.5CM.", zh: "材料 PC+TPR+ABS 挂钩；红光12LED，白光3SMD；9种模式；尺寸 10*10*3.5CM。" }, use: { en: "Roadside emergency kits, retail warning light shelves and mixed model starter orders.", zh: "适合道路应急包、零售警示灯货架和混合型号试单。" }, custom: { en: "Color box, instruction sheet, logo sticker and multi-pack options.", zh: "支持彩盒、说明书、LOGO 贴标和多只装方案。" }, sample: { en: "Recommended with HB-362 or HB-363C for a warning light sample set.", zh: "建议与 HB-362 或 HB-363C 一起做警示灯样品组合。" } },
   "HB-329": { moq: "100", lead: "1~7天", cert: "CE, RoHS, FCC", price: "干电池12元 / 锂电池21元", spec: { en: "PC + ABS body; white 50LM plus red/orange warning light; 9*4.5CM; battery or lithium version available.", zh: "材料 PC+ABS；白光50LM，红光与橙光警示；尺寸 9*4.5CM；可选干电池/锂电池版本。" }, use: { en: "Service vehicles, towing rescue, construction vehicles and magnetic beacon programs.", zh: "适合服务车辆、拖车救援、工程车辆和磁吸信标项目。" }, custom: { en: "Logo, packaging, warning color and battery version selection.", zh: "支持 LOGO、包装、警示颜色和电池版本选择。" }, sample: { en: "Quote together with HB-361 if the buyer needs vehicle warning products.", zh: "如买家做车辆警示产品，建议与 HB-361 组合报价。" } },
@@ -173,6 +177,69 @@ const translations = {
   id: { navProducts:"Produk",navFactory:"Pabrik",navCustom:"OEM/ODM",navQuality:"Kualitas",navContact:"Kontak",quote:"Minta Harga",heroTitle:"Kekuatan manufaktur untuk merek global.",heroText:"Mitra pabrik + perdagangan untuk lampu peringatan LED, lampu kerja, beacon magnetik, dan lampu darurat.",explore:"Lihat Produk",customize:"Kustom Merek",productsTitle:"Pencahayaan portabel untuk jalan, outdoor, dan darurat.",factoryTitle:"Kemampuan end-to-end untuk merek global.",customTitle:"Dari ide ke produk bermerek.",qualityTitle:"QC ketat dari bahan baku hingga produk jadi.",contactTitle:"Kirim pasar, jumlah, dan kebutuhan.",formSubmit:"Kirim",thanks:"Terima kasih. Kami akan menghubungi Anda." },
   hi: { navProducts:"उत्पाद",navFactory:"फैक्टरी",navCustom:"OEM/ODM",navQuality:"गुणवत्ता",navContact:"संपर्क",quote:"कोटेशन",heroTitle:"वैश्विक ब्रांडों के लिए निर्माण शक्ति।",heroText:"LED चेतावनी लाइट, वर्क लाइट, मैग्नेटिक बीकन और इमरजेंसी लाइटिंग के लिए फैक्टरी+ट्रेडिंग पार्टनर।",explore:"उत्पाद देखें",customize:"ब्रांड कस्टमाइज",productsTitle:"सड़क, आउटडोर और आपात स्थिति के लिए पोर्टेबल लाइटिंग।",factoryTitle:"वैश्विक ब्रांडों के लिए पूर्ण क्षमता।",customTitle:"विचार से ब्रांडेड उत्पाद तक।",qualityTitle:"कच्चे माल से तैयार उत्पाद तक सख्त QC।",contactTitle:"बाजार, मात्रा और आवश्यकताएँ भेजें।",formSubmit:"भेजें",thanks:"धन्यवाद। हम जल्द संपर्क करेंगे।" }
 };
+
+translations.en.formIntroEyebrow = "FAST FACTORY QUOTE";
+translations.en.formIntroTitle = "Tell us what you need";
+translations.en.formIntroText = "Choose a model and share quantity, market and packaging needs. We will prepare the next quotation step.";
+translations.zh.formIntroEyebrow = "快速获取工厂报价";
+translations.zh.formIntroTitle = "告诉我们你的采购需求";
+translations.zh.formIntroText = "选择型号并填写数量、市场和包装需求，我们会据此准备下一步报价信息。";
+
+Object.assign(translations.en, {
+  corePriority: "Priority model", coreConfirm: "Confirm by model", coreLogoPack: "Logo / color box", coreCertLabel: "Cert.", coreDetails: "View product page", coreQuote: "Request quote",
+  coreCard1Title: "Battery Safety Flare", coreCard1Text: "Roadside rescue kits and retail safety packs.",
+  coreCard2Title: "Rechargeable Road Warning Light", coreCard2Text: "Reusable vehicle emergency programs and distributors.",
+  coreCard3Title: "Magnetic Safety Beacon", coreCard3Text: "Service vehicles, towing and roadside visibility.",
+  coreCard4Title: "Battery Road Warning Light", coreCard4Text: "Portable warning kits and backup inventory.",
+  coreCard5Title: "Triangle Work Warning Light", coreCard5Text: "Construction zones, temporary lanes and barriers.",
+  coreCard6Title: "Red-Blue Emergency Beacon", coreCard6Text: "Towing, rescue and emergency response programs.",
+  proofEyebrow: "Factory proof for procurement", proofTitle: "Specific information buyers need before requesting a quote.", proofText: "The current product records give buyers a concrete starting point for MOQ, lead time, packing and documentation review.",
+  proofMoqTitle: "MOQ", proofMoqText: "HB-328 and the new HB-330 / HB-331 product records show 100 PCS; confirm the final version and packing plan.", proofLeadTitle: "Lead time", proofLeadText: "The new HB-330 / HB-331 product records show 1–7 days; confirm after quantity, sample and packaging review.", proofOemTitle: "OEM", proofOemText: "The new triangle models use white-box packing; logo, color box and carton marks can be discussed.", proofCertTitle: "Certificates", proofCertText: "The current product records list CE / RoHS / FCC; provide the final file set by model.", proofShipmentTitle: "Shipment", proofShipmentText: "The new HB-330 / HB-331 product records show 100 PCS per carton; confirm the final carton plan.", proofDocsEyebrow: "Document previews", proofDocsText: "Open the available files for initial buyer review.", proofDocQuality: "Quality management", proofDocCe: "Electromagnetic compatibility", proofDocFcc: "Supplier declaration", proofDocRohs: "Restricted substances",
+  oemFlowEyebrow: "OEM flow", oemFlowTitle: "One clear path from model selection to shipment.", oemFlowText: "Share the target model, market and packaging plan. HENGBO coordinates samples, artwork, production and delivery details.",
+  oemStep1Title: "Select", oemStep1Text: "Choose the model and version.", oemStep2Title: "Sample", oemStep2Text: "Confirm function and application.", oemStep3Title: "Packaging", oemStep3Text: "Approve logo, box and carton marks.", oemStep4Title: "Production", oemStep4Text: "Arrange assembly and inspection.", oemStep5Title: "Shipment", oemStep5Text: "Check packing and hand off to the forwarder.",
+  appRetailLabel: "Retail / Wholesale", appRetailTitle: "Build market-ready safety kits", appRetailText: "Mix core warning lights, packaging and supporting products for retail packs and distributor programs.",
+  formQuantity: "Target quantity", formMarket: "Destination market", formPackaging: "Packaging / OEM need", formDelivery: "Target delivery time", packStandard: "Standard packaging", packLogo: "Logo / color box", packMixed: "Mixed retail kit", packConfirm: "To be confirmed"
+});
+
+Object.assign(translations.zh, {
+  corePriority: "重点型号", coreConfirm: "按型号确认", coreLogoPack: "Logo / 彩盒", coreCertLabel: "认证", coreDetails: "查看产品页", coreQuote: "获取报价",
+  coreCard1Title: "电池式安全警示灯", coreCard1Text: "适合道路救援包和零售安全套装。",
+  coreCard2Title: "充电式道路警示灯", coreCard2Text: "适合车辆应急项目和经销商采购。",
+  coreCard3Title: "磁吸安全信标灯", coreCard3Text: "适合服务车辆、拖车救援和道路警示。",
+  coreCard4Title: "电池式道路警示灯", coreCard4Text: "适合便携警示套装和备用库存。",
+  coreCard5Title: "三角施工警示灯", coreCard5Text: "适合施工区域、临时车道和围挡。",
+  coreCard6Title: "红蓝应急信标灯", coreCard6Text: "适合拖车、救援和应急响应项目。",
+  proofEyebrow: "采购所需的工厂证据", proofTitle: "报价前，先把采购关心的信息说清楚。", proofText: "当前产品资料已给出 MOQ、交期、包装和认证资料的具体采购起点，最终按型号确认。",
+  proofMoqTitle: "起订量", proofMoqText: "HB-328 及标注为新品的 HB-330 / HB-331 资料均为 100 PCS，最终按版本和包装确认。", proofLeadTitle: "交期", proofLeadText: "标注为新品的 HB-330 / HB-331 资料显示 1–7 天，确认数量、样品和包装需求后锁定。", proofOemTitle: "OEM", proofOemText: "新款三角警示灯为白盒包装，可沟通 Logo、彩盒和外箱唛头。", proofCertTitle: "认证资料", proofCertText: "当前产品资料列有 CE / RoHS / FCC，最终按型号提供文件。", proofShipmentTitle: "出货", proofShipmentText: "标注为新品的 HB-330 / HB-331 资料显示 100 PCS/箱，最终按版本确认外箱方案。", proofDocsEyebrow: "认证文件预览", proofDocsText: "点击查看可提供的文件，供买家初步审核。", proofDocQuality: "质量管理体系", proofDocCe: "电磁兼容文件", proofDocFcc: "供应商符合性声明", proofDocRohs: "有害物质限制文件",
+  oemFlowEyebrow: "OEM 流程", oemFlowTitle: "从选型到出货，一条清晰的采购路径。", oemFlowText: "告诉我们型号、市场和包装方案，恒博统一协调打样、设计、生产和出货细节。",
+  oemStep1Title: "选型", oemStep1Text: "确认型号和版本。", oemStep2Title: "打样", oemStep2Text: "确认功能和应用场景。", oemStep3Title: "包装", oemStep3Text: "确认 Logo、彩盒和外箱唛头。", oemStep4Title: "量产", oemStep4Text: "安排生产组装和过程检验。", oemStep5Title: "出货", oemStep5Text: "核对包装并完成货代交接。",
+  appRetailLabel: "批发 / 零售", appRetailTitle: "组合成适合市场销售的安全套装", appRetailText: "围绕主推警示灯组合包装与配套产品，适合零售套装和经销商项目。",
+  formQuantity: "目标采购数量", formMarket: "目标市场", formPackaging: "包装 / OEM 需求", formDelivery: "期望交期", packStandard: "标准包装", packLogo: "Logo / 彩盒", packMixed: "混合零售套装", packConfirm: "待确认"
+});
+
+Object.assign(translations.en, {
+  topBestSeller: "HB-328 Best Seller", topNewSeries: "HB-330 / HB-331 New Series", topVersions: "Battery / Rechargeable Versions", topOem: "OEM / ODM Packaging",
+  eyebrow: "Road Safety Warning Light Factory", heroTitle: "HB-328 bestseller. New HB-330 / HB-331 warning light series.", heroText: "HENGBO supplies proven HB-328 road warning lights and new triangle warning light families with battery, rechargeable and OEM packaging options.", explore: "View Core Warning Lights", customize: "Get a Factory Quote", heroWarning: "HB-328 Bestseller", heroWarningText: "Stable road warning light", heroBeacon: "HB-330 / HB-330C", heroBeaconText: "Battery / rechargeable", heroWork: "HB-331 / HB-331C", heroWorkText: "New triangle warning light", heroSourcingLabel: "Core inquiry models",
+  metricFactory: "Proven bestseller", metricTeam: "New triangle series", metricService: "Battery / rechargeable", metricExport: "Packaging support",
+  productsEyebrow: "Core Warning Light Series", productsTitle: "Three warning light families, clear version choices.", productsText: "Start with the proven HB-328 bestseller, then compare the new HB-330 and HB-331 triangle warning light series by battery or rechargeable version.",
+  coreBestSeller: "Best seller", coreNewSeries: "New series", coreSupporting: "Supporting model", coreVersionLabel: "Version", coreBatteryLabel: "Battery", coreRechargeableLabel: "Rechargeable",
+  coreCard1Title: "LED Road Warning Light", coreCard1Text: "Mature bestseller for roadside kits, retail and repeat wholesale orders.", coreCard2Title: "Triangle Warning Light · Battery", coreCard2Text: "New battery version for emergency kits, road work and retail packs.", coreCard3Title: "Triangle Warning Light · Rechargeable", coreCard3Text: "Type-C rechargeable version for repeat-use safety programs.", coreCard4Title: "Triangle Warning Light · Battery", coreCard4Text: "New battery version for work zones, temporary lanes and barriers.", coreCard5Title: "Triangle Warning Light · Rechargeable", coreCard5Text: "Type-C rechargeable version for construction and repeat-use programs.", coreCard6Title: "Magnetic Safety Beacon", coreCard6Text: "Supporting beacon for service vehicles, towing and roadside visibility.",
+  versionBattery: "Battery version", versionRechargeable: "Rechargeable version",
+  applicationsTitle: "See the warning light line in real buyer situations.", applicationsText: "HB-328 covers mature roadside demand, while HB-330 and HB-331 serve triangle warning, work-zone and retail programs.", appRoadLabel: "HB-328 Roadside", appRoadTitle: "Proven visibility for roadside kits", appRoadText: "HB-328 is a dependable starting model for vehicle emergency kits, roadside safety and repeat wholesale orders.", appVehicleLabel: "HB-330 / HB-330C", appVehicleTitle: "Choose battery or rechargeable", appVehicleText: "The HB-330 family lets buyers select a 3 x AAA battery version or a Type-C rechargeable version.", appWorksiteLabel: "HB-331 / HB-331C", appWorksiteTitle: "Triangle warning for work zones", appWorksiteText: "The HB-331 family fits construction areas, temporary lanes and buyers who need battery or rechargeable supply.",
+  trust3Title: "Sample support", trust3Text: "Compare HB-328 with the new HB-330 / HB-331 battery and rechargeable versions before bulk ordering.", faq3Q: "Do you have battery and rechargeable versions?", faq3A: "Yes. HB-330C and HB-331C are rechargeable versions, while HB-330 and HB-331 are battery versions. HB-328 is the mature bestseller road warning light."
+});
+
+Object.assign(translations.zh, {
+  topBestSeller: "HB-328 爆款", topNewSeries: "HB-330 / HB-331 新品系列", topVersions: "电池款 / 充电款", topOem: "OEM / ODM 包装",
+  eyebrow: "道路安全警示灯工厂", heroTitle: "HB-328 成熟爆款，HB-330 / HB-331 新品系列。", heroText: "恒博供应成熟的 HB-328 道路警示灯，以及 HB-330 / HB-331 电池款、充电款和 OEM 包装方案。", explore: "查看核心警示灯", customize: "获取工厂报价", heroWarning: "HB-328 爆款", heroWarningText: "成熟道路警示灯", heroBeacon: "HB-330 / HB-330C", heroBeaconText: "电池款 / 充电款", heroWork: "HB-331 / HB-331C", heroWorkText: "新款三角警示灯", heroSourcingLabel: "核心询盘型号",
+  metricFactory: "成熟爆款", metricTeam: "三角新品系列", metricService: "电池 / 充电版本", metricExport: "支持定制包装",
+  productsEyebrow: "核心警示灯系列", productsTitle: "三条产品线，电池款和充电款清晰可选。", productsText: "先看成熟爆款 HB-328，再对比 HB-330 和 HB-331 三角警示灯系列的电池款与充电款。",
+  coreBestSeller: "成熟爆款", coreNewSeries: "新品系列", coreSupporting: "配套型号", coreVersionLabel: "版本", coreBatteryLabel: "电池款", coreRechargeableLabel: "充电款",
+  coreCard1Title: "LED 道路警示灯", coreCard1Text: "适合道路应急包、零售和长期批发补货的成熟爆款。", coreCard2Title: "三角道路警示灯 · 电池款", coreCard2Text: "适合应急包、道路施工和零售套装的新款电池版本。", coreCard3Title: "三角道路警示灯 · 充电款", coreCard3Text: "适合重复使用安全项目的 Type-C 充电版本。", coreCard4Title: "三角工作警示灯 · 电池款", coreCard4Text: "适合施工区域、临时车道和围挡的新款电池版本。", coreCard5Title: "三角工作警示灯 · 充电款", coreCard5Text: "适合施工和重复使用项目的 Type-C 充电版本。", coreCard6Title: "磁吸安全信标灯", coreCard6Text: "适合服务车辆、拖车救援和道路警示的配套型号。",
+  versionBattery: "电池款", versionRechargeable: "充电款",
+  applicationsTitle: "在真实采购场景中理解警示灯产品线。", applicationsText: "HB-328 承接成熟道路警示需求，HB-330 和 HB-331 面向三角警示、施工区域和零售项目。", appRoadLabel: "HB-328 道路应急", appRoadTitle: "成熟爆款适合道路应急包", appRoadText: "HB-328 适合车辆应急包、道路安全和长期批发补货，是稳定的起步型号。", appVehicleLabel: "HB-330 / HB-330C", appVehicleTitle: "电池款和充电款可选", appVehicleText: "HB-330 系列可选择 3 节 AAA 电池款或 Type-C 充电款。", appWorksiteLabel: "HB-331 / HB-331C", appWorksiteTitle: "施工区域的三角警示", appWorksiteText: "HB-331 系列适合施工区域、临时车道，以及需要电池款或充电款的采购项目。",
+  trust3Title: "样品支持", trust3Text: "批量采购前，可对比 HB-328 与 HB-330 / HB-331 的电池款和充电款。", faq3Q: "有电池款和充电款吗？", faq3A: "有。HB-330C 和 HB-331C 是充电款，HB-330 和 HB-331 是电池款；HB-328 是成熟爆款道路警示灯。"
+});
 
 const fallback = translations.en;
 let currentLang = "en";
@@ -279,6 +346,9 @@ const recipientLabels = {
     recipient4: "Charon Wang - 15356476616@163.com",
     recipientAll: "Send to Sam / Peter / Bao / Charon Wang",
     formNote: "Submitting will open your email app with the selected recipient and inquiry content.",
+    privacyNote: "We only use these details to reply to your inquiry.",
+    privacyLink: "Privacy notice",
+    formStatus: "Your email app should open with the inquiry details filled in.",
     sales1: "Sam",
     sales2: "Peter",
     sales3: "Bao",
@@ -291,6 +361,9 @@ const recipientLabels = {
     recipient4: "Charon Wang - 15356476616@163.com",
     recipientAll: "发送给 Sam / Peter / Bao / Charon Wang",
     formNote: "提交后会打开您的邮箱应用，并自动带入所选收件人与询盘内容。",
+    privacyNote: "我们仅使用这些信息回复您的询盘。",
+    privacyLink: "隐私说明",
+    formStatus: "您的邮箱应用将打开，并自动带入询盘内容。",
     sales1: "Sam",
     sales2: "Peter",
     sales3: "Bao",
@@ -345,7 +418,8 @@ function productBadges(item) {
   if (item.model === "HB-363C") badges.push(t("tagNew"), t("tagRechargeable"));
   if (item.model === "HB-363") badges.push(t("tagNew"), t("tagBattery"));
   if (["Z-818", "Z-828", "Z-838"].includes(item.model)) badges.push(currentLang === "zh" ? "充电宝" : "Power Bank", t("tagRechargeable"));
-  if (["HB-328", "HB-329", "HB-362", "HB-363C", "HB-363"].includes(item.model)) badges.push(t("tagHot"));
+  if (["HB-328", "HB-330", "HB-330C", "HB-331", "HB-331C"].includes(item.model)) badges.push(t("tagHot"));
+  if (["HB-330", "HB-330C", "HB-331", "HB-331C"].includes(item.model)) badges.push(t("tagNew"));
   if (category === "warning") badges.push(t("tagWarning"));
   if (category === "beacon") badges.push(t("tagBeacon"));
   if (category === "work") badges.push(t("tagWork"));
@@ -354,7 +428,7 @@ function productBadges(item) {
   if (category === "camping") badges.push(t("tagCamping"));
   if (["K-351", "K-352", "K-353", "K-354", "K-361", "K-362", "K-363", "K-371", "K-372", "Z-818", "Z-828", "Z-838"].includes(item.model)) badges.push(t("tagNew"));
   if (item.model.startsWith("XG-") || item.model.startsWith("K-") || item.model.startsWith("Z-")) badges.push(t("tagExtended"));
-  if (["HB-362", "HB-363C", "HB-363", "HB-328", "HB-329"].includes(item.model)) badges.push(t("tagOem"));
+  if (["HB-328", "HB-330", "HB-330C", "HB-331", "HB-331C", "HB-329"].includes(item.model)) badges.push(t("tagOem"));
   return [...new Set(badges)].slice(0, 3);
 }
 
@@ -369,6 +443,9 @@ function productApplication(item) {
 }
 
 function productVersion(item) {
+  if (item.model === "HB-328") return t("versionBattery");
+  if (item.model === "HB-330" || item.model === "HB-331") return t("versionBattery");
+  if (item.model === "HB-330C" || item.model === "HB-331C") return t("versionRechargeable");
   if (item.model === "HB-362") return t("newSeries362");
   if (item.model === "HB-363C") return t("newSeriesRechargeable");
   if (item.model === "HB-363") return t("newSeriesBattery");
@@ -376,8 +453,8 @@ function productVersion(item) {
 }
 
 const featuredProductOrder = [
-  "HB-362", "HB-363C", "HB-363", "HB-331",
-  "HB-330", "HB-329", "HB-328", "HB-327", "HB-361",
+  "HB-328", "HB-330", "HB-330C", "HB-331", "HB-331C", "HB-329",
+  "HB-362", "HB-363C", "HB-363", "HB-327", "HB-361",
   "K-351", "K-352", "K-353", "K-354", "K-361", "K-362", "K-363", "K-371", "K-372",
   "Z-838", "Z-828", "Z-818", "XG-C8505-COB", "XG-152-COB",
   "XG-T31", "HB-325", "XG-T30", "HB-326",
@@ -629,8 +706,17 @@ document.getElementById("productSearch").addEventListener("input", event => {
   renderStaticLists();
 });
 
-document.querySelectorAll(".signature-products button, .flagship-board button, .hero-sourcing-card button, .new-series-card, .bundle-grid button, .price-tier-actions button").forEach(button => {
-  button.addEventListener("click", () => openProductModal(button.dataset.model));
+document.querySelectorAll(".signature-products button, .flagship-board button, .hero-sourcing-card button, .new-series-card, .bundle-grid button, .price-tier-actions button, .core-product-quote").forEach(button => {
+  button.addEventListener("click", () => {
+    const item = products.find(product => product.model === button.dataset.model);
+    if (!item) return;
+    if (button.classList.contains("core-product-quote")) {
+      fillInquiryProduct(item);
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+    openProductModal(button.dataset.model);
+  });
 });
 
 document.querySelectorAll(".hero-filter button").forEach(button => {
@@ -700,6 +786,10 @@ document.getElementById("inquiryForm").addEventListener("submit", event => {
   const name = document.getElementById("customerName").value.trim();
   const contact = document.getElementById("customerContact").value.trim();
   const product = document.getElementById("productInterest").value;
+  const quantity = document.getElementById("customerQuantity").value.trim();
+  const market = document.getElementById("destinationMarket").value.trim();
+  const packaging = document.getElementById("packagingNeed").value;
+  const delivery = document.getElementById("targetDelivery").value.trim();
   const message = document.getElementById("messageText").value.trim();
   const subject = `Product Inquiry - ${product || "HENGBO"}`;
   const body = [
@@ -710,6 +800,10 @@ document.getElementById("inquiryForm").addEventListener("submit", event => {
     `Name: ${name || "-"}`,
     `Contact: ${contact || "-"}`,
     `Product Interest: ${product || "-"}`,
+    `Target Quantity: ${quantity || "-"}`,
+    `Destination Market: ${market || "-"}`,
+    `Packaging / OEM Need: ${packaging || "-"}`,
+    `Target Delivery Time: ${delivery || "-"}`,
     "",
     "Inquiry Details:",
     message || "-",
@@ -718,7 +812,10 @@ document.getElementById("inquiryForm").addEventListener("submit", event => {
     "",
     "Best regards,"
   ].join("\n");
-  window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const status = document.getElementById("inquiryStatus");
+  status.textContent = t("formStatus");
+  status.hidden = false;
+  window.location.assign(`mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
 });
 
 const slides = Array.from(document.querySelectorAll(".slide"));

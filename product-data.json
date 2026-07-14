@@ -187,8 +187,10 @@
     "price": "9.5元                         (不含电池）"
   },
   {
-    "model": "HB-330",
-    "name": "",
+    "model": "LEGACY-HB-330-WORK-LIGHT",
+    "sourceModel": "HB-330",
+    "recordType": "legacy-source-record",
+    "name": "Legacy LED Work Light Record",
     "spec": "品名: LED工作灯                                                                                 材料：ABS                                                                                                 光源：头部国产LED,3W,50LM，管子COB,150LM                                                                                             产品尺寸：长合拢长17.8CM,拉开长24.8CM,头部直径4.5CM，管子直径3.5CM                                                                                        产品重量: 130克                                        ",
     "package": "",
     "moq": "5000",
@@ -198,8 +200,10 @@
     "price": "16.0元                         (不含电池）"
   },
   {
-    "model": "HB-331",
-    "name": "",
+    "model": "LEGACY-HB-331-COB-SWITCH-LIGHT",
+    "sourceModel": "HB-331",
+    "recordType": "legacy-source-record",
+    "name": "Legacy COB Switch Light Record",
     "spec": "品名: COB 开关灯                                                                                 材料：铝合金                                                                                            光源：COB  230LM     3W                                                                                                   产品尺寸：16*3.3*1.8CM                                                                    产品重量: 75克                                                                                              电池类",
     "package": "",
     "moq": "1000",
