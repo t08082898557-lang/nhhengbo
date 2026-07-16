@@ -745,6 +745,23 @@ if (!translations[selector.value]) selector.value = "en";
 applyLanguage(selector.value);
 selector.addEventListener("change", e => applyLanguage(e.target.value));
 
+const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
+const primaryNav = document.getElementById("primaryNav");
+if (mobileNavToggle && primaryNav) {
+  const closeMobileNav = () => {
+    primaryNav.classList.remove("is-open");
+    mobileNavToggle.setAttribute("aria-expanded", "false");
+  };
+  mobileNavToggle.addEventListener("click", () => {
+    const isOpen = primaryNav.classList.toggle("is-open");
+    mobileNavToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+  primaryNav.querySelectorAll("a").forEach(link => link.addEventListener("click", closeMobileNav));
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 620) closeMobileNav();
+  });
+}
+
 document.getElementById("toggleProducts").addEventListener("click", () => {
   const grid = document.getElementById("productGrid");
   grid.classList.toggle("show-all");
