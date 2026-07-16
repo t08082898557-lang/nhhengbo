@@ -7290,6 +7290,96 @@ body.industrial-v3 {
   position: static;
 }
 
+.product-detail-page .seo-product-visual .seo-version-product {
+  padding: clamp(20px, 4vw, 42px);
+  object-fit: contain;
+  background: #fff;
+}
+
+body.product-detail-page {
+  --product-navy: #102b4a;
+  --product-orange: #f36b21;
+  --product-paper: #f5f7f8;
+  --product-line: #dce2e8;
+  background: var(--product-paper);
+  font-family: "Noto Sans SC", "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+}
+
+.product-detail-page .product-site-header {
+  min-height: 72px;
+  background: rgba(255, 255, 255, .97);
+  border-bottom: 1px solid var(--product-line);
+  box-shadow: 0 3px 14px rgba(16, 43, 74, .05);
+}
+
+.product-detail-page .product-site-header .btn,
+.product-detail-page .seo-cta-row .btn.primary {
+  color: #fff;
+  background: var(--product-orange);
+  border-color: var(--product-orange);
+}
+
+.product-detail-page .seo-hero {
+  min-height: 620px;
+  padding-top: clamp(58px, 7vw, 92px);
+  background: #fff;
+  border-top: 3px solid var(--product-orange);
+}
+
+.product-detail-page .seo-copy h1 {
+  max-width: 650px;
+  color: var(--product-navy);
+  font-size: clamp(2.6rem, 4vw, 4.1rem);
+  line-height: 1.04;
+  letter-spacing: -.04em;
+}
+
+.product-detail-page .seo-copy > p:not(.eyebrow) {
+  color: #637489;
+  line-height: 1.75;
+}
+
+.product-detail-page .seo-product-visual {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-items: stretch;
+}
+
+.product-detail-page .seo-product-visual img {
+  width: 100%;
+  min-height: 0;
+  aspect-ratio: 1;
+  border: 1px solid var(--product-line);
+  border-radius: 10px;
+  box-shadow: 0 18px 42px rgba(16, 43, 74, .08);
+}
+
+.product-detail-page .seo-main-product {
+  padding: clamp(18px, 3vw, 34px);
+  object-fit: contain;
+  background: #fff;
+}
+
+.product-detail-page .seo-scenario {
+  object-fit: cover;
+}
+
+@media (max-width: 640px) {
+  .product-detail-page .seo-hero {
+    min-height: 0;
+    padding-top: 44px;
+  }
+
+  .product-detail-page .seo-copy h1 {
+    font-size: clamp(2.35rem, 11vw, 3.4rem);
+    line-height: 1.08;
+  }
+
+  .product-detail-page .seo-product-visual img {
+    aspect-ratio: 1;
+  }
+}
+
 .industrial-v3 .signature-products span {
   color: rgba(255, 255, 255, .68);
 }
