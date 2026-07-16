@@ -1,0 +1,11 @@
+# Local browser QA artifacts; keep them out of the published repository.
+.playwright-cli/
+output/
+
+# Local redesign archive; retained on the working machine, never published.
+_archive_before_redesign/
+
+# Serverless/local environment files.
+.env
+.env.*
+!.env.example
