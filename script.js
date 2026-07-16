@@ -243,13 +243,15 @@ Object.assign(translations.zh, {
 
 Object.assign(translations.en, {
   eyebrow: "Portable Lighting & Safety Warning Products", heroTitle: "Portable lighting and safety warning products for global buyers.", heroText: "OEM/ODM manufacturing from tooling to finished product, led by the proven HB-328 bestseller and new HB-330 / HB-331 warning light series.", explore: "View Products", customize: "Start an OEM Project", productsEyebrow: "Product Lines", productsTitle: "Portable lighting and safety warning products for wholesale and OEM.", productsText: "Start with the proven HB-328 bestseller, compare the new HB-330 / HB-330C and HB-331 / HB-331C series, then extend your range with portable work lights.",
-  templateUseLabel: "Use", templateRoadside: "Roadside safety", templateWorksite: "Work zones", templateWorkUse: "Repair / outdoor", templateWorkVersion: "Rechargeable",
+  templateUseLabel: "Use", templateRoadside: "Roadside safety", templateWorksite: "Work zones", templateWorkUse: "Repair / outdoor", templateWorkVersion: "Rechargeable", directoryJump: "Browse complete product catalog",
   template330Title: "Triangle Warning Light Series", template330Text: "A new triangle warning light line with a battery version and a Type-C rechargeable version.",
   template331Title: "Triangle Warning Light Series", template331Text: "A new triangle warning light line for work zones, temporary lanes and repeat-use safety programs.",
   templateWorkTitle: "Magnetic Hook Work Light", templateWorkText: "Portable work lights and headlamps extend the safety range for repair, vehicle and outdoor programs.",
   templateVersionTitle: "Version rule", templateVersionText: "No C = battery version · C = Type-C rechargeable version.",
   templateProcessEyebrow: "From Tooling To Delivery", templateProcessTitle: "One accountable team from tooling to finished product.", templateProcessText: "Injection molding, precision tooling, standardized assembly and quality control are organized for stable OEM and wholesale supply.",
-  templateCapability1: "Injection Molding", templateCapability2: "Precision Tooling", templateCapability3: "Standardized Assembly", templateCapability4: "Quality Control & Packaging",
+  templateCapability1: "Injection Molding", templateCapability1Text: "Consistent plastic parts and repeatable production for stable wholesale supply.", templateCapability2: "Precision Tooling", templateCapability2Text: "Tooling and product adjustments are organized before sampling and mass production.", templateCapability3: "Standardized Assembly", templateCapability3Text: "Assembly checkpoints keep product function and appearance consistent across orders.", templateCapability4: "Quality Control & Packaging", templateCapability4Text: "Function checks, quantity checks and export packaging are completed before delivery.",
+  supportBeaconTitle: "Magnetic Safety Beacon", supportBeaconText: "A compact beacon for service vehicles, towing, project sites and roadside visibility.", supportEmergencyTitle: "Red Blue Emergency Beacon", supportEmergencyText: "A high-visibility beacon for roadside service, towing, rescue and outdoor warning programs.", templateVehicleUse: "Vehicle / rescue", templateRescueUse: "Rescue / roadside", templateBattery: "Battery", directoryEyebrow: "Complete Product Range", directoryTitle: "More models for mixed orders and sourcing programs.", directoryText: "The homepage highlights the core warning-light line. Use the catalog below to browse additional warning lights, beacons, work lights and outdoor products.",
+  growthEyebrow: "Buyer Growth Support", growthTitle: "Start with useful information. Build a repeat buying relationship.", growthText: "HENGBO supports buyers with product selection, sample planning and qualified partner cooperation. Every reward is confirmed with sales according to the actual order.", growthPackTitle: "Buyer Starter Pack", growthPackText: "Request a practical product pack with model comparison, version rules, packaging information and OEM preparation notes.", growthPackCta: "Request the pack", growthSampleTitle: "Sample Order Credit", growthSampleText: "Ask whether an eligible sample or express fee can be credited toward a later bulk order after the model is confirmed.", growthSampleCta: "Ask about sample credit", growthPartnerTitle: "Referral Partner Program", growthPartnerText: "Qualified distributors, sourcing agents and industry partners can discuss referral rewards after a verified paid order.", growthPartnerCta: "Discuss partnership", growthNote: "No public prices or automatic cash promises are shown. Eligibility, order credit and referral terms are confirmed by sales for each project.",
   templateStep1: "Inquiry", templateStep2: "Sampling", templateStep3: "Customization", templateStep4: "Mass Production", templateStep5: "Quality Check", templateStep6: "Delivery"
 });
 
@@ -263,6 +265,40 @@ Object.assign(translations.zh, {
   templateProcessEyebrow: "从模具到交付", templateProcessTitle: "从模具开发到成品交付，由一支团队负责。", templateProcessText: "注塑、精密模具、标准化装配和质量控制，为 OEM 与批发采购提供稳定支持。",
   templateCapability1: "注塑成型", templateCapability2: "精密模具", templateCapability3: "标准化装配", templateCapability4: "质量控制与包装",
   templateStep1: "询盘", templateStep2: "打样", templateStep3: "定制", templateStep4: "量产", templateStep5: "质量检查", templateStep6: "交付"
+});
+
+Object.assign(translations.zh, {
+  templateCapability1Text: "稳定生产塑胶件，满足批发订单的持续供货要求。",
+  templateCapability2Text: "在打样和量产前确认模具与产品调整方案。",
+  templateCapability3Text: "通过装配检查，保持不同批次的功能和外观一致。",
+  templateCapability4Text: "交付前完成功能、数量和出口包装检查。",
+  supportBeaconTitle: "磁吸安全警示灯",
+  supportBeaconText: "适用于服务车辆、拖车救援、工程现场和道路安全警示。",
+  supportEmergencyTitle: "红蓝应急警示灯",
+  supportEmergencyText: "适用于道路服务、拖车救援和户外应急警示场景。",
+  templateVehicleUse: "车辆 / 救援",
+  templateRescueUse: "救援 / 道路",
+  templateBattery: "电池款",
+  directoryEyebrow: "完整产品范围",
+  directoryTitle: "更多型号，适合混合订单和采购项目。",
+  directoryText: "首页突出核心警示灯系列，下面的产品目录可以继续查看其他警示灯、信标灯、工作灯和户外照明产品。",
+  directoryJump: "查看完整产品目录"
+});
+
+Object.assign(translations.zh, {
+  growthEyebrow: "采购合作支持",
+  growthTitle: "先提供有用资料，再建立长期采购关系。",
+  growthText: "恒博为买家提供产品选型、样品规划和合格合作伙伴支持。具体奖励会根据真实订单由销售确认。",
+  growthPackTitle: "采购资料包",
+  growthPackText: "可申请产品对比、版本规则、包装信息和 OEM 准备说明等实用资料。",
+  growthPackCta: "申请资料包",
+  growthSampleTitle: "样品订单抵扣",
+  growthSampleText: "型号确认后，可向销售咨询符合条件的样品费或快递费是否可以抵扣后续批量订单。",
+  growthSampleCta: "咨询样品抵扣",
+  growthPartnerTitle: "采购合作伙伴计划",
+  growthPartnerText: "经销商、采购代理和行业合作伙伴，可在真实付款订单确认后咨询推荐合作奖励。",
+  growthPartnerCta: "咨询合作计划",
+  growthNote: "网站不公开展示价格，也不承诺自动现金返还。资格、订单抵扣和推荐奖励均由销售根据具体项目确认。"
 });
 
 const fallback = translations.en;
